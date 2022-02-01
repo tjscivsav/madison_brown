@@ -24,7 +24,6 @@ export default function Home() {
         draggable: true,
         progress: undefined,
       })
-      e.target.reset()
     } else {
       toast(`${result.msg}`, {
         position: "top-right",
@@ -36,6 +35,7 @@ export default function Home() {
         progress: undefined,
       })
     }
+    e.target.reset()
     setEmail("")
   }
 

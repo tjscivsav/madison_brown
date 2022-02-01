@@ -69,4 +69,6 @@ body {
   border: 2px solid #8ecadc;
   box-sizing: border-box;
   border-radius: 0px 25px 25px 0px;
+  text-align: center;
+  padding-right: 8px;
 }
