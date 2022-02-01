@@ -20,7 +20,7 @@ body {
   border-image-outset: 5px;
 }
 
-#hide {
+/* #hide {
   -webkit-animation: cssAnimation 5s forwards;
   animation: cssAnimation 5s forwards;
 }
@@ -45,7 +45,7 @@ body {
   100% {
     opacity: 0;
   }
-}
+} */
 .content {
   position: absolute;
   height: 100vh;
