@@ -10,6 +10,7 @@ body {
   display: flex;
 }
 .bg_gif {
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -19,7 +20,40 @@ body {
   border-image-outset: 5px;
 }
 
-.input-group input {
+#hide {
+  -webkit-animation: cssAnimation 5s forwards;
+  animation: cssAnimation 5s forwards;
+}
+@keyframes cssAnimation {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.content {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.input {
   width: 181.88px;
   height: 43px;
   background: rgba(221, 218, 221, 0.5);
@@ -28,7 +62,7 @@ body {
   border-radius: 25px 0px 0px 25px;
 }
 
-.input-group button {
+.button {
   width: 109.12px;
   height: 43px;
   background: #8ecadc;
