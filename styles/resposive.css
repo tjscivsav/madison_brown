@@ -1,0 +1,10 @@
+@media (min-width: 320px) and (max-width: 600px) {
+  .bg_gif {
+    border-image: url("../static/Houndstooth_mobile.gif") 30 fill;
+    border-image-width: 30px;
+    border-image-outset: 5px;
+  }
+  .form {
+    width: 80% !important;
+  }
+}
