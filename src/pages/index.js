@@ -8,6 +8,8 @@ import "../../styles/bootstrap.css"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 export default function Home() {
   const [email, setEmail] = useState("")
@@ -45,6 +47,18 @@ export default function Home() {
 
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <ToastContainer />
       <section className=" d-flex flex-column">
         <div id="hide" className="bg_gif"></div>
         <div className="content d-flex flex-column">
@@ -60,20 +74,21 @@ export default function Home() {
               className="input text-center"
             />
             <input type="submit" className="button" value="Sign Up" />
-            <ToastContainer
-              position="top-right"
-              autoClose={5000}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-            />
-            {/* Same as */}
-            <ToastContainer />
           </form>
+          <div className="d-flex flex-row my-3">
+            <a
+              className="text-secondary mx-2"
+              href="https://www.instagram.com/madisonbrownfrozen/"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+            <a
+              className="text-secondary mx-2"
+              href="https://twitter.com/MadisonBrown"
+            >
+              <FontAwesomeIcon icon={faTwitter} size="2x" />
+            </a>
+          </div>
         </div>
       </section>
     </>
