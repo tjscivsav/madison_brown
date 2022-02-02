@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import useWindowSize from "../../hooks/useWindowSize"
 import iceCream from "../../static/ICE_cream_Product.gif"
 import logo from "../../static/logo.png"
+import BlackIrishLogo from "../../static/black_irish_logo.png"
 import "../../styles/global.css"
 import "../../styles/resposive.css"
 import "../../styles/bootstrap.css"
@@ -75,6 +76,12 @@ export default function Home() {
             <input type="submit" className="button" value="Sign Up" />
           </form>
           <div className="d-flex flex-row mt-3">
+            <a
+              className="text-secondary mx-2"
+              href="https://www.goblackirish.com"
+            >
+              <img src={BlackIrishLogo} width={33} height={32} alt="" />
+            </a>
             <a
               className="text-secondary mx-2"
               href="https://www.instagram.com/madisonbrownfrozen/"
