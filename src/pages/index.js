@@ -58,7 +58,6 @@ export default function Home() {
         draggable
         pauseOnHover
       />
-      <ToastContainer />
       <section className=" d-flex flex-column">
         <div id="hide" className="bg_gif"></div>
         <div className="content d-flex flex-column">
@@ -75,7 +74,7 @@ export default function Home() {
             />
             <input type="submit" className="button" value="Sign Up" />
           </form>
-          <div className="d-flex flex-row my-3">
+          <div className="d-flex flex-row mt-3">
             <a
               className="text-secondary mx-2"
               href="https://www.instagram.com/madisonbrownfrozen/"
