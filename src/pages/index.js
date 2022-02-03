@@ -74,17 +74,17 @@ export default function Home() {
             />
             <input type="submit" className="button" value="Sign Up" />
           </form>
-          <div className="d-flex flex-row mt-3">
+          <div className="d-flex  flex-row mt-3">
             <a
               target="_blank"
-              className="text-white mx-2"
+              className="text-white socialIcon mx-2"
               href="https://www.instagram.com/madisonbrownfrozen/"
             >
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a
               target="_blank"
-              className="text-white mx-2"
+              className="text-white socialIcon mx-2"
               href="https://twitter.com/MadisonBrown"
             >
               <FontAwesomeIcon icon={faTwitter} size="2x" />
