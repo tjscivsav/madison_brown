@@ -76,13 +76,15 @@ export default function Home() {
           </form>
           <div className="d-flex flex-row mt-3">
             <a
-              className="text-secondary mx-2"
+              target="_blank"
+              className="text-white mx-2"
               href="https://www.instagram.com/madisonbrownfrozen/"
             >
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a
-              className="text-secondary mx-2"
+              target="_blank"
+              className="text-white mx-2"
               href="https://twitter.com/MadisonBrown"
             >
               <FontAwesomeIcon icon={faTwitter} size="2x" />
