@@ -46,3 +46,7 @@ body {
   text-align: center;
   padding-right: 8px;
 }
+
+.socialIcon:hover {
+  opacity: 0.7;
+}
