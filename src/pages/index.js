@@ -14,6 +14,7 @@ import {
   faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
+import SEO from "../components/SEO"
 
 export default function Home() {
   const [email, setEmail] = useState("")
@@ -51,6 +52,7 @@ export default function Home() {
 
   return (
     <>
+      <SEO />
       <ToastContainer
         position="top-right"
         autoClose={5000}
