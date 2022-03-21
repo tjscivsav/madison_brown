@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856522/Madison%20Brown/duch_ice_zdwmh0.png",
+      "title": "Chocolate Chip Cookie Dough",
+      "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
+      "btn_color": "dough"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856532/Madison%20Brown/chocolate_ice_ylney8.png",
+      "title": "Chocolate",
+      "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
+      "btn_color": "chocolate"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856529/Madison%20Brown/mint_ice_hiqi88.png",
+      "title": "Mint Chocolate Chip",
+      "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
+      "btn_color": "mint"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856523/Madison%20Brown/cookie_ice_w9urzj.png",
+      "title": "Cook ies N’ Cream",
+      "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
+      "btn_color": "cookie"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856524/Madison%20Brown/red_ice_ybmhel.png",
+      "title": "Red Velvet",
+      "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
+      "btn_color": "redvelvet"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856527/Madison%20Brown/vanila_ice_dpseru.png",
+      "title": "Vanilla",
+      "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
+      "btn_color": "vanilla"
+    }
+  ]
+}

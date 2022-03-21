@@ -1,0 +1,21 @@
+.partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.partner img {
+  width: 250px;
+  height: 250px;
+}
+
+.partner h5 {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #000000;
+}

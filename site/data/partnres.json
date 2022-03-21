@@ -1,0 +1,36 @@
+{
+  "partners": [
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647862971/Madison%20Brown/walmart_srjhb0.png",
+      "name": "Walmart"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647862971/Madison%20Brown/costco_x3ixcj.png",
+      "name": "Costco"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647862971/Madison%20Brown/target_2_yenlu3.png",
+      "name": "Target"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647862970/Madison%20Brown/Best_buy_2_eewmmb.png",
+      "name": "Best Buy"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647862971/Madison%20Brown/target_fqvrek.png",
+      "name": "Target"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647862971/Madison%20Brown/7_Eleven_hrbdmm.png",
+      "name": "7 Eleven"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647862970/Madison%20Brown/amazon_hlooiq.png",
+      "name": "Amazon"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647862971/Madison%20Brown/Best_buy_zrbts3.png",
+      "name": "Best Buy"
+    }
+  ]
+}

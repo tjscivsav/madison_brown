@@ -9,15 +9,27 @@
       "link": "/about"
     },
     {
+      "name": "Contact",
+      "link": "/contact"
+    },
+    {
       "name": "Products",
       "link": "/products"
     },
     {
-      "name": "Contact",
-      "link": "/contact"
+      "name": "Retail Partners Page",
+      "link": "/retailpartners"
+    },
+    {
+      "name": "Press",
+      "link": "/press"
+    },
+    {
+      "name": "Charity/Causes",
+      "link": "/charity"
     }
   ],
-  "facebook":"https://www.instagram.com/madisonbrownfrozen/",
-  "instagram":"https://www.instagram.com/madisonbrownfrozen/",
-  "twitter":"https://twitter.com/MadisonBrown"
+  "facebook": "https://www.instagram.com/madisonbrownfrozen/",
+  "instagram": "https://www.instagram.com/madisonbrownfrozen/",
+  "twitter": "https://twitter.com/MadisonBrown"
 }

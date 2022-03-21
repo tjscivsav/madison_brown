@@ -22,7 +22,7 @@ function Header() {
           />
         </Link>
         <ul>
-          {Links?.navLink.map((item, i) => (
+          {Links?.navLink?.slice(0, 4).map((item, i) => (
             <li key={i}>
               <Link to={item.link}>{item.name}</Link>
             </li>

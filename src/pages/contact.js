@@ -1,9 +1,11 @@
-import React from 'react'
-import Layout from '../components/Layout/Layout'
-
+import React from "react"
+import Layout from "../components/Layout/Layout"
+import PageTitle from "../components/PageTitle"
 function Contact() {
   return (
-    <Layout>Contact</Layout>
+    <Layout>
+      <PageTitle title="Contact" />
+    </Layout>
   )
 }
 

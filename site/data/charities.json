@@ -1,0 +1,16 @@
+{
+  "charities": [
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647867195/Madison%20Brown/doctors_y0aziq.png",
+      "name": "Doctors Without Borders, USA"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647867194/Madison%20Brown/red_cross_tm1qgj.png",
+      "name": "American Red Cross Cross"
+    },
+    {
+      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647867196/Madison%20Brown/nature_gfdcbv.png",
+      "name": "The Nature Conservancy"
+    }
+  ]
+}

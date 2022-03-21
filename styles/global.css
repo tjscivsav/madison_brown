@@ -47,3 +47,123 @@ html {
 .socialIcon:hover {
   opacity: 0.7;
 }
+
+.bg_sandal {
+  background-color: #efdfb4;
+  padding-top: 15%;
+}
+
+.page_header {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.dough h5 {
+  color: #222222;
+}
+
+.dough button {
+  background-color: #847770;
+  border-radius: 9px;
+  border: 1px solid #222222;
+  box-shadow: 5px 5px #222222;
+}
+
+.dough button:hover {
+  color: #847770;
+  background-color: #000000;
+  border: 1px solid #847770;
+  box-shadow: 5px 5px #847770;
+}
+
+.chocolate h5 {
+  color: #4e3524;
+}
+
+.chocolate button {
+  background-color: #947d6f;
+  border-radius: 9px;
+  border: 1px solid #4e3524;
+  box-shadow: 5px 5px #4e3524;
+}
+
+.chocolate button:hover {
+  color: #ffff;
+  background-color: #4e3524;
+  border: 1px solid #947d6f;
+  box-shadow: 5px 5px #947d6f;
+}
+
+.mint h5 {
+  color: #4a9560;
+}
+
+.mint button {
+  background-color: #8acb94;
+  border-radius: 9px;
+  border: 1px solid #4a9560;
+  box-shadow: 5px 5px #4a9560;
+}
+
+.mint button:hover {
+  background-color: #4a9560;
+  border: 1px solid #8acb94;
+  box-shadow: 5px 5px #8acb94;
+}
+
+.cookie h5 {
+  color: #acaeac;
+}
+
+.cookie button {
+  background-color: #c7c9c6;
+  border-radius: 9px;
+  border: 1px solid #acaeac;
+  box-shadow: 5px 5px #acaeac;
+}
+
+.cookie button:hover {
+  background-color: #acaeac;
+  border: 1px solid #c7c9c6;
+  box-shadow: 5px 5px #c7c9c6;
+}
+
+.redvelvet h5 {
+  color: #e41e2d;
+}
+
+.redvelvet button {
+  background-color: #e68599;
+  border-radius: 9px;
+  border: 1px solid #e41e2d;
+  box-shadow: 5px 5px #e41e2d;
+}
+
+.redvelvet button:hover {
+  background-color: #e41e2d;
+  border: 1px solid #e68599;
+  box-shadow: 5px 5px #e68599;
+}
+
+.vanilla h5 {
+  color: #4298b5;
+}
+
+.vanilla button {
+  background-color: #98bfcb;
+  border-radius: 9px;
+  border: 1px solid #4298b5;
+  box-shadow: 5px 5px #4298b5;
+}
+
+.vanilla button:hover {
+  background-color: #4298b5;
+  border: 1px solid #98bfcb;
+  box-shadow: 5px 5px #98bfcb;
+}
