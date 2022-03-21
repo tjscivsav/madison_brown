@@ -1,0 +1,27 @@
+.lg_navbar {
+  padding: 0 40px !important;
+  height: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4298b5;
+}
+
+.lg_navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lg_navbar ul a {
+  font-family: "Neue Haas Grotesk Text Pro";
+  text-decoration: none;
+  margin: 0 25px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  text-transform: uppercase;
+}

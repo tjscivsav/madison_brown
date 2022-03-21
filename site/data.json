@@ -1,0 +1,23 @@
+{
+  "navLink": [
+    {
+      "name": "Home",
+      "link": "/home"
+    },
+    {
+      "name": "About",
+      "link": "/about"
+    },
+    {
+      "name": "Products",
+      "link": "/products"
+    },
+    {
+      "name": "Contact",
+      "link": "/contact"
+    }
+  ],
+  "facebook":"https://www.instagram.com/madisonbrownfrozen/",
+  "instagram":"https://www.instagram.com/madisonbrownfrozen/",
+  "twitter":"https://twitter.com/MadisonBrown"
+}

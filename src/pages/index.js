@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import useWindowSize from "../../hooks/useWindowSize"
 import iceCream from "../../static/ICE_cream_Product.gif"
 import logo from "../../static/logo.png"
 import "../../styles/global.css"
@@ -10,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import Seo from "../components/Seo"
 
 export default function Home() {
   const [email, setEmail] = useState("")
@@ -47,6 +47,7 @@ export default function Home() {
 
   return (
     <>
+      <Seo title="Madison Brown" />
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -77,14 +78,16 @@ export default function Home() {
           <div className="d-flex  flex-row mt-3">
             <a
               target="_blank"
-              className="text-white socialIcon mx-2"
+              rel="noopener noreferrer"
+              className="text-secondary socialIcon mx-2"
               href="https://www.instagram.com/madisonbrownfrozen/"
             >
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a
               target="_blank"
-              className="text-white socialIcon mx-2"
+              rel="noopener noreferrer"
+              className="text-secondary socialIcon mx-2"
               href="https://twitter.com/MadisonBrown"
             >
               <FontAwesomeIcon icon={faTwitter} size="2x" />

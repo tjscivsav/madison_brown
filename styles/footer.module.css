@@ -1,0 +1,134 @@
+.footer {
+  background-color: #4a9560;
+  height: 577px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding-top: 10%;
+  padding-left: 7%;
+}
+
+.text {
+  max-width: 417px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.input {
+  border: 1px solid #efdfb4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 51px;
+  max-width: 380px;
+  text-overflow: ellipsis;
+  padding: 10px;
+  background: transparent;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+.input::placeholder {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.btn {
+  background: #efdfb4;
+  border-radius: 9px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 44px;
+  text-align: center;
+  color: #4a9560;
+  width: 200px;
+  transform: skewX(-10deg);
+  border: 1px solid #efdfb4;
+  box-shadow: 5px 5px #b8e5ca;
+}
+
+.btn:hover {
+  background: #4a9560;
+  border-color: 1px solid #efdfb4;
+  box-shadow: 5px 5px #efdfb4;
+  color: #ffffff;
+}
+
+.heading {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 53px;
+  color: #efdfb4;
+}
+
+.page_link {
+  list-style: none;
+  margin-left: -25px;
+}
+
+.page_link a {
+  text-decoration: none;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.page_link a:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.para {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 385px;
+  color: #ffffff;
+  margin: 5% 0;
+}
+
+.mobile_number,
+.mobile_number:hover {
+  text-decoration: none;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.rights {
+  height: 75px;
+  background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/footer_img_ojqcxr.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 71px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  background-color: #8acb94;
+}

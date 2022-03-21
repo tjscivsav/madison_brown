@@ -6,9 +6,6 @@ html {
   background-color: #fff;
 }
 
-body {
-  display: flex;
-}
 .bg_gif {
   position: relative;
   justify-content: center;

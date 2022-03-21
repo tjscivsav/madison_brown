@@ -1,0 +1,32 @@
+@import url("../styles/fonts.css");
+
+.page_title {
+  height: 400px;
+  background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_poster_img_u8eglf.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.page_title h1 {
+  height: 75%;
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 5px 5px #000000;
+  text-transform: uppercase;
+}
+
+.variety_ice {
+  position: absolute;
+  bottom: -5%;
+}
+.page_title img {
+  height: 490px;
+  width: 100%;
+}
