@@ -1,0 +1,73 @@
+.bg_img {
+  background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_sqaure_img_rhjdxs.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_color {
+  margin: 73px 0;
+  background-color: #efdfb4;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-color: #98bfcb;
+}
+
+.content h2 {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 69px;
+  color: #efdfb4;
+  text-shadow: 5px 5px #000000;
+}
+
+.content p {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+  max-width: 573px;
+}
+
+.btn {
+  border-radius: 9px;
+  transform: skewX(-10deg);
+  text-transform: uppercase;
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  width: 242px;
+  height: 70px;
+  color: #4298b5;
+  background: #efdfb4;
+  border: 1px solid #efdfb4;
+  box-shadow: 5px 5px #4298b5;
+}
+
+.btn:hover {
+  color: #efdfb4;
+  background: #4298b5;
+  border: 1px solid #4298b5;
+  box-shadow: 5px 5px #efdfb4;
+}

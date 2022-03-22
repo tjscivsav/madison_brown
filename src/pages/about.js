@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import PageTitle from "../components/PageTitle"
 import * as AboutStyle from "../../styles/about.module.css"
+import ImgwithDot from "../components/ImgwithDot"
 
 function About() {
   return (
@@ -24,15 +25,7 @@ function About() {
           elementum sed sagittis.
         </p>
         <div className="mx-5">
-          <div className={AboutStyle.img_section}>
-            <img
-              src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647851531/Madison%20Brown/ceo_img_wvy5ac.png"
-              alt=""
-            />
-            <div className={AboutStyle.red_dot}></div>
-          </div>
-          <h5 className="mt-5">Jessica William</h5>
-          <h6 className="mb-5">CEO Madison Brown</h6>
+          <ImgwithDot />
         </div>
         <p className={AboutStyle.para2}>
           Elementum et eget convallis a, praesent porttitor imperdiet.

@@ -1,0 +1,52 @@
+.content {
+  background-color: #efdfb4;
+  padding: 36px;
+}
+
+.border {
+  border: 7px solid #4e3524;
+  outline: 7px solid #4e3524;
+  outline-offset: -30px;
+  padding: 20px;
+}
+
+.content h3 {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 161px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-shadow: 5px 5px #000000;
+}
+.green {
+  color: #4a9560;
+}
+
+.dough {
+  color: #222222;
+}
+.chocalate {
+  color: #4e3524;
+}
+.blue {
+  color: #4298b5;
+}
+
+.red {
+  color: #e41e2d;
+}
+
+.grey {
+  color: #acaeac;
+}
+
+.content img {
+  position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  height: 100%;
+  overflow-x: hidden;
+}

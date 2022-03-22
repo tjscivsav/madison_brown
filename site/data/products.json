@@ -20,21 +20,27 @@
     },
     {
       "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856523/Madison%20Brown/cookie_ice_w9urzj.png",
+      "img1": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597879/Madison%20Brown/icecream_tvoxh4.png",
       "title": "Cook ies N’ Cream",
       "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
-      "btn_color": "cookie"
+      "btn_color": "cookie",
+      "frame": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/grey_frame_osppk6.png"
     },
     {
       "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856524/Madison%20Brown/red_ice_ybmhel.png",
+      "img1": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597879/Madison%20Brown/icecream_tvoxh4.png",
       "title": "Red Velvet",
       "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
-      "btn_color": "redvelvet"
+      "btn_color": "redvelvet",
+      "frame": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/red_frame_hkqml4.png"
     },
     {
       "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647856527/Madison%20Brown/vanila_ice_dpseru.png",
+      "img1": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597879/Madison%20Brown/icecream_tvoxh4.png",
       "title": "Vanilla",
       "desc": "A blend of chocolate chip cookie dough with our luxuries ice cream.",
-      "btn_color": "vanilla"
+      "btn_color": "vanilla",
+      "frame": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_frame_ybk4oi.png"
     }
   ]
 }

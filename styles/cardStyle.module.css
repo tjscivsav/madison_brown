@@ -1,0 +1,31 @@
+.container {
+  height: 732px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.img_section {
+  position: relative;
+}
+
+.container img {
+  margin: auto;
+  width: 420px;
+  height: 420px;
+}
+
+.red_dot {
+  position: absolute;
+  right: 70px;
+  bottom: 0px;
+  background-color: #e41e2d;
+  height: 93px;
+  width: 93px;
+  border-radius: 50%;
+}

@@ -5,13 +5,16 @@
   justify-content: center;
   align-items: center;
 }
+
 .para {
   margin-top: 15%;
   margin-bottom: 5%;
 }
+
 .para2 {
   margin: 2% 0;
 }
+
 .about_content p {
   width: 85%;
   font-family: "Neue Haas Grotesk Text Pro";
@@ -21,26 +24,6 @@
   line-height: 53px;
   text-align: center;
   color: #000000;
-}
-
-.img_section {
-  position: relative;
-}
-
-.about_content img {
-  width: 500px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.red_dot {
-  position: absolute;
-  right: 70px;
-  bottom: 0;
-  background-color: #e41e2d;
-  height: 93px;
-  width: 93px;
-  border-radius: 50%;
 }
 
 .about_content h5 {

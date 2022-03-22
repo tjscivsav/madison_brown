@@ -1,0 +1,19 @@
+.img_section {
+  position: relative;
+}
+
+.container img {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.red_dot {
+  position: absolute;
+  right: 70px;
+  bottom: 0;
+  background-color: #e41e2d;
+  height: 93px;
+  width: 93px;
+  border-radius: 50%;
+}

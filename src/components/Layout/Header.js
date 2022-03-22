@@ -35,7 +35,10 @@ function Header() {
             className="text-white socialIcon mx-2"
             href={Links.facebook}
           >
-            <FontAwesomeIcon icon={faFacebookF} style={{ fontSize: "30px" }} />
+            <FontAwesomeIcon
+              icon={faFacebookF}
+              style={{ color: "#EFDFB4", fontSize: "30px" }}
+            />
           </a>
           <a
             target="_blank"
@@ -43,7 +46,10 @@ function Header() {
             className="text-white socialIcon mx-2"
             href={Links.instagram}
           >
-            <FontAwesomeIcon icon={faInstagram} style={{ fontSize: "30px" }} />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              style={{ color: "#EFDFB4", fontSize: "30px" }}
+            />
           </a>
           <a
             target="_blank"
@@ -51,7 +57,10 @@ function Header() {
             className="text-white socialIcon mx-2"
             href={Links.twitter}
           >
-            <FontAwesomeIcon icon={faTwitter} style={{ fontSize: "30px" }} />
+            <FontAwesomeIcon
+              icon={faTwitter}
+              style={{ color: "#EFDFB4", fontSize: "30px" }}
+            />
           </a>
         </div>
       </div>

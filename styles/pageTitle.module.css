@@ -1,3 +1,5 @@
+@import url("../styles/fonts.css");
+
 .page_title {
   height: 400px;
   background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_poster_img_u8eglf.png");
@@ -15,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #efdfb4;
   text-shadow: 5px 5px #000000;
   text-transform: uppercase;
 }

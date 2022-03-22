@@ -167,3 +167,35 @@ html {
   border: 1px solid #98bfcb;
   box-shadow: 5px 5px #98bfcb;
 }
+
+/* For Home page */
+.products .cookie {
+  background-color: #e5e5e5;
+}
+.products .redvelvet {
+  background-color: #fdbfcc;
+}
+.products .vanilla {
+  background-color: #b2dae3;
+}
+
+.products .cookie button {
+  background-color: #e5e5e5;
+  box-shadow: none;
+}
+
+.products .redvelvet button {
+  background-color: #e68599;
+  box-shadow: none;
+  border-color: #e41e2d;
+}
+.products .vanilla button {
+  background-color: #98bfcb;
+  box-shadow: none;
+}
+
+/* Slider */
+
+.slick-list {
+  padding: 0 20% 0 0 !important;
+}

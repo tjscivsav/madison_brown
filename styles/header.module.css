@@ -18,10 +18,15 @@
   font-family: "Neue Haas Grotesk Text Pro";
   text-decoration: none;
   margin: 0 25px;
-  color: #fff;
+  color: #efdfb4;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 31px;
   text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.lg_navbar ul a:hover {
+  opacity: 1;
 }
