@@ -201,7 +201,7 @@
     bottom: 0;
   }
 }
-@media screen and (max-width: 3950px) {
+@media screen and (max-width: 350px) {
   .rights {
     right: 10%;
     bottom: 0;
