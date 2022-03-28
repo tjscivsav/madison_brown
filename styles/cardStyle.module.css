@@ -1,5 +1,5 @@
 .container {
-  height: 732px;
+  height: 632px;
 }
 
 .content {
@@ -28,4 +28,122 @@
   height: 93px;
   width: 93px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    height: 532px;
+  }
+  .container img {
+    margin: auto;
+    width: 320px;
+    height: 320px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 73px;
+    width: 73px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    height: 532px;
+  }
+  .container img {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 73px;
+    width: 73px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    height: 532px;
+  }
+  .container img {
+    margin: auto;
+    width: 320px;
+    height: 320px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 73px;
+    width: 73px;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .container {
+    height: 632px;
+  }
+  .container img {
+    margin: auto;
+    width: 380px;
+    height: 380px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 73px;
+    width: 73px;
+  }
+}
+@media screen and (max-width: 482px) {
+  .container {
+    height: 632px;
+  }
+  .container img {
+    margin: auto;
+    width: 320px;
+    height: 320px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 73px;
+    width: 73px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    height: 482px;
+  }
+  .container img {
+    margin: auto;
+    width: 260px;
+    height: 260px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 53px;
+    width: 53px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    height: 382px;
+  }
+  .container img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 43px;
+    width: 43px;
+  }
 }

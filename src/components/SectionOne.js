@@ -6,7 +6,7 @@ function SectionOne() {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col p-0">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-12 p-0">
             <div className={homeStyle.content}>
               <h2>Fabulous Ice Cream</h2>
               <p>
@@ -17,7 +17,7 @@ function SectionOne() {
               <button className={homeStyle.btn}>see all</button>
             </div>
           </div>
-          <div className="col p-0 ">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-12 p-0 ">
             <div className={homeStyle.bg_img}>
               <div className={homeStyle.bg_color}>
                 <img

@@ -20,6 +20,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 34px;
+  text-align: center;
 }
 
 .border_img button {
@@ -28,4 +29,28 @@
   border-radius: 30px;
   border-width: 3px 5px 10px 5px;
   border-style: solid;
+}
+
+@media screen and (max-width: 992px) {
+  .border_img {
+    height: 80vh;
+    border-image-width: 5px;
+    border-image-outset: 10px;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .border_img {
+    height: 70vh;
+    border-image-width: 5px;
+    border-image-outset: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .border_img {
+    height: 60vh;
+    border-image-width: 5px;
+    border-image-outset: 10px;
+  }
 }

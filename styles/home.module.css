@@ -1,7 +1,7 @@
 .bg_img {
   background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_sqaure_img_rhjdxs.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,6 @@
 
 .btn {
   border-radius: 9px;
-  transform: skewX(-10deg);
   text-transform: uppercase;
   font-family: "Cooper Black";
   font-style: normal;
@@ -60,6 +59,7 @@
   width: 242px;
   height: 70px;
   color: #4298b5;
+  transform: skewX(-10deg);
   background: #efdfb4;
   border: 1px solid #efdfb4;
   box-shadow: 5px 5px #4298b5;
@@ -70,4 +70,36 @@
   background: #4298b5;
   border: 1px solid #4298b5;
   box-shadow: 5px 5px #efdfb4;
+}
+
+@media screen and (max-width: 1300px) {
+  .content h2 {
+    font-size: 50px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+  .btn {
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content h2 {
+    font-size: 45px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -5,14 +5,81 @@ import "slick-carousel/slick/slick-theme.css"
 import * as cardStyle from "../../styles/cardStyle.module.css"
 
 const settings = {
+  slidesToShow: 3,
+  slidesToScroll: 1,
   dots: false,
   arrows: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
   swipeToSlide: true,
   centerMode: true,
+  responsive: [
+    {
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        swipeToSlide: true,
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        swipeToSlide: true,
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        swipeToSlide: true,
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        swipeToSlide: true,
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        swipeToSlide: true,
+        centerMode: true,
+      },
+    },
+  ],
 }
 
 const CustomSlide = ({ item, i }) => {

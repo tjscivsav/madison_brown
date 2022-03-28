@@ -17,16 +17,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #efdfb4;
-  text-shadow: 5px 5px #000000;
+  color: #4e3524;
+  text-shadow: 5px 5px #efdfb4;
   text-transform: uppercase;
 }
 
 .variety_ice {
   position: absolute;
-  bottom: -5%;
+  bottom: 0%;
 }
+
 .page_title img {
-  height: 490px;
+  height: auto;
   width: 100%;
 }

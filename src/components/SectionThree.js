@@ -8,10 +8,11 @@ function SectionThree({ data }) {
         <div className="row">
           {data?.slice(3, 6).map((item, i) => (
             <div
+              key={i}
               style={{
                 borderImage: `url(${item?.frame}) 10 fill`,
               }}
-              className={`col ${three.border_img} ${item.btn_color}`}
+              className={`col-lg-4 col-md-12 col-12  ${three.border_img} ${item.btn_color}`}
             >
               <img src={item?.img1} alt={item.title} />
               <h5>{item.title}</h5>

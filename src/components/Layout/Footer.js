@@ -13,7 +13,7 @@ function Footer() {
   return (
     <>
       <div className={`container-fluid ${footerStyle.footer}`}>
-        <div className={` row ${footerStyle.content}`}>
+        <div className={`row ${footerStyle.content}`}>
           <div className="col-5">
             <img
               className="mb-4 "
@@ -89,8 +89,8 @@ function Footer() {
             </a>
           </div>
         </div>
+        <span className={footerStyle.rights}>All RIghts Reserved.</span>
       </div>
-      <div className={footerStyle.rights}>All RIghts Reserved.</div>
     </>
   )
 }

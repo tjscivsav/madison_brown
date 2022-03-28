@@ -1,0 +1,82 @@
+.bg_img {
+  background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1648112144/Madison%20Brown/pink_frame_sqeacb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_img h2 {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  color: #e41e2d;
+  text-shadow: 5px 5px #ffb0bf;
+}
+
+@media screen and (max-width: 1200px) {
+  .bg_img {
+    height: 300px;
+  }
+  .bg_img h2 {
+    font-size: 80px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bg_img {
+    height: 280px;
+  }
+  .bg_img h2 {
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bg_img {
+    height: 250px;
+  }
+  .bg_img h2 {
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .bg_img h2 {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .bg_img h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg_img {
+    height: 220px;
+  }
+  .bg_img {
+    background-size: cover;
+  }
+  .bg_img h2 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+}

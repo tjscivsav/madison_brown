@@ -2,9 +2,16 @@
   background-color: #4a9560;
   height: 577px;
   width: 100%;
+  border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1648200724/Madison%20Brown/footer_frame_i4vvvt.png")
+    20 fill;
+  border-image-width: 10px;
+  border-image-outset: 5px;
+  position: absolute;
+  z-index: -1;
 }
 
 .content {
+  /* position: absolute; */
   padding-top: 10%;
   padding-left: 7%;
 }
@@ -116,17 +123,16 @@
 }
 
 .rights {
-  height: 75px;
-  background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/footer_img_ojqcxr.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  font-family: "Neue Haas Grotesk Text Pro";
+  position: absolute;
+  right: 40%;
+  overflow-y: hidden;
+  bottom: -1%;
+  font-family: "Cooper Black";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 71px;
-  text-align: center;
+  font-size: 30px;
   color: #ffffff;
+  text-align: center;
   text-shadow: 2px 2px #000000;
-  background-color: #8acb94;
+  overflow-y: hidden !important;
 }
