@@ -14,7 +14,7 @@ function Footer() {
     <>
       <div className={`container-fluid ${footerStyle.footer}`}>
         <div className={`row ${footerStyle.content}`}>
-          <div className="col-5">
+          <div id={footerStyle.first_child} className="col-lg-5 col-md-12">
             <img
               className="mb-4 "
               src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
@@ -34,7 +34,10 @@ function Footer() {
               <button className={footerStyle.btn}>Submit</button>
             </form>
           </div>
-          <div className="col-3">
+          <div
+            id={footerStyle.second_child}
+            className="col-lg-3 col-md-5 col-sm-5 col-5 "
+          >
             <h4 className={footerStyle.heading}>Website</h4>
             <ul className={footerStyle.page_link}>
               {Links?.navLink.map((item, i) => (
@@ -44,49 +47,54 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <div className="col-4">
-            <h4 className={footerStyle.heading}>Find Us</h4>
-            <div className="d-flex flex-row ">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white socialIcon me-4"
-                href={Links.facebook}
-              >
-                <FontAwesomeIcon
-                  icon={faFacebookF}
-                  style={{ fontSize: "30px" }}
-                />
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white socialIcon mx-1"
-                href={Links.instagram}
-              >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  style={{ fontSize: "30px" }}
-                />
-              </a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white socialIcon ms-4"
-                href={Links.twitter}
-              >
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  style={{ fontSize: "30px" }}
-                />
+          <div
+            id={footerStyle.third_child}
+            className="col-lg-4 col-md-7 col-sm-7 col-7"
+          >
+            <div>
+              <h4 className={footerStyle.heading}>Find Us</h4>
+              <div id={footerStyle.social_icons} className="d-flex flex-row ">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white socialIcon me-4"
+                  href={Links.facebook}
+                >
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    style={{ fontSize: "30px" }}
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white socialIcon mx-1"
+                  href={Links.instagram}
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    style={{ fontSize: "30px" }}
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white socialIcon ms-4"
+                  href={Links.twitter}
+                >
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    style={{ fontSize: "30px" }}
+                  />
+                </a>
+              </div>
+              <p className={footerStyle.para}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a className={footerStyle.mobile_number} href="tel:707-541-5674">
+                707-541-5674
               </a>
             </div>
-            <p className={footerStyle.para}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <a className={footerStyle.mobile_number} href="tel:707-541-5674">
-              707-541-5674
-            </a>
           </div>
         </div>
         <span className={footerStyle.rights}>All RIghts Reserved.</span>
