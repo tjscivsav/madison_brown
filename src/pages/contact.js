@@ -5,6 +5,9 @@ function Contact() {
   return (
     <Layout>
       <PageTitle title="Contact" />
+      <div className={`container-fluid  bg_sandal`}>
+        <div className="page_header">All PRODUCTS</div>
+      </div>
     </Layout>
   )
 }

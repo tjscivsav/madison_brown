@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import PageTitle from "../components/PageTitle"
 import * as AboutStyle from "../../styles/about.module.css"
-import ImgwithDot from "../components/ImgwithDot"
+import productData from "../../site/data/products.json"
 
 function About() {
   return (
@@ -25,7 +25,13 @@ function About() {
           elementum sed sagittis.
         </p>
         <div className="mx-5">
-          <ImgwithDot />
+          <ul className={AboutStyle.product_list}>
+            {productData?.products.map((item, i) => (
+              <li key={i}>
+                <img src={item.img1} alt={item.title} />
+              </li>
+            ))}
+          </ul>
         </div>
         <p className={AboutStyle.para2}>
           Elementum et eget convallis a, praesent porttitor imperdiet.

@@ -4,7 +4,8 @@
   height: 400px;
   background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_poster_img_u8eglf.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  position: relative;
 }
 
 .page_title h1 {
@@ -24,10 +25,106 @@
 
 .variety_ice {
   position: absolute;
-  bottom: 0%;
+  bottom: -60%;
 }
 
 .page_title img {
   height: auto;
   width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .variety_ice {
+    bottom: -50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .variety_ice {
+    bottom: -45%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .variety_ice {
+    bottom: -40%;
+  }
+  .page_title h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .page_title {
+    height: 330px;
+  }
+  .variety_ice {
+    bottom: -45%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .variety_ice {
+    bottom: -40%;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .variety_ice {
+    bottom: -35%;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .page_title {
+    height: 280px;
+  }
+  .page_title h1 {
+    font-size: 75px;
+    line-height: 70px;
+  }
+  .variety_ice {
+    bottom: -35%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .variety_ice {
+    bottom: -30%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .page_title {
+    height: 250px;
+  }
+  .page_title h1 {
+    font-size: 65px;
+  }
+  .variety_ice {
+    bottom: -30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page_title {
+    height: 200px;
+  }
+  .page_title h1 {
+    font-size: 50px;
+  }
+  .variety_ice {
+    bottom: -30%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .page_title {
+    height: 200px;
+  }
+  .page_title h1 {
+    font-size: 50px;
+  }
+  .variety_ice {
+    bottom: -30%;
+  }
 }

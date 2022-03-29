@@ -8,7 +8,7 @@
 
 .content img {
   width: 414px;
-  height: 240px;
+  height: 260px;
   margin-bottom: 30px;
   border-radius: 37px;
 }
@@ -44,4 +44,39 @@
   background: #4298b5;
   border: 1px solid #98bfcb;
   box-shadow: 5px 5px #98bfcb;
+}
+
+@media screen and (max-width: 1400px) {
+  .content img {
+    width: 354px;
+    height: 215px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content img {
+    width: 304px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content img {
+    width: 414px;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 898px) {
+  .content img {
+    width: 354px;
+    height: 225px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .content img {
+    width: 304px;
+    height: 225px;
+  }
 }

@@ -8,7 +8,6 @@ import SectionThree from "../components/SectionThree"
 import SectionFour from "../components/SectionFour"
 import Poster from "../components/Poster"
 import SectionFive from "../components/SectionFive.js"
-import SectionSix from "../components/SectionSix.js"
 import SectionSeven from "../components/SectionSeven.js"
 import productData from "../../site/data/products.json"
 

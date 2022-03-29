@@ -4,8 +4,11 @@
 }
 html {
   background-color: #fff;
+  overflow-x: hidden !important;
 }
-
+body {
+  overflow-x: hidden !important ;
+}
 .bg_gif {
   position: relative;
   justify-content: center;
@@ -64,6 +67,10 @@ html {
   margin-bottom: 100px;
 }
 
+.dough .dough {
+  background-color: #727272;
+}
+
 .dough h5 {
   color: #222222;
 }
@@ -80,6 +87,9 @@ html {
   background-color: #000000;
   border: 1px solid #847770;
   box-shadow: 5px 5px #847770;
+}
+.chocolate .chocolate {
+  background-color: #786553;
 }
 
 .chocolate h5 {
@@ -99,6 +109,9 @@ html {
   border: 1px solid #947d6f;
   box-shadow: 5px 5px #947d6f;
 }
+.mint .mint {
+  background-color: #74ad8d;
+}
 
 .mint h5 {
   color: #4a9560;
@@ -117,6 +130,10 @@ html {
   box-shadow: 5px 5px #8acb94;
 }
 
+.cookie .cookie {
+  background-color: #b4b4b4;
+}
+
 .cookie h5 {
   color: #acaeac;
 }
@@ -132,6 +149,9 @@ html {
   background-color: #acaeac;
   border: 1px solid #c7c9c6;
   box-shadow: 5px 5px #c7c9c6;
+}
+.redvelvet .redvelvet {
+  background-color: #f8cace;
 }
 
 .redvelvet h5 {
@@ -149,6 +169,9 @@ html {
   background-color: #e41e2d;
   border: 1px solid #e68599;
   box-shadow: 5px 5px #e68599;
+}
+.vanilla .vanilla {
+  background-color: #d7edf3;
 }
 
 .vanilla h5 {

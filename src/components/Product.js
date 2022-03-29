@@ -9,12 +9,12 @@ function Product({ data }) {
         return (
           <div
             key={i}
-            className="col-6 d-flex flex-column justify-content-center align-items-center my-5"
+            className={`${btn_color} col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center my-5`}
           >
-            <div className={productStyle.img_section}>
-              <img src={item.img} alt={item.title} />
+            <div className={`${productStyle.img_section}  ${btn_color} `}>
+              <img src={item.img1} alt={item.title} />
             </div>
-            <div className={`${productStyle.content} ${btn_color}`}>
+            <div className={`${productStyle.content}`}>
               <h5>{item.title}</h5>
               <p>{item.desc}</p>
               <button>BUY</button>
