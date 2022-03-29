@@ -1,0 +1,151 @@
+.content {
+  position: relative;
+}
+
+.content img {
+  width: 100%;
+  height: 100%;
+}
+
+.form_Section {
+  position: absolute;
+  top: 100px;
+  left: 130px;
+}
+
+.form_value {
+  margin-top: 60px;
+  margin-left: 40px;
+  display: grid;
+  row-gap: 20px;
+  flex-direction: column;
+}
+
+.form_value h3 {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  color: #222222;
+}
+
+.form_value input {
+  width: 420px;
+  height: 64px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 0px 20px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 177.4%;
+  color: #000000;
+}
+.form_value input::placeholder {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 177.4%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.form_value textarea {
+  padding: 20px 20px;
+  width: 420px;
+  height: 220px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 177.4%;
+  color: #000000;
+}
+
+.form_value textarea::placeholder {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 177.4%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form_value button {
+  transform: skewX(-10deg);
+  width: 209px;
+  height: 61px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 177.4%;
+  color: #604a39;
+  border-radius: 9px;
+  background: #efdfb4;
+  box-shadow: 5px 5px #604a39;
+}
+
+.form_value button:hover {
+  color: #efdfb4;
+  background: #604a39;
+  box-shadow: 5px 5px #efdfb4;
+}
+.content_section {
+  position: absolute;
+  top: 150px;
+  right: 40px;
+}
+
+.detail_section {
+  height: 584px;
+  width: 773px;
+  border-radius: 18px;
+  background-color: #efdfb4;
+  box-shadow: 5px 5px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.detail_section h3 {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  color: #222222;
+}
+
+.detail_section img {
+  width: 55px;
+  height: 45px;
+  margin-right: 15px;
+}
+
+.detail_section a {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.detail_section p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
