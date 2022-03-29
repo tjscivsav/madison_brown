@@ -57,14 +57,13 @@ body {
 }
 
 .page_header {
-  font-family: "Cooper Black";
+  font-family: "Neue Haas Grotesk Text Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 45px;
-  line-height: 52px;
-  color: #222222;
+  font-size: 30px;
+  line-height: 146.9%;
   text-align: center;
-  margin-bottom: 100px;
+  color: #4298b5;
 }
 
 .dough .dough {

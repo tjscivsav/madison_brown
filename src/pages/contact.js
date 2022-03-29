@@ -6,7 +6,9 @@ function Contact() {
     <Layout>
       <PageTitle title="Contact" />
       <div className={`container-fluid  bg_sandal`}>
-        <div className="page_header">All PRODUCTS</div>
+        <div className="page_header">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
       </div>
     </Layout>
   )
