@@ -46,6 +46,13 @@
   box-shadow: 5px 5px #98bfcb;
 }
 
+@media screen and (max-width: 1600px) {
+  .content img {
+    width: 354px;
+    height: 215px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .content img {
     width: 354px;

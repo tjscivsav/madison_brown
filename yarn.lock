@@ -982,6 +982,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.14.6":
+  version "7.17.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.8.tgz#3e56e4aff81befa55ac3ac6a0967349fd1c5bca2"
+  integrity sha512-dQpEpK0O9o6lj6oPu0gRDbbnk+4LeHlNcBpspf6Olzt3GIX4P1lWF1gS+pHLDFlaJvbR6q7jCfQ08zA4QJBnmA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.16.7":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.16.7.tgz#8d126c8701fde4d66b264b3eba3d96f07666d155"
@@ -4903,6 +4910,27 @@ gatsby-core-utils@^3.11.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^3.11.1:
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.11.1.tgz#ea87c1d3aa45c26c9ea32b8e8b029afe6a56f8c7"
+  integrity sha512-Op9/uihtcsDLlZDfRsGJ1ya2mFx2YH9Zmx93bawElZ0YpIzKjCkNTp+I5i5UANxvs5I+Fljl0WHQRudMWg+fWA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    fastq "^1.13.0"
+    file-type "^16.5.3"
+    fs-extra "^10.0.0"
+    got "^11.8.3"
+    import-from "^4.0.0"
+    lmdb "^2.2.4"
+    lock "^1.1.0"
+    node-object-hash "^2.3.10"
+    proper-lockfile "^4.1.2"
+    resolve-from "^5.0.0"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-core-utils@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.6.0.tgz#0e2f951e2c53731bdb459eb118eb3815a90a9393"
@@ -4926,6 +4954,15 @@ gatsby-graphiql-explorer@^2.6.0:
   integrity sha512-9YSAci8AXsaknCHdGwKJ3hkjSmcUd2+0CCn1IdTh2xcfVCTRW8Q19jgcJjY/8SYfw9kZJVZVx5jdYdD2AsIowQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
+
+gatsby-image@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.11.0.tgz#9070ffd1e656b801052acfa9e470c34427c099e0"
+  integrity sha512-vRMhGLrgyQRH2RYs8leyZ1UyWYIew+NOZEsKur1w6gnWDf0U9UVmYFa9OIE1Vedlo1W+on3AuZ3/KwM+cI69VQ==
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+    object-fit-images "^3.2.4"
+    prop-types "^15.7.2"
 
 gatsby-legacy-polyfills@^2.6.0:
   version "2.6.0"
@@ -5130,16 +5167,16 @@ gatsby-sharp@^0.5.0:
     "@types/sharp" "^0.29.5"
     sharp "^0.30.1"
 
-gatsby-source-filesystem@^4.11.0:
-  version "4.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.11.0.tgz#dce902b8f84674e002ac31b2cf0ae3da2f2047f2"
-  integrity sha512-9mKiTQ4B33ZxC/JEwdjA75Any/JzaS8jWmcqivfE1g0oGq5ips47qfTQ6QdPQp8R/CRUNAUHgB7pllFntn+OCA==
+gatsby-source-filesystem@^4.11.1:
+  version "4.11.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.11.1.tgz#cf2edca8816c6d06ca36ef46feaad4c6d07a6f10"
+  integrity sha512-8Fz+VpctjoiZxnGYDgfXFgdD+8rLmj5+l16fZpN+bxETAOPhbyQjznc8IoTwDEdyOER1Zr8JQB/y6tx/qRf+Bw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     chokidar "^3.5.2"
     file-type "^16.5.3"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^3.11.0"
+    gatsby-core-utils "^3.11.1"
     got "^9.6.0"
     md5-file "^5.0.0"
     mime "^2.5.2"
@@ -7394,6 +7431,11 @@ object-copy@^0.1.0:
     copy-descriptor "^0.1.0"
     define-property "^0.2.5"
     kind-of "^3.0.3"
+
+object-fit-images@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/object-fit-images/-/object-fit-images-3.2.4.tgz#6c299d38fdf207746e5d2d46c2877f6f25d15b52"
+  integrity sha512-G+7LzpYfTfqUyrZlfrou/PLLLAPNC52FTy5y1CBywX+1/FkxIloOyQXBmZ3Zxa2AWO+lMF0JTuvqbr7G5e5CWg==
 
 object-inspect@^1.11.0, object-inspect@^1.12.0, object-inspect@^1.9.0:
   version "1.12.0"

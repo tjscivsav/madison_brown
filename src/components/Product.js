@@ -20,7 +20,7 @@ function Product({ data }) {
               <button>BUY</button>
             </div>
           </div>
-        )
+        ) 
       })}
     </>
   )
