@@ -2,7 +2,7 @@
   background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1648112144/Madison%20Brown/pink_frame_sqeacb.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 330px;
+  height: 424px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,16 @@
   line-height: 115px;
   color: #e41e2d;
   text-shadow: 5px 5px #ffb0bf;
+}
+
+@media screen and (max-width: 1600px) {
+  .bg_img {
+    height: 225px;
+  }
+  .bg_img h2 {
+    font-size: 75px;
+    line-height: 65px;
+  }
 }
 
 @media screen and (max-width: 1200px) {

@@ -21,6 +21,11 @@ function SectionThree({ data }) {
           ))}
         </div>
       </div>
+      <div className={` container-fluid bg_sandal ${three.btn_content}`}>
+        <div className={three.btn_area}>
+          <button className={three.btn}>see all</button>
+        </div>
+      </div>
     </>
   )
 }

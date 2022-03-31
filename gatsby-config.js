@@ -15,13 +15,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint:
           "https://madisonbrownicecream.us14.list-manage.com/subscribe/post?u=cc8239a65f07d2b1871ac509f&amp;id=a2d5a9b530",
         timeout: 3500,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -35,8 +37,8 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `./static/favicon.png`, // This path is relative to the root of the site.
-        cache_busting_mode: `none`
-      }
-    }
-  ]
+        cache_busting_mode: `none`,
+      },
+    },
+  ],
 }

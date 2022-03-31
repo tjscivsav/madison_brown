@@ -1,7 +1,7 @@
 @import url("../styles/fonts.css");
 
 .page_title {
-  height: 400px;
+  height: 530px;
   background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_poster_img_u8eglf.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,12 +25,18 @@
 
 .variety_ice {
   position: absolute;
-  bottom: -60%;
+  bottom: -55%;
 }
 
 .page_title img {
   height: auto;
   width: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+  .page_title {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 1300px) {

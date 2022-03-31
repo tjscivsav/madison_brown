@@ -21,8 +21,6 @@ function SectionOne() {
             <div className={homeStyle.bg_img}>
               <div className={homeStyle.bg_color}>
                 <img
-                  width={370}
-                  height={370}
                   src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597879/Madison%20Brown/icecream_tvoxh4.png"
                   alt=""
                 />
