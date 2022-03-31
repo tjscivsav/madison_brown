@@ -37,17 +37,29 @@
   .page_title {
     height: 400px;
   }
+  .page_title h1{
+    height: 80%;
+    font-size: 80px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   .variety_ice {
     bottom: -50%;
   }
+  .page_title h1{
+    height: 85%;
+    font-size: 70px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .variety_ice {
     bottom: -45%;
+  }
+  .page_title h1{
+    height: 85%;
+    font-size: 70px;
   }
 }
 

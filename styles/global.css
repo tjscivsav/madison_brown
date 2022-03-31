@@ -51,6 +51,45 @@ body {
   opacity: 0.7;
 }
 
+.custom_btn {
+  text-transform: uppercase;
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 177.4%;
+  text-align: center;
+  width: 242px;
+  height: 70px;
+  transform: skewX(-10deg);  
+  border-radius: 9px;
+  filter: drop-shadow(-6px 10px 15px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width:1600px) {
+  .custom_btn{
+    width: 175px;
+    height: 50px;
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width:1350px) {
+  .custom_btn{
+    width: 180px;
+    height: 45px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width:1150px) {
+  .custom_btn{
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
 .bg_sandal {
   background-color: #efdfb4;
   padding-top: 15%;

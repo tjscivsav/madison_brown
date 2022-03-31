@@ -54,16 +54,6 @@
 }
 
 .btn {
-  border-radius: 9px;
-  text-transform: uppercase;
-  font-family: "Cooper Black";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 35px;
-  text-align: center;
-  width: 242px;
-  height: 70px;
   color: #4298b5;
   transform: skewX(-10deg);
   background: #efdfb4;
@@ -86,21 +76,16 @@
 
 @media screen and (max-width: 1600px) {
   .content {
-    padding: 90px;
+    padding: 90px 140px;
   }
   .content h2 {
     font-size: 50px;
   }
   .content p {
     font-size: 18px;
-    max-width: 523px;
+    max-width: 463px;
   }
-  .btn {
-    width: 202px;
-    height: 60px;
-    font-size: 25px;
-  }
-  .bg_img {
+   .bg_img {
     height: auto;
   }
   .bg_color {
@@ -129,12 +114,7 @@
   .content p {
     font-size: 18px;
   }
-  .btn {
-    width: 200px;
-    height: 60px;
-    font-size: 25px;
-  }
-  .bg_color {
+   .bg_color {
     width: 300px;
     height: 300px;
   }

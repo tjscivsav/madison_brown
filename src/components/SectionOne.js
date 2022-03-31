@@ -14,7 +14,7 @@ function SectionOne() {
                 erat quis vitae, tellus. Amet, mollis diam porttitor tempor
                 faucibus lectus lectus.
               </p>
-              <button className={homeStyle.btn}>see all</button>
+              <button className={`custom_btn ${homeStyle.btn}`}>see all</button>
             </div>
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 col-12 p-0 ">

@@ -109,7 +109,7 @@
   width: 773px;
   border-radius: 18px;
   background-color: #efdfb4;
-  box-shadow: 5px 5px #000;
+  box-shadow: 10px 10px #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

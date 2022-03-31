@@ -86,3 +86,10 @@
     height: 60px !important;
   }
 }
+
+@media screen and (max-width:400px) {
+  .mobile_nav_logo img {
+    width: 125px !important;
+    height: 50px !important;
+  }
+}
