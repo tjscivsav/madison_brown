@@ -85,13 +85,20 @@ const settings = {
 const CustomSlide = ({ item, i }) => {
   let bg =
     i % 4 === 0
-      ? "#FDBFCB"
+      ? "#F3F3F3"
       : i % 3 === 0
-      ? "#b8e5ca"
-      : i % 2 === 0
       ? "#D7EDF3"
-      : "#ffffff"
-
+      : i % 2 === 0
+      ? "#B8E6CA"
+      : "#FDBFCB"
+  let red_dot =
+  i % 4 === 0
+  ? "#C4C4C4"
+  : i % 3 === 0
+  ? "#4298B5"
+  : i % 2 === 0
+  ? "#4A9560"
+  : "#E41E2D"
   return (
     <>
       <div
@@ -103,7 +110,7 @@ const CustomSlide = ({ item, i }) => {
         <div className={cardStyle.content}>
           <div className={cardStyle.img_section}>
             <img src={item?.img} alt={item?.location} />
-            <div className={cardStyle.red_dot}></div>
+            <div style={{  backgroundColor: red_dot}} className={cardStyle.red_dot}></div>
           </div>
           <h5 className="mt-5">{item?.location}</h5>
           <h6 className="mb-5">{item?.upcoming}</h6>
@@ -118,7 +125,7 @@ function SlickSider({ data }) {
     <>
       <Slider {...settings}>
         {data?.map((item, i) => (
-          <CustomSlide key={i} item={item} i={i + 1} />
+          <CustomSlide key={i} item={item} i={i + 2} />
         ))}
       </Slider>
     </>

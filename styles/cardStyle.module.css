@@ -24,13 +24,18 @@
   position: absolute;
   right: 70px;
   bottom: 0px;
-  background-color: #e41e2d;
   height: 93px;
   width: 93px;
   border-radius: 50%;
 }
 
 @media screen and (max-width: 1600px) {
+  .red_dot {
+    right: 50px;
+    bottom: 0px;
+    height: 73px;
+    width: 73px;
+  }
   .container {
     height: 532px;
   }
