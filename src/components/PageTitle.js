@@ -1,6 +1,7 @@
 import React from "react"
 import * as titleStyle from "../../styles/pageTitle.module.css"
-import { StaticImage } from "gatsby-plugin-image"
+import productData from "../../site/data/products.json"
+
 
 function PageTitle(props) {
   return (
@@ -8,10 +9,13 @@ function PageTitle(props) {
       <div className={titleStyle.page_title}>
         <h1>{props.title}</h1>
         <div className={titleStyle.variety_ice}>
-          <StaticImage
-            src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647614357/Madison%20Brown/variety_ice_sgg9qe.png"
-            alt="variety_ice_cream_img"
-          />
+        <ul className={titleStyle.product_list}>
+          {productData?.products.map((item, i) => (
+            <li key={i}>
+              <img src={item?.cap} alt={item.title} />
+            </li>
+          ))}
+        </ul>
         </div>
       </div>
     </>

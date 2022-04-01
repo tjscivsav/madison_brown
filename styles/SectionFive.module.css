@@ -95,12 +95,20 @@
   color: #e41e2d;
 }
 
-.title_section img {
+.title_section ul {
   position: absolute;
   bottom: -250px;
-  width: 100%;
-  height: auto;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 105px ;
 }
+
+.product_list img {
+  width: 300px;
+  height: 300px;
+}
+
 
 .btn {
   display: flex;
@@ -135,6 +143,9 @@
   background: #604a39;
   filter: drop-shadow(10px 15px 15px rgba(0, 0, 0, 0.25));
 }
+
+
+
 
 @media screen and (max-width: 1600px) {
 }

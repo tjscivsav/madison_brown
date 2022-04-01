@@ -14,7 +14,7 @@ function Contact() {
       <div className={contactStyle.contact_section}>
         <div className={contactStyle.content}>
           <img
-            src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648560332/Madison%20Brown/contact_frame_qqzx2i.png"
+            src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648806216/Madison%20Brown/BG_jxwrex.png"
             alt=""
           />
           <div className="container">

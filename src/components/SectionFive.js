@@ -1,5 +1,7 @@
 import React from "react"
 import * as five from "../../styles/SectionFive.module.css"
+import productData from "../../site/data/products.json"
+
 
 function SectionFive() {
   return (
@@ -27,10 +29,13 @@ function SectionFive() {
           </div>
           <div className={five.title_section}>
             <h1>GOODNESS COMES IN ALL FLAVOURS</h1>
-            <img
-              src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648117503/Madison%20Brown/products_img_naeo23.png"
-              alt=""
-            />
+            <ul className={five.product_list}>
+              {productData?.products.map((item, i) => (
+                <li key={i}>
+                  <img src={item?.cap} alt={item.title} />
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
