@@ -227,7 +227,8 @@
   .border_img {
     height: 145vh;
     width: 100%;
-    border-image: url("../static/mob_red_frame.png") 50 fill;
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649090460/Madison%20Brown/mob_red_frame_lqdoxw.png")
+      20 fill;
     border-image-width: 20px;
     border-image-outset: 0px 0px;
     background: linear-gradient(

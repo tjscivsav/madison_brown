@@ -15,7 +15,7 @@ function Contact() {
         <div className={contactStyle.bg_img}>
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-lg-6 col-12">
                 <form className={contactStyle.form_Section}>
                   <div className={contactStyle.form_value}>
                     <h3>Send us a message!</h3>
@@ -26,7 +26,7 @@ function Contact() {
                   </div>
                 </form>
               </div>
-              <div className="col-6">
+              <div className="col-lg-6 col-12">
                 <div className={contactStyle.content_section}>
                   <div className={contactStyle.detail_section}>
                     <h3>Contact Us</h3>

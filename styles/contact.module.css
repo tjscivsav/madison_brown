@@ -148,3 +148,15 @@
   line-height: 30px;
   color: #000000;
 }
+
+@media screen and (max-width: 992px) {
+  .bg_img {
+    background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649092278/Madison%20Brown/contact_mob_frame_erpmcl.png");
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+  }
+}
