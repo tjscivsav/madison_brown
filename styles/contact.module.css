@@ -1,16 +1,14 @@
-.content {
-  position: relative;
-}
-
-.content img {
+.bg_img {
+  background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649070252/Madison%20Brown/contact_frame_m2qohu.png");
+  height: 100vh;
   width: 100%;
-  height: auto;
+  background-size: 100% 100%;
 }
 
 .form_Section {
-  position: absolute;
-  top: 100px;
-  left: 130px;
+  height: 95vh;
+  display: flex;
+  align-items: center;
 }
 
 .form_value {
@@ -98,10 +96,11 @@
   background: #604a39;
   box-shadow: 5px 5px #efdfb4;
 }
+
 .content_section {
-  position: absolute;
-  top: 150px;
-  right: 40px;
+  height: 95vh;
+  display: flex;
+  align-items: center;
 }
 
 .detail_section {
