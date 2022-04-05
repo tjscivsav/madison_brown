@@ -74,6 +74,7 @@ function Contact() {
                     <input
                       className={contactStyle.input}
                       type="text"
+                      onChange={e => setEmail(e.target.value)}
                       placeholder="EMAIL"
                     />
                     <textarea
