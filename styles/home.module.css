@@ -85,8 +85,8 @@
     font-size: 18px;
     max-width: 463px;
   }
-   .bg_img {
-    height: auto;
+  .bg_img {
+    height: 450px;
   }
   .bg_color {
     width: 300px;
@@ -95,6 +95,12 @@
   .bg_color img {
     width: 370px;
     height: 370px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .content {
+    padding: 70px;
   }
 }
 
@@ -114,7 +120,7 @@
   .content p {
     font-size: 18px;
   }
-   .bg_color {
+  .bg_color {
     width: 300px;
     height: 300px;
   }
