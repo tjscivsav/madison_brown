@@ -5,19 +5,6 @@ import productData from "../../site/data/products.json"
 function SectionFive() {
   return (
     <>
-      {/* <div className={five.five_section}>
-        <div className={five.bg_img}>
-          <span>
-            <div>
-              <img
-                src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648045018/Madison%20Brown/red_velvet_p0j16b.png"
-                alt=""
-              />
-            </div>
-          </span>
-        </div>
-      </div> */}
-
       <div className={five.border_img}>
         <div className="container-fluid">
           <div className="row">
@@ -33,14 +20,14 @@ function SectionFive() {
               className={`col-lg-6 col-md-12 col-12 ${five.content_section}`}
             >
               <h1>
-                LOOKING FOR THE GOOD STUFF? YOU’RE GETTING WARMER. AND BY WARMER
-                WE MEAN COLDER.
+                LOOKING FOR THE GOOD STUFF? YOU’RE GETTING WARMER.YOUR FREEZER
+                SECTION JUST GOT HOTTER!
               </h1>
               <button>FIND US</button>
             </div>
           </div>
           <div className={five.title_section}>
-            <h1>GOODNESS COMES IN ALL FLAVOURS</h1>
+            <h1>MEET YOUR NEW FAVORITE FLAVORS!</h1>
             <ul className={five.product_list}>
               {productData?.products.map((item, i) => (
                 <li key={i}>

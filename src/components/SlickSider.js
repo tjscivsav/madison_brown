@@ -43,7 +43,7 @@ const settings = {
     {
       breakpoint: 800,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         dots: false,
         arrows: false,
@@ -92,13 +92,13 @@ const CustomSlide = ({ item, i }) => {
       ? "#B8E6CA"
       : "#FDBFCB"
   let red_dot =
-  i % 4 === 0
-  ? "#C4C4C4"
-  : i % 3 === 0
-  ? "#4298B5"
-  : i % 2 === 0
-  ? "#4A9560"
-  : "#E41E2D"
+    i % 4 === 0
+      ? "#C4C4C4"
+      : i % 3 === 0
+      ? "#4298B5"
+      : i % 2 === 0
+      ? "#4A9560"
+      : "#E41E2D"
   return (
     <>
       <div
@@ -110,10 +110,13 @@ const CustomSlide = ({ item, i }) => {
         <div className={cardStyle.content}>
           <div className={cardStyle.img_section}>
             <img src={item?.img} alt={item?.location} />
-            <div style={{  backgroundColor: red_dot}} className={cardStyle.red_dot}></div>
+            <div
+              style={{ backgroundColor: red_dot }}
+              className={cardStyle.red_dot}
+            ></div>
           </div>
-          <h5 className="mt-5">{item?.location}</h5>
-          <h6 className="mb-5">{item?.upcoming}</h6>
+          <h5 className="mt-3">{item?.location}</h5>
+          <h6 className="mb-4">{item?.upcoming}</h6>
         </div>
       </div>
     </>

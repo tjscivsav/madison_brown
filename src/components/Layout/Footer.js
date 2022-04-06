@@ -19,19 +19,15 @@ function Footer() {
               className="mb-4 "
               src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
               alt="nav_logo"
-              width={164.42}
-              height={78.92}
             />
-            <p className={footerStyle.text}>
-              SIGN UP TO RECEIVE EXCLUSIVE OFFERS AND EXCITING NEWS
-            </p>
+            <p className={footerStyle.text}>Get the scoop!</p>
             <form className="d-flex flex-column">
               <input
                 className={footerStyle.input}
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Enter email"
               />
-              <button className={footerStyle.btn}>Submit</button>
+              <button className={footerStyle.btn}>Subscribe!</button>
             </form>
           </div>
           <div

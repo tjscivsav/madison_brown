@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 130px;
+  align-items: center;
   background-color: #98bfcb;
 }
 
@@ -75,9 +75,6 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .content {
-    padding: 90px 140px;
-  }
   .content h2 {
     font-size: 50px;
   }
@@ -99,21 +96,12 @@
 }
 
 @media screen and (max-width: 1550px) {
-  .content {
-    padding: 70px;
-  }
 }
 
 @media screen and (max-width: 1350px) {
-  .content {
-    padding: 70px;
-  }
 }
 
 @media screen and (max-width: 1300px) {
-  .content {
-    padding: 60px;
-  }
   .content h2 {
     font-size: 46px;
   }
@@ -131,9 +119,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .content {
-    padding: 75px;
-  }
   .content h2 {
     font-size: 40px;
   }
@@ -144,9 +129,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .content {
-    padding: 55px;
-  }
   .content h2 {
     font-size: 35px;
   }
@@ -158,5 +140,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content h2 {
+    font-size: 35px;
+  }
+  .content p {
+    font-size: 18px;
+    max-width: 359px;
+  }
+  .bg_img {
+    height: 400px;
+  }
+  .bg_color {
+    width: 280px;
+    height: 280px;
+  }
+  .bg_color img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .content p {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 359px;
+  }
+  .bg_img {
+    height: 350px;
+  }
+  .bg_color {
+    width: 250px;
+    height: 250px;
+  }
+  .bg_color img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .content h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .content p {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 359px;
+  }
+  .bg_img {
+    height: 300px;
+  }
+  .bg_color {
+    width: 220px;
+    height: 220px;
+  }
+  .bg_color img {
+    width: 250px;
+    height: 250px;
   }
 }

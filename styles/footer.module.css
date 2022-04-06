@@ -15,6 +15,11 @@
   padding-left: 7%;
 }
 
+#first_child img {
+  width: 164.42px;
+  height: 78.92px;
+}
+
 .text {
   max-width: 417px;
   font-family: "Neue Haas Grotesk Text Pro";
@@ -71,7 +76,7 @@
 }
 
 .heading {
-  font-family: "Neue Haas Grotesk Text Pro";
+  font-family: "Cooper Black";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -90,7 +95,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 35px;
   color: #ffffff;
 }
 
@@ -135,67 +139,210 @@
   text-shadow: 2px 2px #000000;
   overflow-y: hidden !important;
 }
-
+@media screen and (min-width: 1600px) {
+  .content {
+    padding-top: 7%;
+    padding-left: 7%;
+  }
+  #first_child img {
+    width: 200px;
+    height: 100px;
+  }
+  #first_child p {
+    font-size: 30px;
+  }
+  .input {
+    font-size: 20px;
+  }
+  .input::placeholder {
+    font-size: 20px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .page_link a {
+    font-size: 23px;
+  }
+  .para {
+    font-size: 23px;
+  }
+  .mobile_number {
+    font-size: 23px;
+  }
+  .rights {
+    font-size: 45px;
+    bottom: -2%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .rights {
     right: 36%;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .footer {
-    height: 100%;
+    height: 95vh;
     border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
-      60 fill;
-    border-image-width: 60px;
-    border-image-outset: 5px;
+      90 fill;
+    border-image-width: 70px;
   }
-  .content #first_child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .text {
+    font-size: 25px;
+  }
+  .input,
+  .input::placeholder {
+    font-size: 18px;
+  }
+  .btn {
+    width: 151px;
+    height: 44px;
+    font-size: 22px;
+    margin-bottom: 2.5rem;
   }
   .input {
     width: 380px;
     text-overflow: ellipsis;
   }
-  .content form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-  }
-  .content #second_child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .content #third_child {
-    display: flex;
-    width: 46%;
-    text-align: center;
-    justify-content: center;
-  }
-  .content #social_icons {
-    justify-content: center;
-  }
   .rights {
-    right: 29%;
+    right: 39%;
     bottom: 0;
+    font-size: 25px;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
+  .footer {
+    height: 95vh;
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+      90 fill;
+    border-image-width: 70px;
+  }
+  .content {
+    padding-left: 5rem;
+  }
+  .text {
+    font-size: 25px;
+  }
+  #first_child img {
+    margin-top: 1rem;
+    width: 127px;
+    height: 67px;
+  }
+  .heading {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  .input,
+  .input::placeholder {
+    font-size: 18px;
+  }
+  .btn {
+    width: 151px;
+    height: 44px;
+    font-size: 22px;
+    margin-bottom: 2.5rem;
+  }
+  .page_link a {
+    font-size: 23px;
+  }
+  .para {
+    max-width: 65%;
+    font-size: 23px;
+  }
   .rights {
-    right: 25%;
+    right: 35%;
     bottom: 0;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    height: 90vh;
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+      90 fill;
+    border-image-width: 70px;
+  }
+  .content {
+    padding-left: 4rem;
+  }
+
+  .para {
+    max-width: 75%;
+  }
+  .rights {
+    right: 30%;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 84vh;
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+      90 fill;
+    border-image-width: 70px;
+  }
+  .content {
+    padding-left: 3rem;
+  }
+  .heading {
+    font-size: 23px;
+    line-height: 25px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .page_link a {
+    font-size: 20px;
+  }
+  .para {
+    max-width: 75%;
+    font-size: 20px;
+  }
+  .rights {
+    right: 30%;
+    bottom: 0;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    height: 77vh;
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+      70 fill;
+    border-image-width: 50px;
+  }
+  .content {
+    padding-left: 2.5rem;
+  }
+  .heading {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  #first_child img {
+    margin-top: 1rem;
+    width: 97px;
+    height: 47px;
+  }
+  .input,
+  .input::placeholder {
+    font-size: 18px;
+  }
+
+  .page_link a {
+    font-size: 18px;
+  }
+  .para {
+    max-width: 80%;
+    font-size: 18px;
+  }
+  .rights {
+    right: 28%;
+    bottom: 0;
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 480px) {
   .input {
     width: 250px;
@@ -205,9 +352,48 @@
     bottom: 0;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
+  .footer {
+    height: 75vh;
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+      60 fill;
+    border-image-width: 40px;
+  }
+  .content {
+    padding-left: 2rem;
+  }
+  .btn {
+    font-size: 17px;
+    margin-bottom: 2rem;
+  }
+  .page_link a {
+    font-size: 15px;
+  }
+  .para {
+    font-size: 15px;
+  }
   .rights {
-    right: 10%;
+    right: 26%;
     bottom: 0;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .rights {
+    right: 24%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer {
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+      60 fill;
+    border-image-width: 40px;
+  }
+  .rights {
+    right: 20%;
+    bottom: 0;
+    font-size: 20px;
   }
 }

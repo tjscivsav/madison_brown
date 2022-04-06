@@ -29,6 +29,15 @@
   border-radius: 50%;
 }
 
+.content h5 {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 177.4%;
+  color: #000000;
+}
+
 @media screen and (max-width: 1600px) {
   .red_dot {
     right: 50px;
@@ -61,77 +70,9 @@
     width: 73px;
   }
 }
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .container {
-    height: 532px;
-  }
-  .container img {
-    margin: auto;
-    width: 300px;
-    height: 300px;
-  }
-  .red_dot {
-    right: 40px;
-    bottom: 0px;
-    height: 73px;
-    width: 73px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .container {
-    height: 532px;
-  }
-  .container img {
-    margin: auto;
-    width: 320px;
-    height: 320px;
-  }
-  .red_dot {
-    right: 40px;
-    bottom: 0px;
-    height: 73px;
-    width: 73px;
-  }
-}
-
-@media screen and (max-width: 762px) {
-  .container {
-    height: 632px;
-  }
-  .container img {
-    margin: auto;
-    width: 380px;
-    height: 380px;
-  }
-  .red_dot {
-    right: 40px;
-    bottom: 0px;
-    height: 73px;
-    width: 73px;
-  }
-}
-@media screen and (max-width: 482px) {
-  .container {
-    height: 632px;
-  }
-  .container img {
-    margin: auto;
-    width: 320px;
-    height: 320px;
-  }
-  .red_dot {
-    right: 40px;
-    bottom: 0px;
-    height: 73px;
-    width: 73px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .container {
-    height: 482px;
+    height: 442px;
   }
   .container img {
     margin: auto;
@@ -141,14 +82,116 @@
   .red_dot {
     right: 40px;
     bottom: 0px;
+    height: 48px;
+    width: 48px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    height: 442px;
+  }
+  .container img {
+    margin: auto;
+    width: 260px;
+    height: 260px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 48px;
+    width: 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    height: 502px;
+  }
+  .container img {
+    margin: auto;
+    width: 320px;
+    height: 320px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 63px;
+    width: 63px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    height: 442px;
+  }
+  .container img {
+    margin: auto;
+    width: 280px;
+    height: 280px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
     height: 53px;
     width: 53px;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 762px) {
   .container {
-    height: 382px;
+    height: 442px;
+  }
+  .container img {
+    margin: auto;
+    width: 280px;
+    height: 280px;
+  }
+  .red_dot {
+    right: 40px;
+    bottom: 0px;
+    height: 53px;
+    width: 53px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    height: 380px;
+  }
+  .container img {
+    margin: auto;
+    width: 220px;
+    height: 220px;
+  }
+  .red_dot {
+    right: 25px;
+    bottom: 0px;
+    height: 45px;
+    width: 45px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 330px;
+  }
+  .container img {
+    margin: auto;
+    width: 190px;
+    height: 190px;
+  }
+  .red_dot {
+    right: 30px;
+    bottom: 0px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    height: 352px;
   }
   .container img {
     margin: auto;

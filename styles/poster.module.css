@@ -20,8 +20,9 @@
 
 @media screen and (max-width: 1600px) {
   .bg_img {
-    height: 235px;
+    height: 250px;
   }
+
   .bg_img h2 {
     font-size: 60px;
     line-height: 65px;
@@ -29,28 +30,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .bg_img {
-    height: 300px;
-  }
-  .bg_img h2 {
-    font-size: 80px;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .bg_img {
-    height: 280px;
-  }
-  .bg_img h2 {
-    font-size: 70px;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 840px) {
   .bg_img {
     height: 250px;
   }
@@ -61,32 +40,60 @@
   }
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 992px) {
+  .bg_img {
+    height: 230px;
+  }
   .bg_img h2 {
-    font-size: 50px;
-    text-align: center;
-    width: 100%;
+    font-size: 55px;
   }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 840px) {
+  .bg_img {
+    height: 200px;
+  }
+  .bg_img h2 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .bg_img {
+    height: 180px;
+  }
   .bg_img h2 {
     font-size: 40px;
-    text-align: center;
-    width: 100%;
+  }
+
+  @media screen and (max-width: 610px) {
+    .bg_img {
+      height: 150px;
+    }
+    .bg_img h2 {
+      font-size: 35px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .bg_img {
+      height: 150px;
+    }
+    .bg_img {
+      background-size: cover;
+    }
+    .bg_img h2 {
+      font-size: 28px;
+    }
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   .bg_img {
-    height: 220px;
+    height: 130px;
   }
-  .bg_img {
-    background-size: cover;
-  }
+
   .bg_img h2 {
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
+    font-size: 25px;
   }
 }
