@@ -10,19 +10,20 @@ function About() {
       <PageTitle title="About us" />
       <div className={`container-fluid  ${AboutStyle.about_content}`}>
         <p className={AboutStyle.para}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-          orci tellus urna egestas duis lacinia eget sit bibendum. Nunc pretium
-          nibh pellentesque non tortor. Mattis nulla elementum pellentesque
-          integer eget feugiat sed. Proin a nisi augue scelerisque enim non.
-          Tempor scelerisque commodo, vestibulum varius. Varius nulla
-          sollicitudin in justo sit magna. Fermentum sed vitae, enim massa orci
-          rutrum imperdiet sed. Vitae enim, id aliquam mattis viverra pulvinar
-          facilisis. Integer massa in orci sagittis. Habitant morbi pulvinar ac
-          vestibulum urna cursus malesuada. Magna morbi viverra ultricies
-          venenatis dictum facilisi risus quis dignissim. Dui amet sit magnis
-          gravida erat ullamcorper. Et consectetur facilisis elementum aliquam
-          odio feugiat et, ut varius. Vulputate nibh risus ac a donec sed
-          elementum sed sagittis.
+          We don’t like ice cream—we love it. And while there’s nothing that
+          brings the Brown family of five together like a couple of scoops, the
+          more ice cream we ate while swapping stories around the table, the
+          more we agreed: Conventional brands just don’t measure up to classic
+          parlor quality. And with artificial flavors and preservatives galore?
+          Thanks, but no thanks. Here us out: Vanilla ice cream shouldn’t just
+          taste like freshly cracked vanilla bean—it should contain it, at least
+          according to Beau, the youngest Brown brother. And when you can’t
+          decide whether to dig into cake, cookies, or ice cream, you shouldn’t
+          have to, middle child Madison insists. (There should be artisan
+          flavors for that—we see you, red velvet and cookies and cream!).
+          Another thing: The flavor trip shouldn’t end when your spoon hits the
+          bottom of the bowl. You deserve that rich and creamy mouthfeel to
+          last—older brother JJ’s got this one right.
         </p>
         <div className="mx-5">
           <ul className={AboutStyle.product_list}>
@@ -34,17 +35,14 @@ function About() {
           </ul>
         </div>
         <p className={AboutStyle.para2}>
-          Elementum et eget convallis a, praesent porttitor imperdiet.
-          Adipiscing amet pellentesque sapien, eget sapien sit sed. Turpis mi
-          sed dolor sit porttitor. Odio in hac nibh elit aliquet consequat,
-          proin porta sed. Vitae molestie amet, eu dignissim cursus porttitor
-          enim duis. Tincidunt commodo amet duis amet elit tellus massa
-          ullamcorper pharetra. Viverra amet sed nunc, non. Proin turpis
-          bibendum nec ullamcorper donec. Commodo ut scelerisque massa diam,
-          tempus. Turpis pharetra viverra velit nec est. At in cras mattis
-          cursus. Commodo ultricies platea lorem aliquam rhoncus, nisi, quam
-          cursus. Eget feugiat quam integer amet dolor. Imperdiet quis lobortis
-          libero dolor aliquam augue mi ut.
+          It took our family two years and hundreds (upon hundreds!) of tastings
+          to go from a shared pipe dream to the perfect pint. We knew we were
+          there when we all proclaimed it fabulous. And here we are! Named after
+          our only sister—don’t middle children deserve the spotlight?!—Madison
+          Brown offers both classic ice cream flavors and unique ones so there’s
+          something that hits the spot for every member of our family *and*
+          yours. The common thread is quality. It’s the very best ice cream
+          we’ve ever eaten, and we know you’ll agree.
         </p>
       </div>
     </Layout>
