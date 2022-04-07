@@ -123,6 +123,97 @@
   margin: 0;
 }
 
+@media screen and (min-width: 1650px) {
+  .form_Section {
+    margin-top: 33%;
+    margin-left: -28%;
+  }
+  .content_section {
+    margin-top: 18%;
+    width: 700px;
+  }
+
+  .detail_section {
+    padding: 70px 80px;
+  }
+  .form_Section h3 {
+    font-size: 45px;
+  }
+  .form_value {
+    width: 480px;
+  }
+  .form_value .input {
+    height: 61px;
+  }
+  .input::placeholder {
+    font-size: 23px;
+  }
+  .form_value .textarea {
+    height: 200px;
+  }
+  .textarea::placeholder {
+    font-size: 23px;
+  }
+  .form_value .btn {
+    width: 201px;
+    height: 71px;
+    font-size: 28px;
+  }
+
+  .detail_section h3 {
+    font-size: 50px;
+  }
+  .detail_section img {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+  }
+  .detail_section a {
+    font-size: 30px;
+  }
+  .detail_section p {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .form_Section {
+    margin-top: 33%;
+    margin-left: -33%;
+  }
+  .content_section {
+    margin-top: 18%;
+    width: 700px;
+  }
+
+  .detail_section {
+    padding: 70px 80px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .form_Section {
+    margin-top: 33%;
+    margin-left: -45%;
+  }
+  .content_section {
+    margin-top: 18%;
+    width: 740px;
+  }
+  .detail_section {
+    padding: 90px 80px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  .form_Section {
+    margin-top: 33%;
+    margin-left: -50%;
+  }
+  .content_section {
+    margin-top: 18%;
+    width: 780px;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .bg_img {
     height: 75vh;
