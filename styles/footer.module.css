@@ -66,6 +66,7 @@
   transform: skewX(-10deg);
   border: 1px solid #efdfb4;
   box-shadow: 5px 5px #b8e5ca;
+  cursor: pointer;
 }
 
 .btn:hover {

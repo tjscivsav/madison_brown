@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import * as footerStyle from "../../../styles/footer.module.css"
 import Links from "../../../site/data.json"
 import { Link } from "gatsby"
@@ -8,10 +8,53 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
+import addToMailchimp from "gatsby-plugin-mailchimp"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 function Footer() {
+  const [email, setEmail] = useState("")
+  const handleSubmit = async e => {
+    e.preventDefault()
+    const result = await addToMailchimp(email)
+    if (result.result === "success") {
+      toast(result.msg, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      })
+    } else {
+      toast(`${result.msg}`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      })
+    }
+    e.target.reset()
+    setEmail("")
+  }
+
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className={`container-fluid ${footerStyle.footer}`}>
         <div className={`row ${footerStyle.content}`}>
           <div id={footerStyle.first_child} className="col-lg-5 col-md-12">
@@ -21,13 +64,21 @@ function Footer() {
               alt="nav_logo"
             />
             <p className={footerStyle.text}>Get the scoop!</p>
-            <form className="d-flex flex-column">
+            <form
+              onSubmit={e => handleSubmit(e)}
+              className="d-flex flex-column"
+            >
               <input
                 className={footerStyle.input}
                 type="email"
                 placeholder="Enter email"
+                onChange={e => setEmail(e.target.value)}
               />
-              <button className={footerStyle.btn}>Subscribe!</button>
+              <input
+                type="submit"
+                value="Subscribe!"
+                className={footerStyle.btn}
+              />
             </form>
           </div>
           <div
