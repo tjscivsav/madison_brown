@@ -81,6 +81,8 @@ function Header() {
           <img
             src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
             alt="nav_logo"
+            width={164.42}
+            height={78.92}
           />
         </Link>
         <div

@@ -130,6 +130,35 @@
     right: 5%;
   }
 }
+@media screen and (max-width: 913px) and (height: 1368px) {
+  .mobile_nav_logo {
+    width: 82%;
+  }
+  .mobile_nav_logo img {
+    width: 145px !important;
+    height: 60px !important;
+  }
+}
+
+@media screen and (max-width: 821px) and (height: 1180px) {
+  .mobile_nav_logo {
+    width: 82%;
+  }
+  .mobile_nav_logo img {
+    width: 145px !important;
+    height: 60px !important;
+  }
+}
+
+@media screen and (max-width: 769px) and (height: 1024px) {
+  .mobile_nav_logo {
+    width: 82%;
+  }
+  .mobile_nav_logo img {
+    width: 145px !important;
+    height: 60px !important;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .mobile_nav_logo img {

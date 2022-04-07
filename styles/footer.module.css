@@ -212,6 +212,16 @@
     font-size: 25px;
   }
 }
+@media screen and (max-width: 912px) and (height: 1368px) {
+  .footer {
+    height: 75vh;
+  }
+}
+@media screen and (max-width: 821px) and (height: 1180px) {
+  .footer {
+    height: 75vh;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .footer {
@@ -256,6 +266,12 @@
     right: 35%;
     bottom: 0;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) and (height: 1024px) {
+  .footer {
+    height: 70vh;
   }
 }
 @media screen and (max-width: 700px) {
