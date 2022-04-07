@@ -128,3 +128,10 @@
     height: 280px;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .border_img img {
+    width: 200px;
+    height: 200px;
+  }
+}

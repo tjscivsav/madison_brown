@@ -26,7 +26,7 @@ function Header() {
         </Link>
         <ul>
           {Links?.navLink?.slice(0, 4).map((item, i) => (
-            <li key={i}>
+            <li className={HeaderStyle.page_link} key={i}>
               <Link to={item.link}>{item.name}</Link>
             </li>
           ))}
@@ -77,49 +77,12 @@ function Header() {
           icon={faBars}
           size="2x"
         />
-        <Link className={HeaderStyle.mobile_nav_logo} to="/">
+        <Link className={HeaderStyle.mobile_nav_logo} to="/home">
           <img
             src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
             alt="nav_logo"
-            width={164.42}
-            height={78.92}
           />
         </Link>
-        <div className="d-flex flex-row ">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white socialIcon mx-2"
-            href={Links.facebook}
-          >
-            <FontAwesomeIcon
-              icon={faFacebookF}
-              style={{ color: "#EFDFB4", fontSize: "30px" }}
-            />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white socialIcon mx-2"
-            href={Links.instagram}
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              style={{ color: "#EFDFB4", fontSize: "30px" }}
-            />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white socialIcon mx-2"
-            href={Links.twitter}
-          >
-            <FontAwesomeIcon
-              icon={faTwitter}
-              style={{ color: "#EFDFB4", fontSize: "30px" }}
-            />
-          </a>
-        </div>
         <div
           className={
             toggle
@@ -136,13 +99,54 @@ function Header() {
             size="2x"
           />
           <div className={HeaderStyle.mobile_navbar}>
+            <Link className={HeaderStyle.mobile_nav_logo} to="/home">
+              <img
+                src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
+                alt="nav_logo"
+              />
+            </Link>
             <ul>
               {Links?.navLink?.slice(0, 4).map((item, i) => (
-                <li key={i}>
+                <li className={HeaderStyle.page_link} key={i}>
                   <Link to={item.link}>{item.name}</Link>
                 </li>
               ))}
             </ul>
+          </div>
+          <div className={`d-flex flex-row ${HeaderStyle.icon_section}`}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white socialIcon mx-2"
+              href={Links.facebook}
+            >
+              <FontAwesomeIcon
+                icon={faFacebookF}
+                style={{ color: "#efdfb4", fontSize: "30px" }}
+              />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white socialIcon mx-2"
+              href={Links.instagram}
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                style={{ color: "#efdfb4", fontSize: "30px" }}
+              />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white socialIcon mx-2"
+              href={Links.twitter}
+            >
+              <FontAwesomeIcon
+                icon={faTwitter}
+                style={{ color: "#efdfb4", fontSize: "30px" }}
+              />
+            </a>
           </div>
         </div>
       </div>

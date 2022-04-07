@@ -307,7 +307,11 @@
     font-size: 20px;
   }
 }
-
+@media screen and (max-width: 550px) and (max-height: 730px) {
+  .footer {
+    height: 90vh;
+  }
+}
 @media screen and (max-width: 500px) {
   .footer {
     height: 77vh;
@@ -380,10 +384,30 @@
     font-size: 20px;
   }
 }
+@media screen and (max-width: 420px) {
+  .footer {
+    height: 63vh;
+  }
+}
 
 @media screen and (max-width: 400px) {
+  .footer {
+    height: 70vh;
+  }
   .rights {
     right: 24%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footer {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .footer {
+    height: 80vh;
   }
 }
 

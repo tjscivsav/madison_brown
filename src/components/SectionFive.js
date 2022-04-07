@@ -23,7 +23,7 @@ function SectionFive() {
                 LOOKING FOR THE GOOD STUFF? YOU’RE GETTING WARMER.YOUR FREEZER
                 SECTION JUST GOT HOTTER!
               </h1>
-              <button>FIND US</button>
+              <button className="custom_btn">FIND US</button>
             </div>
           </div>
           <div className={five.title_section}>
@@ -39,7 +39,7 @@ function SectionFive() {
         </div>
       </div>
       <div className={five.btn}>
-        <button>FIND US</button>
+        <button className="custom_btn">FIND US</button>
       </div>
     </>
   )
