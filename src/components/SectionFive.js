@@ -1,12 +1,11 @@
 import React from "react"
 import * as five from "../../styles/SectionFive.module.css"
 import productData from "../../site/data/products.json"
-import useWindowDimensions from "../../hooks/useDimensions"
 import useWindowSize from "../../hooks/useWindowSize"
 
 function SectionFive() {
-  const { height } = useWindowDimensions()
-  const { width } = useWindowSize()
+  const { width, height } = useWindowSize()
+  console.log(useWindowSize())
   let x = width / height
   //  .5622, .462, .462, .4618, .486, .450, .695, 0.75, 0.667, 0.72, .451, 1.707, 1.6
   let border_height
@@ -19,6 +18,9 @@ function SectionFive() {
       break
     case x < 0.49:
       border_height = height * 0.142
+      break
+    case x < 0.563:
+      border_height = height * 0.15
       break
     case x < 0.6667:
       border_height = height * 0.06
