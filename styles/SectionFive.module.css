@@ -1,6 +1,5 @@
 .border_img {
   position: relative;
-  height: 150vh;
   width: 100%;
   border-image: url("../static/red_frame3D.png") 80 fill;
   border-image-width: 100px;
@@ -124,7 +123,7 @@
 
 @media screen and (max-width: 1600px) {
   .border_img {
-    height: 140vh;
+    /* height: 140vh; */
     border-image: url("../static/Mask_group.png") 60 fill;
     border-image-width: 60px;
   }
@@ -163,7 +162,7 @@
 
 @media screen and (max-width: 1500px) {
   .border_img {
-    height: 130vh;
+    /* height: 130vh; */
     border-image: url("../static/red_frame3D.png") 10 fill;
     border-image-width: 5px;
   }
@@ -203,7 +202,7 @@
 
 @media screen and (max-width: 1400px) {
   .border_img {
-    height: 130vh;
+    /* height: 130vh; */
     border-image: url("../static/red_frame3D.png") 10 fill;
     border-image-width: 5px;
   }
@@ -240,7 +239,7 @@
 
 @media screen and (max-width: 1300px) {
   .border_img {
-    height: 125vh;
+    /* height: 125vh; */
     border-image: url("../static/red_frame3D.png") 10 fill;
     border-image-width: 5px;
   }
@@ -274,7 +273,7 @@
 
 @media screen and (max-width: 1200px) {
   .border_img {
-    height: 110vh;
+    /* height: 110vh; */
     border-image: url("../static/red_frame3D.png") 10 fill;
     border-image-width: 5px;
   }
@@ -315,7 +314,7 @@
 
 @media screen and (max-width: 1050px) {
   .border_img {
-    height: 125vh;
+    /* height: 125vh; */
     border-image: url("../static/red_frame3D.png") 10 fill;
     border-image-width: 5px;
   }
@@ -346,7 +345,7 @@
 
 @media screen and (max-width: 991px) {
   .border_img {
-    height: 140vh;
+    /* height: 140vh; */
     width: 100%;
     border-image: url("../static/mob_red_frame_1.png") 60 fill;
     border-image-width: 100px;
@@ -395,12 +394,12 @@
 }
 @media screen and (max-width: 912px) and (height: 1368px) {
   .border_img {
-    height: 85vh;
+    /* height: 85vh; */
   }
 }
 @media screen and (max-width: 850px) {
   .border_img {
-    height: 85vh;
+    /* height: 85vh !important; */
     width: 100%;
     border-image: url("../static/mob_red_frame_1.png") 60 fill;
     border-image-width: 100px;
@@ -446,7 +445,7 @@
 
 @media screen and (max-width: 800px) {
   .border_img {
-    height: 125vh;
+    /* height: 125vh; */
     width: 100%;
     border-image: url("../static/mob_red_frame_1.png") 60 fill;
     border-image-width: 100px;
@@ -491,12 +490,12 @@
 }
 @media screen and (max-width: 769px) and (height: 1024px) {
   .border_img {
-    height: 95vh;
+    /* height: 95vh; */
   }
 }
 @media screen and (max-width: 700px) {
   .border_img {
-    height: 115vh;
+    /* height: 115vh; */
     border-image: url("../static/mob_red_frame_1.png") 60 fill;
     border-image-width: 100px;
   }
@@ -537,7 +536,7 @@
 
 @media screen and (max-width: 600px) {
   .border_img {
-    height: 110vh;
+    /* height: 110vh; */
   }
   .content_section {
     margin-top: 25px;
@@ -564,7 +563,7 @@
 
 @media screen and (max-width: 550px) and (max-height: 730px) {
   .border_img {
-    height: 112vh;
+    /* height: 112vh; */
     border-image-width: 90px;
   }
 
@@ -593,7 +592,7 @@
 
 @media screen and (max-width: 500px) {
   .border_img {
-    height: 105vh;
+    /* height: 105vh; */
     border-image-width: 90px;
   }
 
@@ -622,7 +621,7 @@
 
 @media screen and (max-width: 450px) {
   .border_img {
-    height: 108vh;
+    /* height: 108vh; */
     border-image-width: 60px;
   }
   .title_section h1 {
@@ -642,7 +641,7 @@
 }
 @media screen and (max-width: 420px) {
   .border_img {
-    height: 95vh;
+    /* height: 95vh; */
   }
   .title_section ul {
     bottom: -14.5%;
@@ -650,32 +649,44 @@
 }
 @media screen and (max-width: 400px) {
   .border_img {
-    height: 105vh;
+    /* height: 105vh; */
     border-image: url("../static/mob_red_frame_1.png") 60 fill;
     border-image-width: 60px;
+  }
+
+  .img_section {
+    margin-top: 50px;
+  }
+  .img_section div {
+    width: 200px;
+    height: 200px;
+  }
+  .img_section img {
+    width: 248px;
+    height: 248px;
   }
 
   .content_section {
     margin-top: 30px;
   }
   .content_section h1 {
-    font-size: 22px;
-    width: 80%;
-    line-height: 50px;
+    font-size: 20px;
+    width: 70%;
+    line-height: 45px;
   }
 
   .content_section button {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .title_section h1 {
     max-width: 90%;
-    font-size: 26px;
+    font-size: 20px;
   }
   .title_section {
     margin: 50px 0 0 0;
   }
   .title_section ul {
-    bottom: -16%;
+    bottom: -18%;
   }
   .product_list img {
     width: 80px;
@@ -684,24 +695,57 @@
 }
 @media screen and (max-width: 394px) and (height: 851px) {
   .border_img {
-    height: 100vh;
+    /* height: 100vh; */
   }
 }
 
 @media screen and (max-width: 380px) {
   .border_img {
-    height: 130vh;
+    /* height: 130vh; */
+  }
+  .img_section div {
+    width: 180px;
+    height: 180px;
+  }
+  .img_section img {
+    width: 228px;
+    height: 228px;
+  }
+
+  .content_section h1 {
+    font-size: 16px;
+    width: 80%;
+    line-height: 35px;
+  }
+
+  .content_section button {
+    margin-top: 20px;
+  }
+  .title_section h1 {
+    max-width: 85%;
+    font-size: 20px;
+  }
+
+  .title_section ul {
+    bottom: -20%;
+  }
+  .product_list img {
+    width: 70px;
+    height: 70px;
+  }
+  .btn {
+    margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 365px) {
   .border_img {
-    height: 105vh;
+    /* height: 105vh; */
   }
 
   .img_section div {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
   }
   .img_section img {
     width: 248px;
