@@ -1,31 +1,27 @@
 .bg_img {
   background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649070252/Madison%20Brown/contact_frame_m2qohu.png");
-  height: 90vh;
-  width: 100%;
   background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form_Section {
-  margin-top: 150px;
-  margin-left: -22%;
+  display: flex;
+  justify-content: center;
 }
-
 .form_value {
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
-
 .form_Section h3 {
   font-family: "Cooper Black";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
   color: #222222;
-}
-
-.form_value {
-  width: 427px;
 }
 
 .form_Section .input {
@@ -33,7 +29,7 @@
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 3.5%;
   padding: 20px;
 }
 
@@ -42,7 +38,7 @@
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 8px;
-  margin-bottom: 35px;
+  margin-bottom: 7%;
   padding: 10px 20px;
 }
 
@@ -64,22 +60,14 @@
   box-shadow: 5px 5px #524436;
 }
 
-.form_Section .btn:hover {
-  color: #efdfb4;
-  background: #524436;
-  box-shadow: 5px 5px #efdfb4;
-}
-
 .content_section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-top: 9%;
 }
 
 .detail_section {
   padding: 70px;
+  width: 75%;
   background: #efdfb4;
   border-radius: 15px;
   display: flex;
@@ -96,9 +84,11 @@
   margin-bottom: 30px;
   color: #222222;
 }
+
 .detail_section div {
   margin-bottom: 40px;
 }
+
 .detail_section img {
   width: 40px;
   height: 40px;
@@ -123,864 +113,117 @@
   margin: 0;
 }
 
-@media screen and (min-width: 1650px) {
-  .form_Section {
-    margin-top: 33%;
-    margin-left: -28%;
-  }
-  .content_section {
-    margin-top: 18%;
-    width: 700px;
-  }
-
-  .detail_section {
-    padding: 70px 80px;
-  }
-  .form_Section h3 {
-    font-size: 45px;
-  }
-  .form_value {
-    width: 480px;
-  }
-  .form_value .input {
-    height: 61px;
-  }
-  .input::placeholder {
-    font-size: 23px;
-  }
-  .form_value .textarea {
-    height: 200px;
-  }
-  .textarea::placeholder {
-    font-size: 23px;
-  }
-  .form_value .btn {
-    width: 201px;
-    height: 71px;
-    font-size: 28px;
-  }
-
-  .detail_section h3 {
-    font-size: 50px;
-  }
-  .detail_section img {
-    width: 50px;
-    height: 50px;
-    margin-right: 25px;
-  }
-  .detail_section a {
-    font-size: 30px;
-  }
-  .detail_section p {
-    font-size: 30px;
-  }
-}
-@media screen and (min-width: 1700px) {
-  .form_Section {
-    margin-top: 33%;
-    margin-left: -33%;
-  }
-  .content_section {
-    margin-top: 18%;
-    width: 700px;
-  }
-
-  .detail_section {
-    padding: 70px 80px;
-  }
+.form_Section .btn:hover {
+  color: #efdfb4;
+  background: #524436;
+  box-shadow: 5px 5px #efdfb4;
 }
 
-@media screen and (min-width: 1800px) {
-  .form_Section {
-    margin-top: 33%;
-    margin-left: -45%;
-  }
-  .content_section {
-    margin-top: 18%;
-    width: 740px;
-  }
+@media screen and (max-width: 1300px) and (height: 800px) {
   .detail_section {
-    padding: 90px 80px;
-  }
-}
-@media screen and (min-width: 1850px) {
-  .form_Section {
-    margin-top: 33%;
-    margin-left: -50%;
-  }
-  .content_section {
-    margin-top: 18%;
-    width: 780px;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .bg_img {
-    height: 75vh;
-  }
-
-  .form_value {
-    width: 260px;
-  }
-  .form_Section h3 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  .form_Section .input {
-    height: 29px;
-    margin-bottom: 15px;
-  }
-  .form_Section .textarea {
-    height: 136px;
-    margin-bottom: 35px;
-    padding: 10px 20px;
-  }
-  .form_Section {
-    margin-top: 100px;
-    margin-left: -11%;
-  }
-
-  .form_Section .btn {
-    width: 171px;
-    height: 50px;
-    font-size: 25px;
-  }
-
-  .detail_section {
-    padding: 40px;
-    height: auto;
-  }
-
-  .detail_section h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .detail_section div {
-    margin-bottom: 15px;
-  }
-  .detail_section img {
-    width: 33px;
-    height: 33px;
-    margin-right: 20px;
-  }
-
-  .detail_section a {
-    font-size: 25px;
-  }
-
-  .detail_section p {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .bg_img {
-    height: 75vh;
-  }
-
-  .form_value {
-    width: 260px;
-  }
-  .form_Section h3 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  .form_Section .input {
-    height: 29px;
-    margin-bottom: 15px;
-  }
-  .form_Section .textarea {
-    height: 136px;
-    margin-bottom: 35px;
-    padding: 10px 20px;
-  }
-  .form_Section {
-    margin-top: 100px;
-    margin-left: -25%;
-  }
-
-  .form_Section .btn {
-    width: 171px;
-    height: 50px;
-    font-size: 25px;
-  }
-
-  .detail_section {
-    padding: 40px;
-    width: 420px;
-    height: auto;
-  }
-
-  .detail_section h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .detail_section div {
-    margin-bottom: 15px;
-  }
-  .detail_section img {
-    width: 33px;
-    height: 33px;
-    margin-right: 20px;
-  }
-
-  .detail_section a {
-    font-size: 25px;
-  }
-
-  .detail_section p {
-    font-size: 25px;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .bg_img {
-    height: 75vh;
-  }
-
-  .form_value {
-    width: 260px;
-  }
   .form_Section h3 {
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 30px;
   }
   .form_Section .input {
-    height: 29px;
-    margin-bottom: 15px;
+    height: 19px;
   }
   .form_Section .textarea {
-    height: 136px;
-    margin-bottom: 35px;
+    height: 96px;
     padding: 10px 20px;
   }
-  .form_Section {
-    margin-top: 100px;
-    margin-left: -11%;
-  }
-
   .form_Section .btn {
-    width: 171px;
-    height: 50px;
-    font-size: 25px;
+    width: 151px;
+    height: 44px;
+    font-size: 17px;
+  }
+  .detail_section {
+    padding: 45px;
   }
 
   .detail_section h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .detail_section div {
-    margin-bottom: 15px;
+    font-size: 25px;
   }
   .detail_section img {
-    width: 33px;
-    height: 33px;
-    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
   }
 
   .detail_section a {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .detail_section p {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .bg_img {
-    height: 75vh;
-  }
-
-  .form_value {
-    width: 260px;
-  }
-  .form_Section h3 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  .form_Section .input {
-    height: 29px;
-    margin-bottom: 15px;
-  }
-  .form_Section .textarea {
-    height: 136px;
-    margin-bottom: 35px;
-    padding: 10px 20px;
-  }
-  .form_Section {
-    margin-top: 100px;
-    margin-left: -15px;
-  }
-
-  .form_Section .btn {
-    width: 171px;
-    height: 50px;
-    font-size: 25px;
-  }
-
-  .detail_section h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .detail_section div {
-    margin-bottom: 15px;
-  }
-  .detail_section img {
-    width: 33px;
-    height: 33px;
-    margin-right: 20px;
-  }
-
-  .detail_section a {
-    font-size: 25px;
-  }
-
-  .detail_section p {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 991px) {
   .bg_img {
-    height: 150vh;
+    /* height: 150vh; */
     background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649144813/Madison%20Brown/contact_mobile_frame_wioxof.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
-
-  .form_value {
-    width: 600px;
-  }
-  .form_Section h3 {
-    font-size: 40px;
-    margin-bottom: 35px;
-  }
-  .form_Section .input {
-    height: 59px;
-    margin-bottom: 30px;
-  }
-  .form_Section .textarea {
-    height: 166px;
-    margin-bottom: 35px;
-    padding: 10px 20px;
-  }
-  .form_Section {
-    margin-top: 60px;
-  }
-
-  .form_Section .btn {
-    width: 171px;
-    height: 50px;
-    font-size: 25px;
-  }
-
-  .detail_section {
-    margin-top: 40px;
-    padding: 40px;
-    width: 600px;
-    height: auto;
-  }
-
-  .detail_section h3 {
-    font-size: 35px;
-    margin-bottom: 30px;
-  }
-  .detail_section div {
-    margin-bottom: 25px;
-  }
-  .detail_section img {
-    width: 33px;
-    height: 33px;
-    margin-right: 23px;
-  }
-
-  .detail_section a {
-    font-size: 30px;
-  }
-
-  .detail_section p {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 920px) and (min-height: 1320px) {
-  .bg_img {
-    height: 95vh;
-  }
-  .form_Section {
-    margin-top: 7rem;
-  }
   .content_section {
-    margin-top: 5rem;
+    margin-top: 20%;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .bg_img {
-    height: 130vh;
-  }
-
-  .form_value {
-    width: 500px;
-  }
-  .form_Section h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .form_Section .input {
-    height: 49px;
-    margin-bottom: 30px;
-  }
-  .form_Section .textarea {
-    height: 126px;
-    margin-bottom: 35px;
-    padding: 10px 20px;
-  }
-  .form_Section {
-    margin-top: 45px;
-  }
-
-  .form_Section .btn {
-    width: 171px;
-    height: 50px;
-    font-size: 25px;
-  }
-
-  .detail_section h3 {
-    font-size: 25px;
-    margin-bottom: 35px;
-  }
-  .detail_section div {
-    margin-bottom: 30px;
-  }
-  .detail_section img {
-    width: 33px;
-    height: 33px;
-    margin-right: 23px;
-  }
-
-  .detail_section a {
-    font-size: 25px;
-  }
-
-  .detail_section p {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 830px) and (min-height: 1180px) {
-  .bg_img {
-    height: 95vh;
-  }
-  .form_Section {
-    margin-top: 7rem;
-  }
+@media screen and (max-width: 991px) and (height: 1368px) {
   .content_section {
-    margin-top: 3rem;
+    margin-top: 12%;
   }
 }
-@media screen and (max-width: 800px) {
-  .bg_img {
-    height: 125vh;
-  }
-
-  .form_value {
-    width: 500px;
-  }
+@media screen and (max-width: 420px) {
   .form_Section h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
+    font-size: 20px;
   }
   .form_Section .input {
-    height: 49px;
-    margin-bottom: 30px;
+    height: 15px;
+    padding: 15px;
   }
   .form_Section .textarea {
-    height: 126px;
-    margin-bottom: 35px;
+    height: 86px;
     padding: 10px 20px;
   }
-  .form_Section {
-    margin-top: 45px;
-  }
-
-  .form_Section .btn {
-    width: 171px;
-    height: 50px;
-    font-size: 25px;
-  }
-  .detail_section {
-    margin-top: 15px;
-    padding: 40px;
-    width: 500px;
-    height: auto;
-  }
-
-  .detail_section h3 {
-    font-size: 25px;
-    margin-bottom: 30px;
-  }
-  .detail_section div {
-    margin-bottom: 25px;
-  }
-  .detail_section img {
-    width: 28px;
-    height: 28px;
-    margin-right: 18px;
-  }
-
-  .detail_section a {
-    font-size: 22px;
-  }
-
-  .detail_section p {
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 770px) and (min-height: 1020px) {
-  .bg_img {
-    height: 95vh;
-  }
-  .form_Section {
-    margin-top: 3rem;
-  }
-  .content_section {
-    margin-top: 3rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .bg_img {
-    height: 110vh;
-  }
-
-  .form_value {
-    width: 420px;
-  }
-  .form_Section h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .form_Section .input {
-    height: 39px;
-    margin-bottom: 25px;
-  }
-  .form_Section .textarea {
-    height: 96px;
-    margin-bottom: 30px;
-    padding: 10px 20px;
-  }
-  .form_Section {
-    margin-top: 45px;
-  }
-
   .form_Section .btn {
     width: 151px;
     height: 44px;
     font-size: 17px;
   }
-
-  .detail_section h3 {
-    font-size: 25px;
-    margin-bottom: 35px;
-  }
-  .detail_section div {
-    margin-bottom: 30px;
-  }
-  .detail_section img {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-  }
-
-  .detail_section a {
-    font-size: 20px;
-  }
-
-  .detail_section p {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .bg_img {
-    height: 100vh;
-  }
-
-  .form_Section {
-    margin-top: 45px;
-  }
-
-  .form_Section h3 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-
-  .form_value {
-    width: 350px;
-  }
-
-  .form_Section .input {
-    height: 39px;
-    margin-bottom: 20px;
-  }
-
-  .form_Section .textarea {
-    height: 96px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-  }
-
-  .form_Section .btn {
-    width: 151px;
-    height: 44px;
-    font-size: 17px;
+  .content_section {
+    margin-top: 20%;
   }
   .detail_section {
-    padding: 40px;
-    width: 400px;
-    height: auto;
+    padding: 25px;
   }
 
   .detail_section h3 {
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-  .detail_section div {
-    margin-bottom: 25px;
+    font-size: 20px;
   }
   .detail_section img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-right: 10px;
   }
 
   .detail_section a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .detail_section p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 540px) and (min-height: 700px) {
-  .bg_img {
-    height: 115vh;
-  }
-  .form_Section {
-    margin-top: 3rem;
-  }
-  .content_section {
-    margin-top: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .bg_img {
-    height: 92vh;
-  }
-
-  .form_Section {
-    margin-top: 45px;
-  }
-
-  .form_Section h3 {
-    font-size: 17px;
-  }
-
-  .form_value {
-    width: 247px;
-  }
-
-  .form_Section .input {
-    height: 39px;
-    margin-bottom: 15px;
-  }
-
-  .form_Section .textarea {
-    height: 96px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-  }
-
-  .form_Section .btn {
-    width: 151px;
-    height: 44px;
-    font-size: 17px;
-  }
+@media screen and (max-width: 370px) {
   .detail_section {
-    width: 300px;
-    height: auto;
-  }
-
-  .detail_section h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .detail_section div {
-    margin-bottom: 10px;
-  }
-  .detail_section img {
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-  }
-
-  .detail_section a {
-    font-size: 18px;
-  }
-
-  .detail_section p {
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .bg_img {
-    height: 85vh;
-  }
-
-  .form_Section {
-    margin-top: 45px;
-  }
-
-  .form_Section h3 {
-    font-size: 17px;
-  }
-
-  .form_value {
-    width: 247px;
-  }
-
-  .form_Section .input {
-    height: 39px;
-    margin-bottom: 10px;
-  }
-
-  .form_Section .textarea {
-    height: 96px;
-    margin-bottom: 15px;
-    padding: 10px 20px;
-  }
-
-  .form_Section .btn {
-    width: 151px;
-    height: 44px;
-    font-size: 17px;
-    box-shadow: 5px 5px #524436;
-  }
-  .detail_section {
-    margin-top: -10px;
-    height: auto;
-  }
-
-  .detail_section div {
-    margin-bottom: 15px;
-  }
-  .detail_section h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .detail_section img {
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-  }
-
-  .detail_section a {
-    font-size: 18px;
-  }
-
-  .detail_section p {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 420px) {
-  .bg_img {
-    height: 78vh;
-  }
-  .content_section {
-    margin-top: 3rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .bg_img {
-    height: 85vh;
-  }
-
-  .form_Section {
-    margin-top: 45px;
-  }
-
-  .form_Section h3 {
-    font-size: 17px;
-  }
-
-  .form_value {
-    width: 247px;
-  }
-
-  .form_Section .input {
-    height: 39px;
-    margin-bottom: 10px;
-  }
-
-  .form_Section .textarea {
-    height: 96px;
-    margin-bottom: 15px;
-    padding: 10px 20px;
-  }
-
-  .form_Section .btn {
-    width: 151px;
-    height: 44px;
-    font-size: 17px;
-  }
-
-  .detail_section {
-    margin-top: 0px;
-    height: auto;
-  }
-  .detail_section div {
-    margin-bottom: 12px;
-  }
-  .detail_section h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .detail_section img {
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-  }
-
-  .detail_section a {
-    font-size: 18px;
-  }
-
-  .detail_section p {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .bg_img {
-    height: 105vh;
-  }
-  .content_section {
-    margin-top: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 365px) {
-  .bg_img {
-    height: 95vh;
-  }
-  .content_section {
-    margin-top: 2.5rem;
+    width: 85%;
   }
 }

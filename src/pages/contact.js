@@ -5,8 +5,70 @@ import * as contactStyle from "../../styles/contact.module.css"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import useWindowSize from "../../hooks/useWindowSize"
 
 function Contact() {
+  const { width, height } = useWindowSize()
+  console.log(useWindowSize())
+  let x = width / height
+  //  .5622, .462, .462, .4618, .486, .450, .695, 0.75, 0.667, 0.72, .451, 1.707, 1.6
+  let bg_img_height
+  let content_section
+  let form_section
+  let form_value
+  let form_height
+  switch (true) {
+    case x < 0.465:
+      bg_img_height = height * 0.09
+      break
+    case x < 0.487:
+      bg_img_height = height * 0.11
+      break
+    case x < 0.563:
+      bg_img_height = height * 0.14
+      break
+    case x < 0.667:
+      bg_img_height = height * 0.05
+      break
+    case x < 0.695:
+      bg_img_height = height * 0.08
+      break
+    case x < 0.76 && height === 720:
+      bg_img_height = height * 0.152
+      form_height = height * 0.062
+      break
+    case x < 0.76:
+      bg_img_height = height * 0.095
+      break
+    case x < 1.95 && height === 1058:
+      bg_img_height = height * 0.076
+      form_section = width * 0.35
+      form_value = width * 0.28
+      content_section = 90
+      break
+    case x < 1.3:
+      bg_img_height = height * 0.18
+      form_section = 80
+      content_section = 90
+      form_value = 70
+      break
+    case x < 1.62:
+      bg_img_height = height * 0.12
+      break
+    case x < 1.71:
+      bg_img_height = height * 0.17
+      break
+    case x < 1.82:
+      bg_img_height = height * 0.098
+      form_section = 80
+      content_section = 90
+      form_value = 70
+      break
+
+    default:
+      bg_img_height = 90
+  }
+  console.log(x, height, width)
   const [email, setEmail] = useState("")
   const handleSubmit = async e => {
     e.preventDefault()
@@ -56,11 +118,15 @@ function Contact() {
         </div>
       </div>
       <>
-        <div className={contactStyle.bg_img}>
-          <div className="container">
+        <div
+          style={{ height: `${bg_img_height}vh` }}
+          className={contactStyle.bg_img}
+        >
+          <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-6 col-12 d-flex justify-content-center">
+              <div className="col-lg-6 col-12">
                 <form
+                  style={{ height: `${form_height}vh` }}
                   onSubmit={e => handleSubmit(e)}
                   className={contactStyle.form_Section}
                 >
@@ -90,8 +156,11 @@ function Contact() {
                   </div>
                 </form>
               </div>
-              <div className="col-lg-6 col-12 ">
-                <div className={contactStyle.content_section}>
+              <div className="col-lg-6 col-12">
+                <div
+                  style={{ width: `${content_section}%` }}
+                  className={contactStyle.content_section}
+                >
                   <div className={contactStyle.detail_section}>
                     <h3>Contact Us</h3>
                     {/* <div className="d-flex align-items-center ">

@@ -49,7 +49,6 @@ function SectionFive() {
     default:
       border_height = 160
   }
-  console.log(x, width, height, border_height)
   return (
     <>
       <div style={{ height: `${border_height}vh` }} className={five.border_img}>
