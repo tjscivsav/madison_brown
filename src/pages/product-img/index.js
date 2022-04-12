@@ -15,6 +15,7 @@ function ProductsImg(props) {
   const location = useLocation()
   var n = location?.pathname?.lastIndexOf("/")
   var result = location?.pathname?.substring(n + 1)
+  console.log(result)
   return (
     <>
       <div className={productStyle.products}>
@@ -60,7 +61,7 @@ function ProductsImg(props) {
           </Link>
         </div>
       </div>
-      {result === "product-img" || ""
+      {result === "product-img" || result === ""
         ? productsData?.products?.slice(0, 1).map((item, i) => (
             <>
               <div className={productStyle.product__img}>
