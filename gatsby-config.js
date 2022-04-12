@@ -19,13 +19,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/images`,
-        name: "images",
-      },
-    },
-    {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint:

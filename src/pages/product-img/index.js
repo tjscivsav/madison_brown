@@ -36,7 +36,7 @@ function ProductsImg(props) {
               className=" socialIcon mx-2"
               href="https://www.instagram.com/madisonbrownfrozen/"
             >
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
               target="_blank"
@@ -44,7 +44,7 @@ function ProductsImg(props) {
               className=" socialIcon mx-2"
               href="https://twitter.com/MadisonBrown"
             >
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
             <a
               target="_blank"
@@ -52,7 +52,7 @@ function ProductsImg(props) {
               className=" socialIcon mx-2"
               href="https://twitter.com/MadisonBrown"
             >
-              <FontAwesomeIcon icon={faFacebookF} size="2x" />
+              <FontAwesomeIcon icon={faFacebookF} />
             </a>
           </div>
           <Link to="/">
