@@ -47,7 +47,7 @@ function SectionFive() {
       border_height = height * 0.155
       break
     default:
-      border_height = 160
+      border_height = 170
   }
   return (
     <>
