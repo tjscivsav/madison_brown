@@ -1,3 +1,27 @@
+.products a {
+  text-decoration: none;
+}
+.products h1 {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.2em;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.4em;
+  font-size: 2rem;
+  color: #000;
+}
+.products ul {
+  list-style: none;
+}
+
+.products ul li {
+  color: #000;
+}
+
 .product__img {
   display: flex;
   width: 100%;
@@ -8,4 +32,21 @@
   width: 100%;
   max-width: 1000px;
   height: auto;
+}
+
+@media screen and (min-width: 1272px) {
+  .products h1 {
+    font-size: calc(2 * 1rem);
+  }
+}
+@media screen and (min-width: 0) and (max-width: 1271px) and (orientation: landscape) {
+  .products h1 {
+    font-size: calc((2 - 1) * 1.2vw + 1rem);
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 1271px) and (orientation: portrait) {
+  .products h1 {
+    font-size: calc((2 - 1) * 1.2vh + 1rem);
+  }
 }

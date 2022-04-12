@@ -60,7 +60,7 @@ function ProductsImg(props) {
           </Link>
         </div>
       </div>
-      {result === "product-img"
+      {result === "product-img" || ""
         ? productsData?.products?.slice(0, 1).map((item, i) => (
             <>
               <div className={productStyle.product__img}>
