@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: tjscivsav/black-irish
+  repo: tjscivsav/madison_brown
   branch: main
 media_folder: src/images/uploads
 collections:

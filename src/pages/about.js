@@ -37,7 +37,9 @@ function About() {
           memories, and bring people together. Therefore, you can count on
           Madison Brown to continue to find ways to give back to the communities
           who create and inspire us…because some things are meant for sharing.
-          The Madison Brown Team
+        </p>
+        <p>
+          <strong>{`- The Madison Brown Team`}</strong>
         </p>
       </div>
     </Layout>

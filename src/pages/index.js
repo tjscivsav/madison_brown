@@ -8,7 +8,11 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import {
+  faInstagram,
+  faTiktok,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
 import Seo from "../components/Seo"
 
 export default function Home() {
@@ -91,6 +95,13 @@ export default function Home() {
               href="https://twitter.com/MadisonBrown"
             >
               <FontAwesomeIcon icon={faTwitter} size="2x" />
+            </a>
+            <a
+              target="_blank"
+              className="text-secondary socialIcon mx-2"
+              href="https://www.tiktok.com/@madisonbrownicecream"
+            >
+              <FontAwesomeIcon icon={faTiktok} size="2x" />
             </a>
           </div>
         </div>
