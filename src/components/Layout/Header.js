@@ -16,7 +16,7 @@ function Header() {
     <>
       {/* Desktop View*/}
       <div className={`container-fluid ${HeaderStyle.lg_navbar}`}>
-        <Link to="/home">
+        <Link to="/">
           <img
             src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
             alt="nav_logo"
@@ -77,7 +77,7 @@ function Header() {
           icon={faBars}
           size="2x"
         />
-        <Link className={HeaderStyle.mobile_nav_logo} to="/home">
+        <Link className={HeaderStyle.mobile_nav_logo} to="/">
           <img
             src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
             alt="nav_logo"
