@@ -1,5 +1,5 @@
 import React from "react"
-import * as five from "../../styles/SectionFive.module.css"
+import * as five from "../../styles/sectionFive2.module.css"
 import productData from "../../site/data/products.json"
 import useWindowSize from "../../hooks/useWindowSize"
 
@@ -50,9 +50,9 @@ function SectionFive() {
   }
   return (
     <>
-      <div style={{ height: `${border_height}vh` }} className={five.border_img}>
+      <div className={five.border_img}>
         <div className="container-fluid">
-          <div className="row">
+          <div className={`row ${five.all_items}`}>
             <div className={`col-lg-6 col-md-12 col-12 ${five.img_section}`}>
               <div>
                 <img
@@ -71,16 +71,16 @@ function SectionFive() {
               <button className="custom_btn">FIND US</button>
             </div>
           </div>
-          <div className={five.title_section}>
-            <h1>MEET YOUR NEW FAVORITE FLAVORS!</h1>
-            <ul className={five.product_list}>
-              {productData?.products.map((item, i) => (
-                <li key={i}>
-                  <img src={item?.cap} alt={item.title} />
-                </li>
-              ))}
-            </ul>
-          </div>
+        </div>
+        <div className={five.title_section}>
+          <h1>MEET YOUR NEW FAVORITE FLAVORS!</h1>
+          <ul className={five.product_list}>
+            {productData?.products.map((item, i) => (
+              <li key={i}>
+                <img src={item?.cap} alt={item.title} />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className={five.btn}>
