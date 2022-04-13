@@ -2,19 +2,19 @@
   "shops": [
     {
       "location": "TEXAS",
-      "upcoming": "Comming Soon"
+      "upcoming": "Coming Soon"
     },
     {
       "location": "CALIFORNIA",
-      "upcoming": "Comming Soon"
+      "upcoming": "Coming Soon"
     },
     {
       "location": "PENNSYLVANIA",
-      "upcoming": "Comming Soon"
+      "upcoming": "Coming Soon"
     },
     {
       "location": "TEXAS",
-      "upcoming": "Comming Soon"
+      "upcoming": "Coming Soon"
     }
   ]
 }

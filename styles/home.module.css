@@ -90,7 +90,7 @@
   }
   .bg_color img {
     width: 370px;
-    height: 370px;
+    height: auto;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -176,10 +176,6 @@
     width: 250px;
     height: 250px;
   }
-  .bg_color img {
-    width: 280px;
-    height: 280px;
-  }
 }
 
 @media screen and (max-width: 380px) {
@@ -199,9 +195,5 @@
   .bg_color {
     width: 220px;
     height: 220px;
-  }
-  .bg_color img {
-    width: 250px;
-    height: 250px;
   }
 }

@@ -41,6 +41,7 @@ module.exports = {
     //     name: `products`,
     //   },
     // },
+    "gatsby-plugin-netlify-cms",
     `gatsby-plugin-graphql-config`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
