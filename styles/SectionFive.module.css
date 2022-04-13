@@ -8,6 +8,9 @@
     rgb(229, 31, 48, 0.1) 30.94%,
     rgb(255, 176, 191, 0.1) 101.12%
   );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-height: 1080px) {
@@ -17,7 +20,6 @@
 }
 
 .img_section {
-  margin-top: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,10 +38,6 @@
 .img_section img {
   width: 628px;
   height: 628px;
-}
-
-.content_section {
-  margin-top: 350px;
 }
 
 .content_section h1 {
@@ -133,9 +131,7 @@
     border-image: url("../static/Mask_group.png") 60 fill;
     border-image-width: 60px;
   }
-  .img_section {
-    margin-top: 0px;
-  }
+
   .img_section div {
     width: 398px;
     height: 398px;
@@ -143,9 +139,6 @@
   .img_section img {
     width: 458px;
     height: 458px;
-  }
-  .content_section {
-    margin-top: 150px;
   }
   .content_section h1 {
     font-size: 40px;
@@ -172,9 +165,7 @@
     border-image: url("../static/red_frame3D.png") 10 fill;
     border-image-width: 5px;
   }
-  .img_section {
-    margin-top: 130px;
-  }
+
   .img_section div {
     width: 370px;
     height: 370px;

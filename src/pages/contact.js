@@ -112,11 +112,7 @@ function Contact() {
         pauseOnHover
       />
       <PageTitle title="Contact" />
-      <div className={`container-fluid  bg_sandal`}>
-        <div className="page_header">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-      </div>
+      <div className={`container-fluid  bg_sandal`}></div>
       <>
         <div
           style={{ height: `${bg_img_height}vh` }}

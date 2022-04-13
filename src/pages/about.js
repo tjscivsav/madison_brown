@@ -10,20 +10,16 @@ function About() {
       <PageTitle title="About us" />
       <div className={`container-fluid  ${AboutStyle.about_content}`}>
         <p className={AboutStyle.para}>
-          We don’t like ice cream—we love it. And while there’s nothing that
-          brings the Brown family of five together like a couple of scoops, the
-          more ice cream we ate while swapping stories around the table, the
-          more we agreed: Conventional brands just don’t measure up to classic
-          parlor quality. And with artificial flavors and preservatives galore?
-          Thanks, but no thanks. Here us out: Vanilla ice cream shouldn’t just
-          taste like freshly cracked vanilla bean—it should contain it, at least
-          according to Beau, the youngest Brown brother. And when you can’t
-          decide whether to dig into cake, cookies, or ice cream, you shouldn’t
-          have to, middle child Madison insists. (There should be artisan
-          flavors for that—we see you, red velvet and cookies and cream!).
-          Another thing: The flavor trip shouldn’t end when your spoon hits the
-          bottom of the bowl. You deserve that rich and creamy mouthfeel to
-          last—older brother JJ’s got this one right.
+          Ice cream can mean a lot of different things but at Madison Brown it
+          stands for family, friends, and community. Over the years our family
+          has enjoyed countless ice cream trips which still serve as some of our
+          fondest memories. With so many wonderful experiences we wondered how
+          we could continue to share our passion with those we love most, and
+          thus Madison Brown was born. Named after one of our family members, we
+          began to make flavors the same way we made memories - over time and
+          together. Each adding our insights and tasting endless combinations we
+          landed on our six trademark flavors that ensured the classics were
+          perfect with little personalized touches throughout the ingredients.
         </p>
         <div className="mx-5">
           <ul className={AboutStyle.product_list}>
@@ -35,14 +31,13 @@ function About() {
           </ul>
         </div>
         <p className={AboutStyle.para2}>
-          It took our family two years and hundreds (upon hundreds!) of tastings
-          to go from a shared pipe dream to the perfect pint. We knew we were
-          there when we all proclaimed it fabulous. And here we are! Named after
-          our only sister—don’t middle children deserve the spotlight?!—Madison
-          Brown offers both classic ice cream flavors and unique ones so there’s
-          something that hits the spot for every member of our family *and*
-          yours. The common thread is quality. It’s the very best ice cream
-          we’ve ever eaten, and we know you’ll agree.
+          From there we began giving it to our friends and community and
+          realized that not only could we create our own happiness, we could
+          share it. We knew that this was how we would spread joy, create
+          memories, and bring people together. Therefore, you can count on
+          Madison Brown to continue to find ways to give back to the communities
+          who create and inspire us…because some things are meant for sharing.
+          The Madison Brown Team
         </p>
       </div>
     </Layout>

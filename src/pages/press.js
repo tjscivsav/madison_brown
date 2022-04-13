@@ -11,7 +11,6 @@ function press() {
         style={{ paddingBottom: "8rem" }}
         className="container-fluid bg_sandal"
       >
-        <div className="page_header">All Press</div>
         <ImageBox data={data?.press} />
       </div>
     </Layout>

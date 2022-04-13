@@ -99,6 +99,22 @@ const CustomSlide = ({ item, i }) => {
       : i % 2 === 0
       ? "#4A9560"
       : "#E41E2D"
+  let txt_bg =
+    i % 4 === 0
+      ? "#847770"
+      : i % 3 === 0
+      ? "#98BFCB"
+      : i % 2 === 0
+      ? "#92D7AD"
+      : "#F2A1B1"
+  let txt_clr =
+    i % 4 === 0
+      ? "#C4C4C4"
+      : i % 3 === 0
+      ? "#4298B5"
+      : i % 2 === 0
+      ? "#4A9560"
+      : "#E41E2D"
   return (
     <>
       <div
@@ -108,15 +124,33 @@ const CustomSlide = ({ item, i }) => {
         className={cardStyle.container}
       >
         <div className={cardStyle.content}>
-          <div className={cardStyle.img_section}>
-            <img src={item?.img} alt={item?.location} />
-            <div
-              style={{ backgroundColor: red_dot }}
-              className={cardStyle.red_dot}
-            ></div>
+          <div
+            style={{
+              backgroundColor: txt_bg,
+            }}
+            className={cardStyle.img_section}
+          >
+            {item?.img ? (
+              <>
+                <img src={item?.img} alt={item?.location} />
+                <div
+                  style={{ backgroundColor: red_dot }}
+                  className={cardStyle.red_dot}
+                ></div>
+              </>
+            ) : (
+              <>
+                <h1 style={{ color: txt_clr }} className="mb-4">
+                  {item?.upcoming}
+                </h1>
+                <div
+                  style={{ backgroundColor: red_dot }}
+                  className={cardStyle.red_dot}
+                ></div>
+              </>
+            )}
           </div>
           <h5 className="mt-3">{item?.location}</h5>
-          <h6 className="mb-4">{item?.upcoming}</h6>
         </div>
       </div>
     </>

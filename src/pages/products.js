@@ -8,7 +8,6 @@ function Products() {
     <Layout>
       <PageTitle title="Products" />
       <div className={`container-fluid  bg_sandal`}>
-        <div className="page_header">All PRODUCTS</div>
         <div className="row">
           <Product data={productData?.products} />
         </div>

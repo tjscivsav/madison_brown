@@ -144,7 +144,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <span className={footerStyle.rights}>All RIghts Reserved.</span>
+        <span className={footerStyle.rights}>All Rights Reserved.</span>
       </div>
     </>
   )

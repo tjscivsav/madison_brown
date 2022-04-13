@@ -1,7 +1,7 @@
 .products a {
   text-decoration: none;
 }
-.products h1 {
+.products h1 a {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.2em;
@@ -18,7 +18,7 @@
   list-style: none;
 }
 
-.products ul li {
+.products ul li a {
   color: #000;
 }
 

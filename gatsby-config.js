@@ -13,6 +13,34 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        // Conditionally set the typeName so that we both use a lowercased and capitalized type name
+        typeName: ({ node }) => {
+          const name = node.sourceInstanceName
+          if (name === `products`) {
+            return `Product`
+          }
+          return name
+        },
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./site/data/products.json`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/products`,
+        name: `products`,
+      },
+    },
     `gatsby-plugin-graphql-config`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

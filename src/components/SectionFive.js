@@ -7,7 +7,6 @@ function SectionFive() {
   const { width, height } = useWindowSize()
   console.log(useWindowSize())
   let x = width / height
-  //  .5622, .462, .462, .4618, .486, .450, .695, 0.75, 0.667, 0.72, .451, 1.707, 1.6
   let border_height
   switch (true) {
     case x < 0.405:
@@ -66,8 +65,8 @@ function SectionFive() {
               className={`col-lg-6 col-md-12 col-12 ${five.content_section}`}
             >
               <h1>
-                LOOKING FOR THE GOOD STUFF? YOU’RE GETTING WARMER.YOUR FREEZER
-                SECTION JUST GOT HOTTER!
+                Don’t walk—RUN! Our flavors are now carried in stores across the
+                country.
               </h1>
               <button className="custom_btn">FIND US</button>
             </div>

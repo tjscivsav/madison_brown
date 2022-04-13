@@ -1,21 +1,20 @@
 {
   "shops": [
     {
-      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647947673/Madison%20Brown/Shops/shop2_fyiegm.png",
-      "location": "CALIFORNIA"
+      "location": "TEXAS",
+      "upcoming": "Comming Soon"
     },
     {
-      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647947667/Madison%20Brown/Shops/upcoming_uk0g5v.png",
+      "location": "CALIFORNIA",
+      "upcoming": "Comming Soon"
+    },
+    {
       "location": "PENNSYLVANIA",
       "upcoming": "Comming Soon"
     },
     {
-      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647947671/Madison%20Brown/Shops/shop1_hhd101.png",
-      "location": "TEXAS"
-    },
-    {
-      "img": "https://res.cloudinary.com/dq4fvmcte/image/upload/v1647947671/Madison%20Brown/Shops/shop1_hhd101.png",
-      "location": "TEXAS"
+      "location": "TEXAS",
+      "upcoming": "Comming Soon"
     }
   ]
 }

@@ -9,7 +9,6 @@ function retailpartners() {
     <Layout>
       <PageTitle title="Retail Partners" />
       <div className="container-fluid bg_sandal pb-5">
-        <div className="page_header">All Partners</div>
         <div className="container">
           <div className="row">
             {data?.partners.map((item, i) => (

@@ -19,16 +19,16 @@ function SectionOne() {
           <div className="col-lg-6 col-md-12 col-sm-12 col-12 p-0">
             <div className={homeStyle.content}>
               <div>
-                <h2>Best. Ice Cream. Ever!</h2>
+                <h2>Some things are meant for sharing.</h2>
                 <p>
-                  Madison Brown is all about fabulous ice cream—the stuff that
-                  celebrations are made of. Our family-owned and operated
-                  creamery makes pints that bring people together, and that’s
-                  exactly how we like it. So, what are you waiting for? Get your
-                  spoon!
+                  Ice cream can mean a lot of different things but at Madison
+                  Brown it stands for family, friends, and community. Over the
+                  years our family has enjoyed countless ice cream trips which
+                  still serve as some of our fondest memories, and now we’re
+                  bringing our happiness to you.
                 </p>
                 <button className={`custom_btn ${homeStyle.btn}`}>
-                  FEATURED FLAVORS
+                  Learn More
                 </button>
               </div>
             </div>
