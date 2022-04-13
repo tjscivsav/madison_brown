@@ -2,7 +2,7 @@
   "navLink": [
     {
       "name": "Home",
-      "link": "/home"
+      "link": "/"
     },
     {
       "name": "About",

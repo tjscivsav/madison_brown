@@ -1,17 +1,4 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-const path = require(`path`)
 module.exports = {
-  siteMetadata: {
-    title: `Madison Brown Ice Cream`,
-    description: `Front-end development and side projects.`,
-    author: `Karthikeyan`,
-    siteUrl: `https://www.emgoto.com`,
-  },
-
   /* Your site config here */
   siteMetadata: {
     title: `Madison Brown`,
@@ -20,7 +7,6 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
     `gatsby-plugin-graphql-config`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -41,11 +27,8 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `./static/favicon.png`, // This path is relative to the root of the site.
+        icon: `./static/favicon.png`,
         cache_busting_mode: `none`,
       },
     },
