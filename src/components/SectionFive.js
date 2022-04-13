@@ -1,5 +1,5 @@
 import React from "react"
-import * as five from "../../styles/sectionFive.module.css"
+import * as five from "../../styles/SectionFive.module.css"
 import productData from "../../site/data/products.json"
 
 function SectionFive() {
