@@ -13,7 +13,6 @@ import {
   faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
-import Seo from "../components/SEO"
 
 export default function Index() {
   const [email, setEmail] = useState("")
@@ -51,7 +50,6 @@ export default function Index() {
 
   return (
     <>
-      <Seo title="Madison Brown" />
       <ToastContainer
         position="top-right"
         autoClose={5000}
