@@ -135,12 +135,12 @@ function Footer() {
                   />
                 </a>
               </div>
-              {/* <p className={footerStyle.para}>
+              <p className={footerStyle.para}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <a className={footerStyle.mobile_number} href="tel:707-541-5674">
                 707-541-5674
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
