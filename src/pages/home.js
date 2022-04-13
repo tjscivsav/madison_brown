@@ -13,7 +13,7 @@ import {
   faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
-import Seo from "../components/Seo"
+import Seo from "../components/SEO"
 
 export default function Index() {
   const [email, setEmail] = useState("")
