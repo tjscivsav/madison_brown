@@ -9,34 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/free-solid-svg-icons"
 
 function Popup({ open, opened }) {
-  const customStyles = {
-    overlay: {
-      position: "fixed",
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      backgroundColor: "rgba(0, 0, 0, 0.8)",
-    },
-    content: {
-      backgroundColor: "#4a9560",
-      minHeight: "446px",
-      width: "70%",
-      borderImage: `url(https://res.cloudinary.com/dq4fvmcte/image/upload/v1648200724/Madison%20Brown/footer_frame_i4vvvt.png)
-    20 fill`,
-      borderImageWidth: "10px",
-      borderImageOutset: "5px",
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    },
-  }
   const [email, setEmail] = useState("")
   const handleSubmit = async e => {
     e.preventDefault()
@@ -82,7 +54,8 @@ function Popup({ open, opened }) {
       <Modal
         isOpen={open}
         onRequestClose={false}
-        style={customStyles}
+        className="popup_content"
+        overlayClassName="popup_overlay"
         contentLabel="Example Modal"
         preventScroll={true}
       >

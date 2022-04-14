@@ -169,7 +169,7 @@
 
 @media screen and (max-width: 400px) {
   .mobile_nav_logo img {
-    width: 145px !important;
+    width: 120px !important;
     height: 60px !important;
   }
 }

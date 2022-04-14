@@ -34,3 +34,32 @@
   top: 8%;
   right: 4%;
 }
+
+@media screen and (max-width: 991px) {
+  .modal_window p {
+    font-size: 27px;
+  }
+  .fa_times {
+    top: 6%;
+    right: 6%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .modal_window p {
+    font-size: 25px;
+  }
+  .modal_window input[type="email"] {
+    width: 279px !important;
+    height: 49px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal_window p {
+    font-size: 20px;
+  }
+  .modal_window input[type="email"] {
+    width: 229px !important;
+    height: 49px;
+  }
+}

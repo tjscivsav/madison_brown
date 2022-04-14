@@ -260,3 +260,57 @@ body {
 .slick-list {
   padding: 0 20% 0 0 !important;
 }
+
+/* Modal */
+
+.popup_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup_content {
+  position: absolute;
+  background-color: #4a9560;
+  min-height: 446px;
+  width: 70%;
+  border-image: url(https://res.cloudinary.com/dq4fvmcte/image/upload/v1648200724/Madison%20Brown/footer_frame_i4vvvt.png)
+    20 fill;
+  border-image-width: 10px;
+  border-image-outset: 5px;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .popup_content {
+    width: 70%;
+    height: 30vh;
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+      50 fill;
+    border-image-width: 30px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .popup_content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .popup_content {
+    height: 32vh;
+    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+      40 fill;
+    border-image-width: 20px;
+  }
+}
