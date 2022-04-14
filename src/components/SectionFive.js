@@ -1,6 +1,7 @@
 import React from "react"
 import * as five from "../../styles/SectionFive.module.css"
 import productData from "../../site/data/products.json"
+import { Link } from "gatsby"
 
 function SectionFive() {
   return (

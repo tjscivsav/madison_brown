@@ -1,5 +1,7 @@
-import React from "react"
+import { Link } from "gatsby"
+import React, { useState } from "react"
 import * as three from "../../styles/sectionThree.module.css"
+import Popup from "./Popup"
 
 function SectionThree({ data }) {
   return (
@@ -16,14 +18,18 @@ function SectionThree({ data }) {
             >
               <img src={item?.img1} alt={item.title} />
               <h5>{item.title}</h5>
-              <button>SHOP NOW</button>
+              <Link to="/products">
+                <button>SHOP NOW</button>
+              </Link>
             </div>
           ))}
         </div>
       </div>
       <div className={` container-fluid bg_sandal ${three.btn_content}`}>
         <div className={three.btn_area}>
-          <button className={three.btn}>see all</button>
+          <Link to="/products">
+            <button className={three.btn}>see all</button>
+          </Link>
         </div>
       </div>
     </>

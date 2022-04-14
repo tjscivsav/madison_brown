@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import * as homeStyle from "../../styles/home.module.css"
 
@@ -27,9 +28,11 @@ function SectionOne() {
                   still serve as some of our fondest memories, and now we’re
                   bringing our happiness to you.
                 </p>
-                <button className={`custom_btn ${homeStyle.btn}`}>
-                  Learn More
-                </button>
+                <Link to="/about">
+                  <button className={`custom_btn ${homeStyle.btn}`}>
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

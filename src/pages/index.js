@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout/Layout"
 import SlickSlider from "../components/SlickSider"
 import shopsData from "../../site/data/shops.json"
@@ -10,6 +10,7 @@ import SectionFive from "../components/SectionFive.js"
 import productData from "../../site/data/products.json"
 
 function Home() {
+  const [open, setOpen] = useState(false)
   return (
     <Layout>
       <SectionOne />

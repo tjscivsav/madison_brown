@@ -1,0 +1,35 @@
+.modal_window p {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  width: 75%;
+}
+.modal_window,
+.modal_window form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal_window input[type="email"] {
+  width: 379px !important;
+  height: 49px;
+}
+
+.modal_window input::placeholder {
+  text-align: center;
+  font-size: 25px;
+}
+
+.fa_times {
+  cursor: pointer;
+  position: absolute;
+  color: #efdfb4;
+  filter: drop-shadow(-6px 10px 15px rgba(0, 0, 0, 0.25));
+  top: 8%;
+  right: 4%;
+}

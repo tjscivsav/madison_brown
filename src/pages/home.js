@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import iceCream from "../../static/ICE_cream_Product.gif"
-import logo from "../../static/logo.png"
+import iceCream from "../images/ICE_cream_Product.gif"
+import logo from "../images/logo.png"
 import "../../styles/global.css"
 import "../../styles/resposive.css"
 import "../../styles/bootstrap.css"

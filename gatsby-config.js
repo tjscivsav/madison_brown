@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    "gatsby-plugin-netlify-cms",
     `gatsby-plugin-graphql-config`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -28,7 +29,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         display: `minimal-ui`,
-        icon: `./static/favicon.png`,
+        icon: `./src/images/favicon.png`,
         cache_busting_mode: `none`,
       },
     },

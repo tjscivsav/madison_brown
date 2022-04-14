@@ -40,6 +40,9 @@
   justify-content: center;
   align-items: center;
 }
+.btn_content a {
+  text-decoration: none;
+}
 
 .btn_content .btn {
   width: 272px;
