@@ -21,7 +21,7 @@ collections:
     files:
       - label: Content
         name: content
-        file: site/home.json
+        file: site/home.md
         fields:
           - {
               label: SEO Title,
@@ -35,22 +35,45 @@ collections:
               widget: string,
               required: false,
             }
-          - { label: Page Title, name: title, widget: string, required: false }
-          - { label: Video Banner, name: banner_video, widget: string }
-          - { label: Image Banner, name: banner_img, widget: image }
-          - label: Section
-            name: section
+          - { label: Heading, name: title, widget: string, required: false }
+          - { label: Desciption, name: desc, widget: string, required: false }
+          - { label: Backgroud Image, name: bg_img, widget: image }
+          - { label: Ice cream Image, name: front_img, widget: image }
+          - { label: Poster Title, name: poster_title, widget: string }
+          - label: Shop List
+            name: shops
             widget: list
             fields:
+              - { label: Location, name: location, widget: string }
+              - { label: Upcoming?, name: upcoming, widget: string }
+              - { label: Image, name: img, widget: image }
+  - name: products
+    label: Products
+    files:
+      - label: Content
+        name: content
+        file: site/products.md
+        fields:
+          - label: Product List
+            name: products
+            widget: list
+            fields:
+              - { label: Ice Cream, name: img, widget: image }
               - { label: Title, name: title, widget: string }
               - { label: Description, name: desc, widget: string }
-              - { label: Image, name: img, widget: image }
-              - { label: Button Name, name: btnName, widget: string }
-              - { label: Page Name, name: link, widget: string }
-          - label: Poster Content
-            name: poster
+              - { label: Background Color, name: btn_color, widget: string }
+              - { label: ID, name: id, widget: string }
+  - name: shops
+    label: Shops
+    files:
+      - label: Content
+        name: content
+        file: site/shops.md
+        fields:
+          - label: Shop List
+            name: shops
             widget: list
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Content, name: content, widget: string }
-              - { label: Button Name, name: btnName, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Upcoming?, name: upcoming, widget: string }
+              - { label: Image, name: img, widget: image }
