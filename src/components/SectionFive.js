@@ -1,9 +1,8 @@
 import React from "react"
 import * as five from "../../styles/SectionFive.module.css"
 import productData from "../../site/data/products.json"
-import { Link } from "gatsby"
 
-function SectionFive() {
+function SectionFive({ opened }) {
   return (
     <>
       <div className={five.border_img}>
@@ -24,7 +23,9 @@ function SectionFive() {
                 Don’t walk—RUN! Our flavors are now carried in stores across the
                 country.
               </h1>
-              <button className="custom_btn">FIND US</button>
+              <button onClick={() => opened(true)} className="custom_btn">
+                FIND US
+              </button>
             </div>
           </div>
         </div>
@@ -40,7 +41,9 @@ function SectionFive() {
         </div>
       </div>
       <div className={five.btn}>
-        <button className="custom_btn">FIND US</button>
+        <button onClick={() => opened(true)} className="custom_btn">
+          FIND US
+        </button>
       </div>
     </>
   )

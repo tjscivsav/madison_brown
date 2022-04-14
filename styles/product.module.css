@@ -27,6 +27,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 34px;
+  margin-top: 3%;
 }
 
 .content p {
@@ -52,7 +53,7 @@
   transform: skewX(-10deg);
 }
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width: 1600px) {
   .img_section {
     width: 384px;
     height: 384px;
