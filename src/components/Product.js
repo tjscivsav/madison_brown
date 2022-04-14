@@ -1,7 +1,7 @@
 import React from "react"
 import * as productStyle from "../../styles/product.module.css"
 
-function Product({ data }) {
+function Product({ opened, data }) {
   return (
     <>
       {data?.map((item, i) => {
@@ -17,10 +17,10 @@ function Product({ data }) {
             <div className={`${productStyle.content}`}>
               <h5>{item.title}</h5>
               <p>{item.desc}</p>
-              <button>BUY</button>
+              <button onClick={() => opened(true)}>BUY</button>
             </div>
           </div>
-        ) 
+        )
       })}
     </>
   )
