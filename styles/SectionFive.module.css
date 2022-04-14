@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: max-content;
-  border-image: url("../static/red_frame3D.png") 80 fill;
+  border-image: url("../src/images/red_frame3D.png") 80 fill;
   border-image-width: 100px;
   background: linear-gradient(
     119.53deg,
@@ -134,7 +134,7 @@
 
 @media screen and (max-width: 1500px) {
   .border_img {
-    border-image: url("../static/red_frame3D.png") 10 fill;
+    border-image: url("../src/images/red_frame3D.png") 10 fill;
     border-image-width: 5px;
   }
   .img_section div {
@@ -170,7 +170,7 @@
   .border_img {
     height: max-content;
     width: 100%;
-    border-image: url("../static/mob_red_frame_1.png") 60 fill;
+    border-image: url("../src/images/mob_red_frame_1.png") 60 fill;
     border-image-width: 100px;
     border-image-outset: 0px 0px;
     background: linear-gradient(

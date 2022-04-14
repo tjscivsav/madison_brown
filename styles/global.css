@@ -15,7 +15,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  border-image: url("../static/Houndstooth_Desktop.gif") 30 fill;
+  border-image: url("../src/images/Houndstooth_Desktop.gif") 30 fill;
   border-image-width: 60px;
   border-image-outset: 10px;
 }
