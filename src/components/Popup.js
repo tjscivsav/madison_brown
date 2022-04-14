@@ -16,7 +16,7 @@ function Popup({ open, opened }) {
       left: 0,
       right: 0,
       bottom: 0,
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      backgroundColor: "rgba(0, 0, 0, 0.8)",
     },
     content: {
       backgroundColor: "#4a9560",

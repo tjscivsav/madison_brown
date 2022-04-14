@@ -18,6 +18,7 @@
 .modal_window input[type="email"] {
   width: 379px !important;
   height: 49px;
+  text-align: center;
 }
 
 .modal_window input::placeholder {

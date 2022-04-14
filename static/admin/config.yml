@@ -10,7 +10,7 @@ collections:
     files:
       - label: Links
         name: socialLinks
-        file: site/socialLinks.json
+        file: site/socialLinks.md
         fields:
           - { label: Twitter, name: twitter, widget: string }
           - { label: Facebook, name: facebook, widget: string }
