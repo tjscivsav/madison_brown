@@ -9,9 +9,7 @@ import useWindowSize from "../../hooks/useWindowSize"
 
 function Contact() {
   const { width, height } = useWindowSize()
-  console.log(useWindowSize())
   let x = width / height
-  //  .5622, .462, .462, .4618, .486, .450, .695, 0.75, 0.667, 0.72, .451, 1.707, 1.6
   let bg_img_height
   let content_section
   let form_section
@@ -68,7 +66,6 @@ function Contact() {
     default:
       bg_img_height = 90
   }
-  console.log(x, height, width)
   const [email, setEmail] = useState("")
   const handleSubmit = async e => {
     e.preventDefault()

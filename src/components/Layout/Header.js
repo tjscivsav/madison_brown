@@ -5,12 +5,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React, { useState } from "react"
 import Links from "../../../site/data.json"
 import * as HeaderStyle from "../../../styles/header.module.css"
 
-function Header() {
+function Header({ social_links }) {
   const [toggle, setToggle] = useState(false)
   return (
     <>
@@ -36,7 +36,11 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-white socialIcon mx-2"
-            href={Links.facebook}
+            href={
+              social_links[0]?.node?.frontmatter?.facebook
+                ? social_links[0]?.node?.frontmatter?.facebook
+                : Links.facebook
+            }
           >
             <FontAwesomeIcon
               icon={faFacebookF}
@@ -47,7 +51,11 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-white socialIcon mx-2"
-            href={Links.instagram}
+            href={
+              social_links[0]?.node?.frontmatter?.instagram
+                ? social_links[0]?.node?.frontmatter?.instagram
+                : Links.instagram
+            }
           >
             <FontAwesomeIcon
               icon={faInstagram}
@@ -58,7 +66,11 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-white socialIcon mx-2"
-            href={Links.twitter}
+            href={
+              social_links[0]?.node?.frontmatter?.twitter
+                ? social_links[0]?.node?.frontmatter?.twitter
+                : Links.twitter
+            }
           >
             <FontAwesomeIcon
               icon={faTwitter}
@@ -120,7 +132,11 @@ function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white socialIcon mx-2"
-              href={Links.facebook}
+              href={
+                social_links[0]?.node?.frontmatter?.facebook
+                  ? social_links[0]?.node?.frontmatter?.facebook
+                  : Links.facebook
+              }
             >
               <FontAwesomeIcon
                 icon={faFacebookF}
@@ -131,7 +147,11 @@ function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white socialIcon mx-2"
-              href={Links.instagram}
+              href={
+                social_links[0]?.node?.frontmatter?.instagram
+                  ? social_links[0]?.node?.frontmatter?.instagram
+                  : Links.instagram
+              }
             >
               <FontAwesomeIcon
                 icon={faInstagram}
@@ -142,7 +162,11 @@ function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white socialIcon mx-2"
-              href={Links.twitter}
+              href={
+                social_links[0]?.node?.frontmatter?.twitter
+                  ? social_links[0]?.node?.frontmatter?.twitter
+                  : Links.twitter
+              }
             >
               <FontAwesomeIcon
                 icon={faTwitter}

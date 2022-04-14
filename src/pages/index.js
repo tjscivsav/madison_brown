@@ -9,11 +9,12 @@ import Poster from "../components/Poster"
 import SectionFive from "../components/SectionFive.js"
 import productData from "../../site/data/products.json"
 import Popup from "../components/Popup"
+import { graphql } from "gatsby"
 
-function Home() {
+function Home({ data }) {
   const [open, setOpen] = useState(false)
   return (
-    <Layout>
+    <Layout socialLinks={data?.allMarkdownRemark?.edges}>
       <Popup
         open={open}
         opened={() => {
@@ -35,3 +36,21 @@ function Home() {
 }
 
 export default Home
+
+export const Social_Links = graphql`
+  query SocialLinks {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            facebook
+            instagram
+            tiktok
+            twitter
+          }
+        }
+      }
+    }
+  }
+`

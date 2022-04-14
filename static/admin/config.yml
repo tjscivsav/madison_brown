@@ -16,3 +16,41 @@ collections:
           - { label: Facebook, name: facebook, widget: string }
           - { label: Instagram, name: instagram, widget: string }
           - { label: TikTok, name: tiktok, widget: string }
+  - name: home
+    label: Home Page
+    files:
+      - label: Content
+        name: content
+        file: site/home.json
+        fields:
+          - {
+              label: SEO Title,
+              name: seoTitle,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: SEO Description,
+              name: seoDescription,
+              widget: string,
+              required: false,
+            }
+          - { label: Page Title, name: title, widget: string, required: false }
+          - { label: Video Banner, name: banner_video, widget: string }
+          - { label: Image Banner, name: banner_img, widget: image }
+          - label: Section
+            name: section
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: desc, widget: string }
+              - { label: Image, name: img, widget: image }
+              - { label: Button Name, name: btnName, widget: string }
+              - { label: Page Name, name: link, widget: string }
+          - label: Poster Content
+            name: poster
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Content, name: content, widget: string }
+              - { label: Button Name, name: btnName, widget: string }

@@ -33,5 +33,22 @@ module.exports = {
         cache_busting_mode: `none`,
       },
     },
+    `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/uploads",
+      },
+      __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./site/",
+      },
+      __key: "content",
+    },
   ],
 }
