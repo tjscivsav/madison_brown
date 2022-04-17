@@ -3,10 +3,11 @@ import Layout from "../components/Layout/Layout"
 import PageTitle from "../components/PageTitle"
 import * as AboutStyle from "../../styles/about.module.css"
 import productData from "../../site/data/products.json"
+import { graphql } from "gatsby"
 
-function About() {
+function About({ data }) {
   return (
-    <Layout>
+    <Layout socialLinks={data?.allMarkdownRemark?.edges}>
       <PageTitle title="About us" />
       <div className={`container-fluid  ${AboutStyle.about_content}`}>
         <p className={AboutStyle.para}>
@@ -47,3 +48,21 @@ function About() {
 }
 
 export default About
+
+export const about_Data = graphql`
+  query AboutData {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            facebook
+            instagram
+            tiktok
+            twitter
+          }
+        }
+      }
+    }
+  }
+`

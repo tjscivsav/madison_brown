@@ -6,8 +6,9 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import useWindowSize from "../../hooks/useWindowSize"
+import { graphql } from "gatsby"
 
-function Contact() {
+function Contact({ data }) {
   const { width, height } = useWindowSize()
   let x = width / height
   let bg_img_height
@@ -96,7 +97,7 @@ function Contact() {
   }
 
   return (
-    <Layout>
+    <Layout socialLinks={data?.allMarkdownRemark?.edges}>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -210,3 +211,21 @@ function Contact() {
 }
 
 export default Contact
+
+export const contact_Data = graphql`
+  query ContactData {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            facebook
+            instagram
+            tiktok
+            twitter
+          }
+        }
+      }
+    }
+  }
+`

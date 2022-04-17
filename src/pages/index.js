@@ -37,8 +37,8 @@ function Home({ data }) {
 
 export default Home
 
-export const Social_Links = graphql`
-  query SocialLinks {
+export const Index_Data = graphql`
+  query IndexData {
     allMarkdownRemark {
       edges {
         node {

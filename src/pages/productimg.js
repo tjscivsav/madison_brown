@@ -3,29 +3,15 @@ import Layout from "../components/Layout/Layout"
 import * as productStyle from "../../styles/prodictImg.module.css"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-function ProductImg() {
-  const data = useStaticQuery(graphql`
-    query products_img {
-      allFile(filter: { relativeDirectory: { eq: "product_img" } }) {
-        edges {
-          node {
-            base
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+
+function ProductImg({ data }) {
+  console.log(data)
   return (
     <>
-      <Layout>
+      {/* <Layout socialLinks={data?.allMarkdownRemark?.edges}>
         <div className={productStyle.products}>
           <div>
-            {data.allFile.edges.map(({ node }) => (
+            {data?.allFile.edges.map(({ node }) => (
               <Img
                 style={{ maxWidth: "1200px" }}
                 fluid={node.childImageSharp.fluid}
@@ -33,9 +19,27 @@ function ProductImg() {
             ))}
           </div>
         </div>
-      </Layout>
+      </Layout> */}
     </>
   )
 }
 
 export default ProductImg
+
+export const productImg_Data = graphql`
+  query productImgData {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            facebook
+            instagram
+            tiktok
+            twitter
+          }
+        }
+      }
+    }
+  }
+`
