@@ -38,7 +38,7 @@ products:
     id: MB_ice_cream_MCC
   - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/cookies_qtdary.png
     title: Cookies N’ Cream
-    desc: Madison Brown Premium Cookies & Cream Ice Cream, We take our super premium
+    desc: Madison Brown Premium Cookies & Cream Ice Cream, we take our super premium
       vanilla and add pieces of premium chocolate cookie with a delicious icing
       filling- Cookie pieces in every bite! This classic flavor wows with tons
       of rich cookie chunks and continues to be one of the top sellers in any
