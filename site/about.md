@@ -8,7 +8,7 @@ para1: Ice cream can mean a lot of different things but at Madison Brown it
   we made memories - over time and together. Each adding our insights and
   tasting endless combinations we landed on our six trademark flavors that
   ensured the classics were perfect with little personalized touches throughout
-  the ingredients.
+  the ingredient
 para2: From there we began giving it to our friends and community and realized
   that not only could we create our own happiness, we could share it. We knew
   that this was how we would spread joy, create memories, and bring people
