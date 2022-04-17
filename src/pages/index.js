@@ -13,38 +13,46 @@ import { graphql } from "gatsby"
 
 function Home({ data }) {
   const [open, setOpen] = useState(false)
-  const [product_Data, setProduct_Data] = useState()
-  const [shop_list, setShop_list] = useState()
-  const [social_links, setSocial_links] = useState()
+  let product_Data
+  let shop_list
+  let social_links
   let sectionOneData
   let poster_Data
   data?.allMarkdownRemark?.edges?.map(item => {
     if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      setSocial_links({
+      social_links = {
         instagram: item?.node?.frontmatter?.instagram,
         facebook: item?.node?.frontmatter?.facebook,
         tiktok: item?.node?.frontmatter?.tiktok,
         twitter: item?.node?.frontmatter?.twitter,
-      })
+      }
     }
     if (item?.node?.id === "20ac4b4e-cb02-5c68-b9b9-d8eeaf4a62cc") {
-      setShop_list(item?.node?.frontmatter?.shops)
+      shop_list =
+        item?.node?.frontmatter?.shops && item?.node?.frontmatter?.shops
     }
     if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
-      setProduct_Data(item?.node?.frontmatter?.products)
+      product_Data =
+        item?.node?.frontmatter?.products && item?.node?.frontmatter?.products
     }
     if (item?.node?.id === "94cec0e5-f9e1-5864-928f-5ae9fd79d851") {
       sectionOneData = {
-        title: item?.node?.frontmatter?.title,
-        desc: item?.node?.frontmatter?.desc,
-        bg_img: item?.node?.frontmatter?.bg_img,
-        front_img: item?.node?.frontmatter?.front_img,
+        title: item?.node?.frontmatter?.title && item?.node?.frontmatter?.title,
+        desc: item?.node?.frontmatter?.desc && item?.node?.frontmatter?.desc,
+        bg_img:
+          item?.node?.frontmatter?.bg_img && item?.node?.frontmatter?.bg_img,
+        front_img:
+          item?.node?.frontmatter?.front_img &&
+          item?.node?.frontmatter?.front_img,
       }
       poster_Data = {
-        title: item?.node?.frontmatter?.poster_title,
+        title:
+          item?.node?.frontmatter?.poster_title &&
+          item?.node?.frontmatter?.poster_title,
       }
     }
   })
+
   return (
     <Layout socialLinks={social_links}>
       <Popup

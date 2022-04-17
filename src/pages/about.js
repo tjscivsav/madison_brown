@@ -6,12 +6,12 @@ import productData from "../../site/data/products.json"
 import { graphql } from "gatsby"
 
 function About({ data }) {
-  const [about_Data, setAbout_Data] = useState()
-  const [social_links, setSocial_links] = useState()
-  const [product_Data, setProduct_Data] = useState()
+  let about_Data
+  let social_links
+  let product_Data
   data?.allMarkdownRemark?.edges?.map(item => {
     if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      setSocial_links({
+      return (social_links = {
         instagram: item?.node?.frontmatter?.instagram,
         facebook: item?.node?.frontmatter?.facebook,
         tiktok: item?.node?.frontmatter?.tiktok,
@@ -19,18 +19,16 @@ function About({ data }) {
       })
     }
     if (item?.node?.id === "fe6569da-ac62-51a7-be99-f8decd490ca4") {
-      setAbout_Data({
+      return (about_Data = {
         para1: item?.node?.frontmatter?.para1,
         para2: item?.node?.frontmatter?.para2,
       })
-      if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
-        setProduct_Data(item?.node?.frontmatter?.products)
-      }
+    }
+    if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
+      return (product_Data = item?.node?.frontmatter)
     }
   })
-
   let product_img = product_Data ? product_Data : productData
-
   return (
     <Layout socialLinks={social_links}>
       <PageTitle title="About us" />
@@ -59,14 +57,14 @@ function About({ data }) {
           </ul>
         </div>
         <p className={AboutStyle.para2}>
-          {about_Data?.para1
-            ? about_Data?.para1
+          {about_Data?.para2
+            ? about_Data?.para2
             : `From there we began giving it to our friends and community and
           realized that not only could we create our own happiness, we could
           share it. We knew that this was how we would spread joy, create
           memories, and bring people together. Therefore, you can count on
           Madison Brown to continue to find ways to give back to the communities
-          who create and inspire us…because some things are meant for sharing.`}
+          who create and inspire us… because some things are meant for sharing.`}
         </p>
         <p>
           <strong>{`- The Madison Brown Team`}</strong>
