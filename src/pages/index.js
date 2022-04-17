@@ -13,25 +13,25 @@ import { graphql } from "gatsby"
 
 function Home({ data }) {
   const [open, setOpen] = useState(false)
+  const [product_Data, setProduct_Data] = useState()
+  const [shop_list, setShop_list] = useState()
+  const [social_links, setSocial_links] = useState()
   let sectionOneData
-  let product_Data
   let poster_Data
-  let shop_list
-  let social_links
   data?.allMarkdownRemark?.edges?.map(item => {
     if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      social_links = {
+      setSocial_links({
         instagram: item?.node?.frontmatter?.instagram,
         facebook: item?.node?.frontmatter?.facebook,
         tiktok: item?.node?.frontmatter?.tiktok,
         twitter: item?.node?.frontmatter?.twitter,
-      }
+      })
     }
     if (item?.node?.id === "20ac4b4e-cb02-5c68-b9b9-d8eeaf4a62cc") {
-      shop_list = item?.node?.frontmatter?.shops
+      setShop_list(item?.node?.frontmatter?.shops)
     }
     if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
-      product_Data = item?.node?.frontmatter?.products
+      setProduct_Data(item?.node?.frontmatter?.products)
     }
     if (item?.node?.id === "94cec0e5-f9e1-5864-928f-5ae9fd79d851") {
       sectionOneData = {
