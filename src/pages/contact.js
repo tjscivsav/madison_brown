@@ -68,7 +68,6 @@ function Contact({ data }) {
       bg_img_height = 90
   }
   const [email, setEmail] = useState("")
-  const [email_id, setEmail_id] = useState()
   const handleSubmit = async e => {
     e.preventDefault()
     const result = await addToMailchimp(email)
@@ -105,9 +104,6 @@ function Contact({ data }) {
         tiktok: item?.node?.frontmatter?.tiktok,
         twitter: item?.node?.frontmatter?.twitter,
       }
-    }
-    if (item?.node?.id === "5a5951ab-e27d-5f9e-849d-af5c56b9b481") {
-      setEmail_id(item?.node?.frontmatter?.email)
     }
   })
   return (
@@ -171,7 +167,29 @@ function Contact({ data }) {
                 >
                   <div className={contactStyle.detail_section}>
                     <h3>Contact Us</h3>
-                    {email_id?.map((item, i) =>
+                    <div className="d-flex align-items-center ">
+                      <img
+                        width={55}
+                        height={45}
+                        src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648564411/Madison%20Brown/mail_icon_cfqkkv.png"
+                        alt=""
+                      />
+                      <a href="mailto:Sales@madisonbrown.com">
+                        Sales@madisonbrown.com
+                      </a>
+                    </div>
+                    <div className="d-flex align-items-center ">
+                      <img
+                        width={55}
+                        height={45}
+                        src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648564411/Madison%20Brown/mail_icon_cfqkkv.png"
+                        alt=""
+                      />
+                      <a href="mailto:Marketing@madisonbrown.com">
+                        Marketing@madisonbrown.com
+                      </a>
+                    </div>
+                    {/* {email_id?.map((item, i) =>
                       item ? (
                         <div className="d-flex align-items-center ">
                           <img
@@ -210,7 +228,7 @@ function Contact({ data }) {
                           </div>
                         </>
                       )
-                    )}
+                    )} */}
                     {/* <div className="d-flex align-items-center ">
                       <img
                         width={100}
