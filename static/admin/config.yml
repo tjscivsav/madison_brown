@@ -61,6 +61,23 @@ collections:
             }
           - { label: Paragraph, name: para1, widget: string, required: false }
           - { label: Paragraph, name: para2, widget: string, required: false }
+  - name: contact
+    label: Contact Page
+    files:
+      - label: Content
+        name: content
+        file: site/contact.md
+        fields:
+          - label: Email
+            name: email
+            widget: list
+            fields:
+              - {
+                  label: Email ID,
+                  name: email_id,
+                  widget: string,
+                  required: false,
+                }
   - name: products
     label: Products
     files:

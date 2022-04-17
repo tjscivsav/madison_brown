@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout/Layout"
 import PageTitle from "../components/PageTitle"
 import * as AboutStyle from "../../styles/about.module.css"
@@ -6,25 +6,25 @@ import productData from "../../site/data/products.json"
 import { graphql } from "gatsby"
 
 function About({ data }) {
-  let about_Data
-  let social_links
-  let product_Data
+  const [about_Data, setAbout_Data] = useState()
+  const [social_links, setSocial_links] = useState()
+  const [product_Data, setProduct_Data] = useState()
   data?.allMarkdownRemark?.edges?.map(item => {
     if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      social_links = {
+      setSocial_links({
         instagram: item?.node?.frontmatter?.instagram,
         facebook: item?.node?.frontmatter?.facebook,
         tiktok: item?.node?.frontmatter?.tiktok,
         twitter: item?.node?.frontmatter?.twitter,
-      }
+      })
     }
     if (item?.node?.id === "fe6569da-ac62-51a7-be99-f8decd490ca4") {
-      about_Data = {
+      setAbout_Data({
         para1: item?.node?.frontmatter?.para1,
         para2: item?.node?.frontmatter?.para2,
-      }
+      })
       if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
-        product_Data = item?.node?.frontmatter?.products
+        setProduct_Data(item?.node?.frontmatter?.products)
       }
     }
   })
