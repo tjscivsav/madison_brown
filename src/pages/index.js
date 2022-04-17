@@ -60,9 +60,6 @@ export const Index_Data = graphql`
             front_img
             poster_title
             seoTitle
-            img
-            location
-            upcoming
           }
         }
       }
