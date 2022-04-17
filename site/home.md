@@ -8,8 +8,4 @@ desc: Ice cream can mean a lot of different things but at Madison Brown it
 bg_img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_sqaure_img_rhjdxs.png
 front_img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597879/Madison%20Brown/icecream_tvoxh4.png
 poster_title: FIND OUR ICE CREAM
-shops:
-  - location: TEXAS
-    upcoming: Coming Soon
-    img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647867196/Madison%20Brown/nature_gfdcbv.png
 ---
