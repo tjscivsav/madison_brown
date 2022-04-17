@@ -13,6 +13,12 @@ import { graphql } from "gatsby"
 
 function Home({ data }) {
   const [open, setOpen] = useState(false)
+  const sectionOneData = {
+    title: data?.allMarkdownRemark?.edges[1]?.node?.frontmatter?.title,
+    desc: data?.allMarkdownRemark?.edges[1]?.node?.frontmatter?.desc,
+    bg_img: data?.allMarkdownRemark?.edges[1]?.node?.frontmatter?.bg_img,
+    front_img: data?.allMarkdownRemark?.edges[1]?.node?.frontmatter?.front_img,
+  }
   return (
     <Layout socialLinks={data?.allMarkdownRemark?.edges}>
       <Popup
@@ -21,7 +27,7 @@ function Home({ data }) {
           setOpen(!open)
         }}
       />
-      <SectionOne />
+      <SectionOne data={sectionOneData} />
       <SectionTwo />
       <SectionThree data={productData?.products} />
       <Poster />
@@ -47,7 +53,16 @@ export const Index_Data = graphql`
             facebook
             instagram
             tiktok
+            title
             twitter
+            bg_img
+            desc
+            front_img
+            poster_title
+            seoTitle
+            img
+            location
+            upcoming
           }
         }
       }

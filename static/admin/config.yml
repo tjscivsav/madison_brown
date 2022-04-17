@@ -40,13 +40,6 @@ collections:
           - { label: Backgroud Image, name: bg_img, widget: image }
           - { label: Ice cream Image, name: front_img, widget: image }
           - { label: Poster Title, name: poster_title, widget: string }
-          - label: Shop List
-            name: shops
-            widget: list
-            fields:
-              - { label: Location, name: location, widget: string }
-              - { label: Upcoming?, name: upcoming, widget: string }
-              - { label: Image, name: img, widget: image }
   - name: products
     label: Products
     files:
