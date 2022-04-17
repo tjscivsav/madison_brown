@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 function About({ data }) {
   let about_Data
   let social_links
+  let product_Data
   data?.allMarkdownRemark?.edges?.map(item => {
     if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
       social_links = {
@@ -22,8 +23,14 @@ function About({ data }) {
         para1: item?.node?.frontmatter?.para1,
         para2: item?.node?.frontmatter?.para2,
       }
+      if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
+        product_Data = item?.node?.frontmatter?.products
+      }
     }
   })
+
+  let product_img = product_Data ? product_Data : productData
+
   return (
     <Layout socialLinks={social_links}>
       <PageTitle title="About us" />
@@ -44,9 +51,9 @@ function About({ data }) {
         </p>
         <div className="mx-5">
           <ul className={AboutStyle.product_list}>
-            {productData?.products.map((item, i) => (
+            {product_img?.products.map((item, i) => (
               <li key={i}>
-                <img src={item.img} alt={item.title} />
+                <img src={item?.img} alt={item?.title} />
               </li>
             ))}
           </ul>
