@@ -9,13 +9,22 @@ import { graphql } from "gatsby"
 function Products({ data }) {
   const [open, setOpen] = useState(false)
   let product_Data
+  let social_links
   data?.allMarkdownRemark?.edges?.map(item => {
+    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
+      social_links = {
+        instagram: item?.node?.frontmatter?.instagram,
+        facebook: item?.node?.frontmatter?.facebook,
+        tiktok: item?.node?.frontmatter?.tiktok,
+        twitter: item?.node?.frontmatter?.twitter,
+      }
+    }
     if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
       product_Data = item?.node?.frontmatter?.products
     }
   })
   return (
-    <Layout socialLinks={data?.allMarkdownRemark?.edges}>
+    <Layout socialLinks={social_links}>
       <Popup
         open={open}
         opened={() => {

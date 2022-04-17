@@ -95,9 +95,19 @@ function Contact({ data }) {
     e.target.reset()
     setEmail("")
   }
-
+  let social_links
+  data?.allMarkdownRemark?.edges?.map(item => {
+    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
+      social_links = {
+        instagram: item?.node?.frontmatter?.instagram,
+        facebook: item?.node?.frontmatter?.facebook,
+        tiktok: item?.node?.frontmatter?.tiktok,
+        twitter: item?.node?.frontmatter?.twitter,
+      }
+    }
+  })
   return (
-    <Layout socialLinks={data?.allMarkdownRemark?.edges}>
+    <Layout socialLinks={social_links}>
       <ToastContainer
         position="top-right"
         autoClose={5000}

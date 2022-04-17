@@ -37,9 +37,7 @@ function Header({ social_links }) {
             rel="noopener noreferrer"
             className="text-white socialIcon mx-2"
             href={
-              social_links[0]?.node?.frontmatter?.facebook
-                ? social_links[0]?.node?.frontmatter?.facebook
-                : Links.facebook
+              social_links?.facebook ? social_links?.facebook : Links.facebook
             }
           >
             <FontAwesomeIcon
@@ -52,8 +50,8 @@ function Header({ social_links }) {
             rel="noopener noreferrer"
             className="text-white socialIcon mx-2"
             href={
-              social_links[0]?.node?.frontmatter?.instagram
-                ? social_links[0]?.node?.frontmatter?.instagram
+              social_links?.instagram
+                ? social_links?.instagram
                 : Links.instagram
             }
           >
@@ -66,11 +64,7 @@ function Header({ social_links }) {
             target="_blank"
             rel="noopener noreferrer"
             className="text-white socialIcon mx-2"
-            href={
-              social_links[0]?.node?.frontmatter?.twitter
-                ? social_links[0]?.node?.frontmatter?.twitter
-                : Links.twitter
-            }
+            href={social_links?.twitter ? social_links?.twitter : Links.twitter}
           >
             <FontAwesomeIcon
               icon={faTwitter}
@@ -133,9 +127,7 @@ function Header({ social_links }) {
               rel="noopener noreferrer"
               className="text-white socialIcon mx-2"
               href={
-                social_links[0]?.node?.frontmatter?.facebook
-                  ? social_links[0]?.node?.frontmatter?.facebook
-                  : Links.facebook
+                social_links?.facebook ? social_links?.facebook : Links.facebook
               }
             >
               <FontAwesomeIcon
@@ -148,8 +140,8 @@ function Header({ social_links }) {
               rel="noopener noreferrer"
               className="text-white socialIcon mx-2"
               href={
-                social_links[0]?.node?.frontmatter?.instagram
-                  ? social_links[0]?.node?.frontmatter?.instagram
+                social_links?.instagram
+                  ? social_links?.instagram
                   : Links.instagram
               }
             >
@@ -163,9 +155,7 @@ function Header({ social_links }) {
               rel="noopener noreferrer"
               className="text-white socialIcon mx-2"
               href={
-                social_links[0]?.node?.frontmatter?.twitter
-                  ? social_links[0]?.node?.frontmatter?.twitter
-                  : Links.twitter
+                social_links?.twitter ? social_links?.twitter : Links.twitter
               }
             >
               <FontAwesomeIcon

@@ -7,7 +7,16 @@ import { graphql } from "gatsby"
 
 function About({ data }) {
   let about_Data
+  let social_links
   data?.allMarkdownRemark?.edges?.map(item => {
+    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
+      social_links = {
+        instagram: item?.node?.frontmatter?.instagram,
+        facebook: item?.node?.frontmatter?.facebook,
+        tiktok: item?.node?.frontmatter?.tiktok,
+        twitter: item?.node?.frontmatter?.twitter,
+      }
+    }
     if (item?.node?.id === "fe6569da-ac62-51a7-be99-f8decd490ca4") {
       about_Data = {
         para1: item?.node?.frontmatter?.para1,
@@ -16,7 +25,7 @@ function About({ data }) {
     }
   })
   return (
-    <Layout socialLinks={data?.allMarkdownRemark?.edges}>
+    <Layout socialLinks={social_links}>
       <PageTitle title="About us" />
       <div className={`container-fluid  ${AboutStyle.about_content}`}>
         <p className={AboutStyle.para}>
