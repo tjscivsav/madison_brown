@@ -46,7 +46,7 @@ function About({ data }) {
           <ul className={AboutStyle.product_list}>
             {productData?.products.map((item, i) => (
               <li key={i}>
-                <img src={item.img1} alt={item.title} />
+                <img src={item.img} alt={item.title} />
               </li>
             ))}
           </ul>
