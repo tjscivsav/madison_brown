@@ -1,10 +1,8 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
 import * as three from "../../styles/sectionThree.module.css"
-import Popup from "./Popup"
 
 function SectionThree({ data }) {
-  console.log(data)
   return (
     <>
       <div className="container-fluid products">

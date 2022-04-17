@@ -10,7 +10,14 @@ function SectionOne({ data }) {
           <div className="col-lg-6 col-md-12 col-sm-12 col-12 p-0 ">
             <div className={homeStyle.bg_img}>
               <div className={homeStyle.bg_color}>
-                <img src={data?.front_img} alt="" />
+                <img
+                  src={
+                    data?.front_img
+                      ? data?.front_img
+                      : `https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597879/Madison%20Brown/icecream_tvoxh4.png`
+                  }
+                  alt=""
+                />
               </div>
             </div>
           </div>

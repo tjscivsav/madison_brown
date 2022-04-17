@@ -45,7 +45,6 @@ function Home({ data }) {
       }
     }
   })
-  console.log(sectionOneData, product_Data, poster_Data)
   return (
     <Layout socialLinks={social_links}>
       <Popup
