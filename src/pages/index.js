@@ -52,7 +52,7 @@ function Home({ data }) {
       }
     }
   })
-
+  console.log(sectionOneData)
   return (
     <Layout socialLinks={social_links}>
       <Popup
