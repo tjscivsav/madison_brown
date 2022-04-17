@@ -1,12 +1,13 @@
 ---
 products:
   - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/red_vevlet_howebc.png
-    title: Cookies N’ Cream
+    title: Red Velvet
     btn_color: redvelvet
     desc: The base of this signature flavor is a rich chocolate cake ice cream and
       includes loads of red velvet cake pieces and is finished with a swirl of
       soft smooth cream cheese frosting
     id: MB_ice_cream_RVEL
+    frame: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/red_frame_hkqml4.png
   - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/vanila_ikz5k5.png
     title: Vanilla
     desc: Our Vanilla Ice Cream is made with a Vanilla Extract three times stronger
@@ -14,13 +15,17 @@ products:
       custard to round the flavor of our flagship super premium ice cream.
     btn_color: vanilla
     id: MB_ice_cream_VAN
-  - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/chocolate_chip_ahhswj.png
-    title: Chocolate Chip Cookie Dough
-    desc: Our cookie dough starts with our super premium vanilla and adds chunks of
-      buttery soft and chewy cookie dough blended with fine meltaway milk
-      chocolate chips.
-    btn_color: dough
-    id: MB_ice_cream_CCCD
+    frame: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_frame_ybk4oi.png
+  - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/cookies_qtdary.png
+    title: Cookies N’ Cream
+    desc: Madison Brown Premium Cookies & Cream Ice Cream, We take our super premium
+      vanilla and add pieces of premium chocolate cookie with a delicious icing
+      filling- Cookie pieces in every bite! This classic flavor wows with tons
+      of rich cookie chunks and continues to be one of the top sellers in any
+      market.
+    btn_color: cookie
+    id: MB_ice_cream_CNC
+    frame: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/grey_frame_osppk6.png
   - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/chocolate_qn2wos.png
     desc: Our Chocolate ice cream starts with a silky milk chocolate cocoa powder
       balanced with just the right bitterness and then we add a touch of dark
@@ -36,13 +41,11 @@ products:
       chocolate flakes.
     btn_color: mint
     id: MB_ice_cream_MCC
-  - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/cookies_qtdary.png
-    title: Cookies N’ Cream
-    desc: Madison Brown Premium Cookies & Cream Ice Cream, we take our super premium
-      vanilla and add pieces of premium chocolate cookie with a delicious icing
-      filling- Cookie pieces in every bite! This classic flavor wows with tons
-      of rich cookie chunks and continues to be one of the top sellers in any
-      market.
-    btn_color: cookie
-    id: MB_ice_cream_CNC
+  - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/chocolate_chip_ahhswj.png
+    title: Chocolate Chip Cookie Dough
+    desc: Our cookie dough starts with our super premium vanilla and adds chunks of
+      buttery soft and chewy cookie dough blended with fine meltaway milk
+      chocolate chips.
+    btn_color: dough
+    id: MB_ice_cream_CCCD
 ---
