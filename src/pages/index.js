@@ -50,16 +50,28 @@ export const Index_Data = graphql`
         node {
           id
           frontmatter {
-            facebook
             instagram
+            facebook
             tiktok
-            title
             twitter
             bg_img
             desc
             front_img
             poster_title
             seoTitle
+            shops {
+              img
+              location
+              upcoming
+            }
+            title
+            products {
+              btn_color
+              desc
+              id
+              img
+              title
+            }
           }
         }
       }

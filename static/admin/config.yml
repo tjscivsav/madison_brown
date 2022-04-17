@@ -68,5 +68,10 @@ collections:
             widget: list
             fields:
               - { label: Location, name: location, widget: string }
-              - { label: Upcoming?, name: upcoming, widget: string }
+              - {
+                  label: Upcoming?,
+                  name: upcoming,
+                  widget: string,
+                  required: false,
+                }
               - { label: Image, name: img, widget: image }
