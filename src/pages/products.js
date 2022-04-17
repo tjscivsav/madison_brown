@@ -38,7 +38,7 @@ function Products({ data }) {
             opened={opened => {
               setOpen(opened)
             }}
-            data={product_Data || productData?.products}
+            data={product_Data ? product_Data : productData?.products}
           />
         </div>
       </div>

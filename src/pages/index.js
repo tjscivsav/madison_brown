@@ -56,9 +56,11 @@ function Home({ data }) {
       />
       <SectionOne data={sectionOneData} />
       <SectionTwo />
-      <SectionThree data={product_Data || productData?.products} />
+      <SectionThree
+        data={product_Data ? product_Data : productData?.products}
+      />
       <Poster data={poster_Data} />
-      <SlickSlider data={shop_list || shopsData?.shops} />
+      <SlickSlider data={shop_list ? shop_list : shopsData?.shops} />
       <SectionFive
         opened={opened => {
           setOpen(opened)

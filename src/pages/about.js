@@ -29,8 +29,9 @@ function About({ data }) {
       <PageTitle title="About us" />
       <div className={`container-fluid  ${AboutStyle.about_content}`}>
         <p className={AboutStyle.para}>
-          {about_Data?.para1 ||
-            `  Ice cream can mean a lot of different things but at Madison Brown it
+          {about_Data?.para1
+            ? about_Data?.para1
+            : `  Ice cream can mean a lot of different things but at Madison Brown it
           stands for family, friends, and community. Over the years our family
           has enjoyed countless ice cream trips which still serve as some of our
           fondest memories. With so many wonderful experiences we wondered how
@@ -51,8 +52,9 @@ function About({ data }) {
           </ul>
         </div>
         <p className={AboutStyle.para2}>
-          {about_Data?.para1 ||
-            `From there we began giving it to our friends and community and
+          {about_Data?.para1
+            ? about_Data?.para1
+            : `From there we began giving it to our friends and community and
           realized that not only could we create our own happiness, we could
           share it. We knew that this was how we would spread joy, create
           memories, and bring people together. Therefore, you can count on

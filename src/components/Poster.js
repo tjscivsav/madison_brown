@@ -5,7 +5,7 @@ function Poster({ data }) {
   return (
     <>
       <div className={poster.bg_img}>
-        <h2>{data?.title}</h2>
+        <h2>{data?.title ? data?.title : `FIND OUR ICE CREAM`}</h2>
       </div>
     </>
   )
