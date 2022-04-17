@@ -27,10 +27,30 @@ export const press_Data = graphql`
         node {
           id
           frontmatter {
-            facebook
             instagram
+            facebook
             tiktok
             twitter
+            bg_img
+            desc
+            front_img
+            seoTitle
+            title
+            para1
+            para2
+            poster_title
+            products {
+              btn_color
+              desc
+              id
+              img
+              title
+            }
+            shops {
+              img
+              location
+              upcoming
+            }
           }
         }
       }

@@ -35,6 +35,7 @@
   margin: auto;
   width: 420px;
   height: 420px;
+  border-radius: 50%;
 }
 
 .red_dot {

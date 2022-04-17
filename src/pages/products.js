@@ -5,9 +5,15 @@ import Product from "../components/Product"
 import productData from "../../site/data/products.json"
 import Popup from "../components/Popup"
 import { graphql } from "gatsby"
+
 function Products({ data }) {
   const [open, setOpen] = useState(false)
-
+  let product_Data
+  data?.allMarkdownRemark?.edges?.map(item => {
+    if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
+      product_Data = item?.node?.frontmatter?.products
+    }
+  })
   return (
     <Layout socialLinks={data?.allMarkdownRemark?.edges}>
       <Popup
@@ -23,7 +29,7 @@ function Products({ data }) {
             opened={opened => {
               setOpen(opened)
             }}
-            data={productData?.products}
+            data={product_Data || productData?.products}
           />
         </div>
       </div>
@@ -40,10 +46,31 @@ export const products_Data = graphql`
         node {
           id
           frontmatter {
-            facebook
             instagram
+            facebook
             tiktok
             twitter
+            bg_img
+            desc
+            front_img
+            seoTitle
+            title
+            para1
+            para2
+            poster_title
+            products {
+              btn_color
+              desc
+              id
+              img
+              title
+              frame
+            }
+            shops {
+              img
+              location
+              upcoming
+            }
           }
         }
       }

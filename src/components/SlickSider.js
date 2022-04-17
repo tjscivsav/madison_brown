@@ -130,7 +130,7 @@ const CustomSlide = ({ item, i }) => {
             }}
             className={cardStyle.img_section}
           >
-            {item?.img ? (
+            {!item?.upcoming ? (
               <>
                 <img src={item?.img} alt={item?.location} />
                 <div

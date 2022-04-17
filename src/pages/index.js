@@ -13,12 +13,30 @@ import { graphql } from "gatsby"
 
 function Home({ data }) {
   const [open, setOpen] = useState(false)
-  const sectionOneData = {
-    title: data?.allMarkdownRemark?.edges[1]?.node?.frontmatter?.title,
-    desc: data?.allMarkdownRemark?.edges[1]?.node?.frontmatter?.desc,
-    bg_img: data?.allMarkdownRemark?.edges[1]?.node?.frontmatter?.bg_img,
-    front_img: data?.allMarkdownRemark?.edges[1]?.node?.frontmatter?.front_img,
-  }
+  let sectionOneData
+  let product_Data
+  let poster_Data
+  let shop_list
+  data?.allMarkdownRemark?.edges?.map(item => {
+    if (item?.node?.id === "20ac4b4e-cb02-5c68-b9b9-d8eeaf4a62cc") {
+      shop_list = item?.node?.frontmatter?.shops
+    }
+    if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
+      product_Data = item?.node?.frontmatter?.products
+    }
+    if (item?.node?.id === "94cec0e5-f9e1-5864-928f-5ae9fd79d851") {
+      sectionOneData = {
+        title: item?.node?.frontmatter?.title,
+        desc: item?.node?.frontmatter?.desc,
+        bg_img: item?.node?.frontmatter?.bg_img,
+        front_img: item?.node?.frontmatter?.front_img,
+      }
+      poster_Data = {
+        title: item?.node?.frontmatter?.poster_title,
+      }
+    }
+  })
+
   return (
     <Layout socialLinks={data?.allMarkdownRemark?.edges}>
       <Popup
@@ -29,9 +47,9 @@ function Home({ data }) {
       />
       <SectionOne data={sectionOneData} />
       <SectionTwo />
-      <SectionThree data={productData?.products} />
-      <Poster />
-      <SlickSlider data={shopsData?.shops} />
+      <SectionThree data={product_Data || productData?.products} />
+      <Poster data={poster_Data} />
+      <SlickSlider data={shop_list || shopsData?.shops} />
       <SectionFive
         opened={opened => {
           setOpen(opened)
@@ -57,20 +75,23 @@ export const Index_Data = graphql`
             bg_img
             desc
             front_img
-            poster_title
             seoTitle
-            shops {
-              img
-              location
-              upcoming
-            }
             title
+            para1
+            para2
+            poster_title
             products {
               btn_color
               desc
               id
               img
               title
+              frame
+            }
+            shops {
+              img
+              location
+              upcoming
             }
           }
         }

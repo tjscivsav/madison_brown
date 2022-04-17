@@ -3,7 +3,6 @@ import React from "react"
 import * as homeStyle from "../../styles/home.module.css"
 
 function SectionOne({ data }) {
-  console.log(data)
   return (
     <>
       <div className="container-fluid">

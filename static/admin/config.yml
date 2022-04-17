@@ -73,6 +73,7 @@ collections:
             widget: list
             fields:
               - { label: Ice Cream, name: img, widget: image }
+              - { label: Frame, name: frame, widget: image, required: false }
               - { label: Title, name: title, widget: string }
               - { label: Description, name: desc, widget: string }
               - { label: Background Color, name: btn_color, widget: string }

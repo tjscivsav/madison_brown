@@ -1,11 +1,11 @@
 import React from "react"
 import * as poster from "../../styles/poster.module.css"
 
-function Poster() {
+function Poster({ data }) {
   return (
     <>
       <div className={poster.bg_img}>
-        <h2>FIND OUR ICE CREAM</h2>
+        <h2>{data.title}</h2>
       </div>
     </>
   )
