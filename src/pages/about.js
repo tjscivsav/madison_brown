@@ -4,79 +4,7 @@ import PageTitle from "../components/PageTitle"
 import * as AboutStyle from "../../styles/about.module.css"
 import productData from "../../site/data/products.json"
 import { graphql } from "gatsby"
-
-function About({ data }) {
-  const [about_Data, setAbout_Data] = useState()
-  const [social_links, setSocial_links] = useState()
-  const [product_Data, setProduct_Data] = useState()
-  data?.allMarkdownRemark?.edges?.map(item => {
-    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      setSocial_links({
-        instagram: item?.node?.frontmatter?.instagram,
-        facebook: item?.node?.frontmatter?.facebook,
-        tiktok: item?.node?.frontmatter?.tiktok,
-        twitter: item?.node?.frontmatter?.twitter,
-      })
-    }
-    if (item?.node?.id === "fe6569da-ac62-51a7-be99-f8decd490ca4") {
-      setAbout_Data({
-        para1: item?.node?.frontmatter?.para1,
-        para2: item?.node?.frontmatter?.para2,
-      })
-      if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
-        setProduct_Data(item?.node?.frontmatter?.products)
-      }
-    }
-  })
-
-  let product_img = product_Data ? product_Data : productData
-
-  return (
-    <Layout socialLinks={social_links}>
-      <PageTitle title="About us" />
-      <div className={`container-fluid  ${AboutStyle.about_content}`}>
-        <p className={AboutStyle.para}>
-          {about_Data?.para1
-            ? about_Data?.para1
-            : `  Ice cream can mean a lot of different things but at Madison Brown it
-          stands for family, friends, and community. Over the years our family
-          has enjoyed countless ice cream trips which still serve as some of our
-          fondest memories. With so many wonderful experiences we wondered how
-          we could continue to share our passion with those we love most, and
-          thus Madison Brown was born. Named after one of our family members, we
-          began to make flavors the same way we made memories - over time and
-          together. Each adding our insights and tasting endless combinations we
-          landed on our six trademark flavors that ensured the classics were
-          perfect with little personalized touches throughout the ingredients.`}
-        </p>
-        <div className="mx-5">
-          <ul className={AboutStyle.product_list}>
-            {product_img?.products.map((item, i) => (
-              <li key={i}>
-                <img src={item?.img} alt={item?.title} />
-              </li>
-            ))}
-          </ul>
-        </div>
-        <p className={AboutStyle.para2}>
-          {about_Data?.para1
-            ? about_Data?.para1
-            : `From there we began giving it to our friends and community and
-          realized that not only could we create our own happiness, we could
-          share it. We knew that this was how we would spread joy, create
-          memories, and bring people together. Therefore, you can count on
-          Madison Brown to continue to find ways to give back to the communities
-          who create and inspire us…because some things are meant for sharing.`}
-        </p>
-        <p>
-          <strong>{`- The Madison Brown Team`}</strong>
-        </p>
-      </div>
-    </Layout>
-  )
-}
-
-export default About
+import _ from "lodash"
 
 export const about_Data = graphql`
   query AboutData {
@@ -115,3 +43,79 @@ export const about_Data = graphql`
     }
   }
 `
+
+function About({ data }) {
+  let about_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (
+      item?.node?.id === "fe6569da-ac62-51a7-be99-f8decd490ca4" ||
+      item?.node?.id === "0cdc5699-a20e-532b-96a6-96b12d29df83"
+    ) {
+      return item?.node
+    }
+  })
+  let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (
+      item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0" ||
+      item?.node?.id === "f410484c-206d-58cc-8915-ba3ff0672103"
+    ) {
+      return item?.node
+    }
+  })
+  let product_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (
+      item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92" ||
+      item?.node?.id === "e628fe81-6e8e-535b-8955-45804124fc88"
+    ) {
+      return item?.node
+    }
+  })
+
+  let product_img = product_Data?.node?.frontmatter
+    ? product_Data?.node?.frontmatter
+    : productData
+  return (
+    <Layout socialLinks={social_links?.node?.frontmatter}>
+      <PageTitle title="About us" />
+      <div className={`container-fluid  ${AboutStyle.about_content}`}>
+        <p className={AboutStyle.para}>
+          {about_Data?.node?.frontmatter?.para1
+            ? about_Data?.node?.frontmatter?.para1
+            : `  Ice cream can mean a lot of different things but at Madison Brown it
+          stands for family, friends, and community. Over the years our family
+          has enjoyed countless ice cream trips which still serve as some of our
+          fondest memories. With so many wonderful experiences we wondered how
+          we could continue to share our passion with those we love most, and
+          thus Madison Brown was born. Named after one of our family members, we
+          began to make flavors the same way we made memories - over time and
+          together. Each adding our insights and tasting endless combinations we
+          landed on our six trademark flavors that ensured the classics were
+          perfect with little personalized touches throughout the ingredients.`}
+        </p>
+        <div className="mx-5">
+          <ul className={AboutStyle.product_list}>
+            {product_img?.products.map((item, i) => (
+              <li key={i}>
+                <img src={item?.img} alt={item?.title} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <p className={AboutStyle.para2}>
+          {about_Data?.node?.frontmatter?.para2
+            ? about_Data?.node?.frontmatter?.para2
+            : `From there we began giving it to our friends and community and
+          realized that not only could we create our own happiness, we could
+          share it. We knew that this was how we would spread joy, create
+          memories, and bring people together. Therefore, you can count on
+          Madison Brown to continue to find ways to give back to the communities
+          who create and inspire us… because some things are meant for sharing.`}
+        </p>
+        <p>
+          <strong>{`- The Madison Brown Team`}</strong>
+        </p>
+      </div>
+    </Layout>
+  )
+}
+
+export default About

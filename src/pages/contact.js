@@ -7,6 +7,26 @@ import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import useWindowSize from "../../hooks/useWindowSize"
 import { graphql } from "gatsby"
+import _ from "lodash"
+
+export const contact_Data = graphql`
+  query ContactData {
+    allMarkdownRemark(
+      filter: { id: { eq: "5a5951ab-e27d-5f9e-849d-af5c56b9b481" } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            email {
+              email_id
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 function Contact({ data }) {
   const { width, height } = useWindowSize()
@@ -96,18 +116,13 @@ function Contact({ data }) {
     setEmail("")
   }
   let social_links
-  data?.allMarkdownRemark?.edges?.map(item => {
-    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      social_links = {
-        instagram: item?.node?.frontmatter?.instagram,
-        facebook: item?.node?.frontmatter?.facebook,
-        tiktok: item?.node?.frontmatter?.tiktok,
-        twitter: item?.node?.frontmatter?.twitter,
-      }
+  let email_details = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (item?.node?.id === "5a5951ab-e27d-5f9e-849d-af5c56b9b481") {
+      return item?.node
     }
   })
   return (
-    <Layout socialLinks={social_links}>
+    <Layout socialLinks={social_links?.node?.frontmatter}>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -167,29 +182,39 @@ function Contact({ data }) {
                 >
                   <div className={contactStyle.detail_section}>
                     <h3>Contact Us</h3>
-                    <div className="d-flex align-items-center ">
-                      <img
-                        width={55}
-                        height={45}
-                        src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648564411/Madison%20Brown/mail_icon_cfqkkv.png"
-                        alt=""
-                      />
-                      <a href="mailto:Sales@madisonbrown.com">
-                        Sales@madisonbrown.com
-                      </a>
-                    </div>
-                    <div className="d-flex align-items-center ">
-                      <img
-                        width={55}
-                        height={45}
-                        src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648564411/Madison%20Brown/mail_icon_cfqkkv.png"
-                        alt=""
-                      />
-                      <a href="mailto:Marketing@madisonbrown.com">
-                        Marketing@madisonbrown.com
-                      </a>
-                    </div>
-                    {/* {email_id?.map((item, i) =>
+                    {email_details?.node?.frontmatter?.email?.map((item, i) =>
+                      item?.email_id ? (
+                        <>
+                          <div key={i} className="d-flex align-items-center ">
+                            <img
+                              width={55}
+                              height={45}
+                              src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648564411/Madison%20Brown/mail_icon_cfqkkv.png"
+                              alt=""
+                            />
+                            <a href={`mailto:${item?.email_id}`}>
+                              {item?.email_id}
+                            </a>
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="d-flex align-items-center ">
+                            <img
+                              width={55}
+                              height={45}
+                              src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648564411/Madison%20Brown/mail_icon_cfqkkv.png"
+                              alt=""
+                            />
+                            <a href="mailto:Marketing@madisonbrown.com">
+                              Marketing@madisonbrown.com
+                            </a>
+                          </div>
+                        </>
+                      )
+                    )}
+                    <>
+                      {/* {email_id?.map((item, i) =>
                       item ? (
                         <div className="d-flex align-items-center ">
                           <img
@@ -229,7 +254,7 @@ function Contact({ data }) {
                         </>
                       )
                     )} */}
-                    {/* <div className="d-flex align-items-center ">
+                      {/* <div className="d-flex align-items-center ">
                       <img
                         width={100}
                         height={100}
@@ -239,7 +264,7 @@ function Contact({ data }) {
                       <a href="tel:707-541-5674">707-541-5674</a>
                     </div> */}
 
-                    {/* <div className="d-flex align-items-center ">
+                      {/* <div className="d-flex align-items-center ">
                       <img
                         width={55}
                         height={45}
@@ -250,7 +275,7 @@ function Contact({ data }) {
                         Marketing@madisonbrown.com
                       </a>
                     </div> */}
-                    {/* <div className="d-flex align-items-center ">
+                      {/* <div className="d-flex align-items-center ">
                       <img
                         width={55}
                         height={45}
@@ -261,6 +286,7 @@ function Contact({ data }) {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </p>
                     </div> */}
+                    </>
                   </div>
                 </div>
               </div>
@@ -273,44 +299,3 @@ function Contact({ data }) {
 }
 
 export default Contact
-
-export const contact_Data = graphql`
-  query ContactData {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            instagram
-            facebook
-            tiktok
-            twitter
-            bg_img
-            desc
-            front_img
-            seoTitle
-            title
-            para1
-            para2
-            poster_title
-            products {
-              btn_color
-              desc
-              id
-              img
-              title
-            }
-            shops {
-              img
-              location
-              upcoming
-            }
-            email {
-              email_id
-            }
-          }
-        }
-      }
-    }
-  }
-`

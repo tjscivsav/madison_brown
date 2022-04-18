@@ -13,6 +13,5 @@ para2: From there we began giving it to our friends and community and realized
   that not only could we create our own happiness, we could share it. We knew
   that this was how we would spread joy, create memories, and bring people
   together. Therefore, you can count on Madison Brown to continue to find ways
-  to give back to the communities who create and inspire us…because some things
-  are meant for sharing.
+  to give back to the communities who create and inspire us… because
 ---
