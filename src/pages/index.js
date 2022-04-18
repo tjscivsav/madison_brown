@@ -12,6 +12,7 @@ import Popup from "../components/Popup"
 import { graphql } from "gatsby"
 
 function Home({ data }) {
+  console.log(data)
   const [open, setOpen] = useState(false)
   let sectionOneData
   let product_Data
