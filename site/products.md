@@ -5,7 +5,7 @@ products:
     btn_color: redvelvet
     desc: The base of this signature flavor is a rich chocolate cake ice cream and
       includes loads of red velvet cake pieces and is finished with a swirl of
-      soft smooth cream cheese frosting period.
+      soft smooth cream cheese frosting.
     id: MB_ice_cream_RVEL
     frame: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/red_frame_hkqml4.png
   - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/vanila_ikz5k5.png
