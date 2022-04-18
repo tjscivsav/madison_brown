@@ -5,26 +5,23 @@ import Product from "../components/Product"
 import productData from "../../site/data/products.json"
 import Popup from "../components/Popup"
 import { graphql } from "gatsby"
+import _ from "lodash"
 
 function Products({ data }) {
   const [open, setOpen] = useState(false)
-  let product_Data
-  let social_links
-  data?.allMarkdownRemark?.edges?.map(item => {
-    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      social_links = {
-        instagram: item?.node?.frontmatter?.instagram,
-        facebook: item?.node?.frontmatter?.facebook,
-        tiktok: item?.node?.frontmatter?.tiktok,
-        twitter: item?.node?.frontmatter?.twitter,
-      }
-    }
+  let product_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
-      product_Data = item?.node?.frontmatter?.products
+      return item?.node
     }
   })
+  let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
+      return item?.node
+    }
+  })
+
   return (
-    <Layout socialLinks={social_links}>
+    <Layout socialLinks={social_links?.node?.frontmatter}>
       <Popup
         open={open}
         opened={() => {
@@ -38,7 +35,11 @@ function Products({ data }) {
             opened={opened => {
               setOpen(opened)
             }}
-            data={product_Data ? product_Data : productData?.products}
+            data={
+              product_Data?.node?.frontmatter?.products
+                ? product_Data?.node?.frontmatter?.products
+                : productData?.products
+            }
           />
         </div>
       </div>

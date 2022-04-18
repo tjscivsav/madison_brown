@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import useWindowSize from "../../hooks/useWindowSize"
 import { graphql } from "gatsby"
+import _ from "lodash"
 
 function Contact({ data }) {
   const { width, height } = useWindowSize()
@@ -96,22 +97,13 @@ function Contact({ data }) {
     setEmail("")
   }
   let social_links
-  let email_details
-  data?.allMarkdownRemark?.edges?.map(item => {
-    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      social_links = {
-        instagram: item?.node?.frontmatter?.instagram,
-        facebook: item?.node?.frontmatter?.facebook,
-        tiktok: item?.node?.frontmatter?.tiktok,
-        twitter: item?.node?.frontmatter?.twitter,
-      }
-    }
+  let email_details = _.find(data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.id === "5a5951ab-e27d-5f9e-849d-af5c56b9b481") {
-      email_details = item?.node?.frontmatter?.email
+      return item?.node
     }
   })
   return (
-    <Layout socialLinks={social_links}>
+    <Layout socialLinks={social_links?.node?.frontmatter}>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -171,10 +163,10 @@ function Contact({ data }) {
                 >
                   <div className={contactStyle.detail_section}>
                     <h3>Contact Us</h3>
-                    {email_details?.map((item, i) =>
+                    {email_details?.node?.frontmatter?.email?.map((item, i) =>
                       item?.email_id ? (
                         <>
-                          <div className="d-flex align-items-center ">
+                          <div key={i} className="d-flex align-items-center ">
                             <img
                               width={55}
                               height={45}

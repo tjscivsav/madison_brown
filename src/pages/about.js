@@ -4,38 +4,35 @@ import PageTitle from "../components/PageTitle"
 import * as AboutStyle from "../../styles/about.module.css"
 import productData from "../../site/data/products.json"
 import { graphql } from "gatsby"
+import _ from "lodash"
 
 function About({ data }) {
-  let about_Data
-  let social_links
-  let product_Data
-  data?.allMarkdownRemark?.edges?.map(item => {
-    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
-      return (social_links = {
-        instagram: item?.node?.frontmatter?.instagram,
-        facebook: item?.node?.frontmatter?.facebook,
-        tiktok: item?.node?.frontmatter?.tiktok,
-        twitter: item?.node?.frontmatter?.twitter,
-      })
-    }
+  let about_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.id === "fe6569da-ac62-51a7-be99-f8decd490ca4") {
-      return (about_Data = {
-        para1: item?.node?.frontmatter?.para1,
-        para2: item?.node?.frontmatter?.para2,
-      })
-    }
-    if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
-      return (product_Data = item?.node?.frontmatter)
+      return item?.node
     }
   })
-  let product_img = product_Data ? product_Data : productData
+  let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
+      return item?.node
+    }
+  })
+  let product_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
+      return item?.node
+    }
+  })
+
+  let product_img = product_Data?.node?.frontmatter
+    ? product_Data?.node?.frontmatter
+    : productData
   return (
-    <Layout socialLinks={social_links}>
+    <Layout socialLinks={social_links?.node?.frontmatter}>
       <PageTitle title="About us" />
       <div className={`container-fluid  ${AboutStyle.about_content}`}>
         <p className={AboutStyle.para}>
-          {about_Data?.para1
-            ? about_Data?.para1
+          {about_Data?.node?.frontmatter?.para1
+            ? about_Data?.node?.frontmatter?.para1
             : `  Ice cream can mean a lot of different things but at Madison Brown it
           stands for family, friends, and community. Over the years our family
           has enjoyed countless ice cream trips which still serve as some of our
@@ -57,8 +54,8 @@ function About({ data }) {
           </ul>
         </div>
         <p className={AboutStyle.para2}>
-          {about_Data?.para2
-            ? about_Data?.para2
+          {about_Data?.node?.frontmatter?.para2
+            ? about_Data?.node?.frontmatter?.para2
             : `From there we began giving it to our friends and community and
           realized that not only could we create our own happiness, we could
           share it. We knew that this was how we would spread joy, create
