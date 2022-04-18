@@ -10,65 +10,65 @@ import Poster from "../components/Poster"
 import SectionFive from "../components/SectionFive.js"
 import productData from "../../site/data/products.json"
 import Popup from "../components/Popup"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
-export const Index_Data = graphql`
-  query IndexData {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            instagram
-            facebook
-            tiktok
-            twitter
-            bg_img
-            desc
-            front_img
-            seoTitle
-            title
-            para1
-            para2
-            poster_title
-            products {
-              btn_color
+function Home() {
+  const md_Data = useStaticQuery(graphql`
+    query md_Data {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              instagram
+              facebook
+              tiktok
+              twitter
+              bg_img
               desc
-              id
-              img
+              front_img
+              seoTitle
               title
-              frame
-            }
-            shops {
-              img
-              location
-              upcoming
+              para1
+              para2
+              poster_title
+              products {
+                btn_color
+                desc
+                id
+                img
+                title
+                frame
+              }
+              shops {
+                img
+                location
+                upcoming
+              }
             }
           }
         }
       }
     }
-  }
-`
-
-function Home({ data }) {
+  `)
+  console.log(md_Data)
   const [open, setOpen] = useState(false)
-  let product_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let product_Data = _.find(md_Data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92") {
       return item?.node
     }
   })
-  let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let social_links = _.find(md_Data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0") {
       return item?.node
     }
   })
-  let shop_list = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let shop_list = _.find(md_Data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.id === "20ac4b4e-cb02-5c68-b9b9-d8eeaf4a62cc") {
       return item?.node
     }
   })
-  let home_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let home_Data = _.find(md_Data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.id === "94cec0e5-f9e1-5864-928f-5ae9fd79d851") {
       return item?.node
     }
