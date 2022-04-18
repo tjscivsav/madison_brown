@@ -11,9 +11,7 @@ import _ from "lodash"
 
 export const contact_Data = graphql`
   query ContactData {
-    allMarkdownRemark(
-      filter: { id: { eq: "5a5951ab-e27d-5f9e-849d-af5c56b9b481" } }
-    ) {
+    allMarkdownRemark {
       edges {
         node {
           id
@@ -21,6 +19,31 @@ export const contact_Data = graphql`
             email {
               email_id
             }
+            facebook
+            front_img
+            instagram
+            para2
+            para1
+            poster_title
+            products {
+              btn_color
+              desc
+              frame
+              id
+              img
+              title
+            }
+            bg_img
+            desc
+            seoTitle
+            shops {
+              img
+              location
+              upcoming
+            }
+            tiktok
+            title
+            twitter
           }
         }
       }
@@ -115,9 +138,19 @@ function Contact({ data }) {
     e.target.reset()
     setEmail("")
   }
-  let social_links
+  let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (
+      item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0" ||
+      item?.node?.id === "f410484c-206d-58cc-8915-ba3ff0672103"
+    ) {
+      return item?.node
+    }
+  })
   let email_details = _.find(data?.allMarkdownRemark?.edges, function (item) {
-    if (item?.node?.id === "5a5951ab-e27d-5f9e-849d-af5c56b9b481") {
+    if (
+      item?.node?.id === "5a5951ab-e27d-5f9e-849d-af5c56b9b481" ||
+      item?.node?.id === "cb7373d6-bbf2-54ef-a056-32ac51cf5dee"
+    ) {
       return item?.node
     }
   })
