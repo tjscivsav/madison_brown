@@ -1,6 +1,6 @@
 ---
 seoTitle: Home
-title: Some things are meant for Sharing
+title: "Some things "
 desc: "Ice cream can mean a lot of different things but at Madison Brown it
   stands for family, friends, and community. Over the years our family has
   enjoyed countless ice cream trips which still serve as some of our fondest
