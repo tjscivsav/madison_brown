@@ -9,6 +9,25 @@ import useWindowSize from "../../hooks/useWindowSize"
 import { graphql } from "gatsby"
 import _ from "lodash"
 
+export const contact_Data = graphql`
+  query ContactData {
+    allMarkdownRemark(
+      filter: { id: { eq: "5a5951ab-e27d-5f9e-849d-af5c56b9b481" } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            email {
+              email_id
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 function Contact({ data }) {
   const { width, height } = useWindowSize()
   let x = width / height
@@ -280,22 +299,3 @@ function Contact({ data }) {
 }
 
 export default Contact
-
-export const contact_Data = graphql`
-  query ContactData {
-    allMarkdownRemark(
-      filter: { id: { eq: "5a5951ab-e27d-5f9e-849d-af5c56b9b481" } }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            email {
-              email_id
-            }
-          }
-        }
-      }
-    }
-  }
-`
