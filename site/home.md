@@ -6,6 +6,6 @@ desc: Ice cream can mean a lot of different things but at Madison Brown it
   enjoyed countless ice cream trips which still serve as some of our fondest
   memories, and now we’re bringing our happiness to you.
 bg_img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597877/Madison%20Brown/blue_sqaure_img_rhjdxs.png
-front_img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597879/Madison%20Brown/icecream_tvoxh4.png
+front_img: /src/images/uploads/mb-ice-cream-_van.png
 poster_title: "FIND OUR ICE "
 ---
