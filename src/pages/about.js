@@ -6,6 +6,44 @@ import productData from "../../site/data/products.json"
 import { graphql } from "gatsby"
 import _ from "lodash"
 
+export const about_Data = graphql`
+  query AboutData {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            instagram
+            facebook
+            tiktok
+            twitter
+            bg_img
+            desc
+            front_img
+            seoTitle
+            title
+            para1
+            para2
+            poster_title
+            products {
+              btn_color
+              desc
+              id
+              img
+              title
+            }
+            shops {
+              img
+              location
+              upcoming
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 function About({ data }) {
   let about_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.id === "fe6569da-ac62-51a7-be99-f8decd490ca4") {
@@ -72,41 +110,3 @@ function About({ data }) {
 }
 
 export default About
-
-export const about_Data = graphql`
-  query AboutData {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            instagram
-            facebook
-            tiktok
-            twitter
-            bg_img
-            desc
-            front_img
-            seoTitle
-            title
-            para1
-            para2
-            poster_title
-            products {
-              btn_color
-              desc
-              id
-              img
-              title
-            }
-            shops {
-              img
-              location
-              upcoming
-            }
-          }
-        }
-      }
-    }
-  }
-`

@@ -12,6 +12,45 @@ import productData from "../../site/data/products.json"
 import Popup from "../components/Popup"
 import { graphql } from "gatsby"
 
+export const Index_Data = graphql`
+  query IndexData {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            instagram
+            facebook
+            tiktok
+            twitter
+            bg_img
+            desc
+            front_img
+            seoTitle
+            title
+            para1
+            para2
+            poster_title
+            products {
+              btn_color
+              desc
+              id
+              img
+              title
+              frame
+            }
+            shops {
+              img
+              location
+              upcoming
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 function Home({ data }) {
   const [open, setOpen] = useState(false)
   let product_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
@@ -79,42 +118,3 @@ function Home({ data }) {
 }
 
 export default Home
-
-export const Index_Data = graphql`
-  query IndexData {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            instagram
-            facebook
-            tiktok
-            twitter
-            bg_img
-            desc
-            front_img
-            seoTitle
-            title
-            para1
-            para2
-            poster_title
-            products {
-              btn_color
-              desc
-              id
-              img
-              title
-              frame
-            }
-            shops {
-              img
-              location
-              upcoming
-            }
-          }
-        }
-      }
-    }
-  }
-`

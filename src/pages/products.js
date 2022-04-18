@@ -7,6 +7,45 @@ import Popup from "../components/Popup"
 import { graphql } from "gatsby"
 import _ from "lodash"
 
+export const products_Data = graphql`
+  query productsData {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            instagram
+            facebook
+            tiktok
+            twitter
+            bg_img
+            desc
+            front_img
+            seoTitle
+            title
+            para1
+            para2
+            poster_title
+            products {
+              btn_color
+              desc
+              id
+              img
+              title
+              frame
+            }
+            shops {
+              img
+              location
+              upcoming
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 function Products({ data }) {
   const [open, setOpen] = useState(false)
   let product_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
@@ -48,42 +87,3 @@ function Products({ data }) {
 }
 
 export default Products
-
-export const products_Data = graphql`
-  query productsData {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            instagram
-            facebook
-            tiktok
-            twitter
-            bg_img
-            desc
-            front_img
-            seoTitle
-            title
-            para1
-            para2
-            poster_title
-            products {
-              btn_color
-              desc
-              id
-              img
-              title
-              frame
-            }
-            shops {
-              img
-              location
-              upcoming
-            }
-          }
-        }
-      }
-    }
-  }
-`
