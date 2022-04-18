@@ -54,7 +54,6 @@ function Home() {
       }
     }
   `)
-  console.log(md_Data)
   const [open, setOpen] = useState(false)
   let product_Data = _.find(md_Data?.allMarkdownRemark?.edges, function (item) {
     if (
