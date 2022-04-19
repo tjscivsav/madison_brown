@@ -9,6 +9,7 @@ import { graphql, Link } from "gatsby"
 import React, { useState } from "react"
 import Links from "../../../site/data.json"
 import * as HeaderStyle from "../../../styles/header.module.css"
+import logo from "../../../src/images/logo.svg"
 
 function Header({ social_links }) {
   const [toggle, setToggle] = useState(false)
@@ -18,7 +19,7 @@ function Header({ social_links }) {
       <div className={`container-fluid ${HeaderStyle.lg_navbar}`}>
         <Link to="/">
           <img
-            src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
+            src={logo}
             alt="nav_logo"
             width={164.42}
             height={78.92}
