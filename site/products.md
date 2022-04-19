@@ -35,13 +35,14 @@ products:
     title: Chocolate
     id: MB_ice_cream_CHOC
     frame: https://res.cloudinary.com/namodda/image/upload/v1650394393/Ellipse_15_qi43gj.svg
-  - img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1648547323/Madison%20Brown/products/mint_whfefo.png
+  - img: https://res.cloudinary.com/namodda/image/upload/v1650394578/MB_ice_cream__CCCD_5_kmi6ds.svg
     title: Mint Chocolate Chip
     desc: This classic take on Mint Chip blends two unique peppermint extracts for a
       spicy and refreshingly cool base ice cream with tons of bittersweet dark
       chocolate flakes.
     btn_color: mint
     id: MB_ice_cream_MCC
+    frame: https://res.cloudinary.com/namodda/image/upload/v1650394574/Ellipse_16_bw1awh.svg
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394003/MB_ice_cream__CCCD_fnycvo.svg
     title: Chocolate Chip Cookie Dough
     desc: Our cookie dough starts with our super premium vanilla and adds chunks of
