@@ -9,6 +9,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 import SignupForm from "../SignupForm"
+import logo from "../../../src/images/footer_logo.svg
 
 function Footer() {
   return (
@@ -18,7 +19,7 @@ function Footer() {
           <div id={footerStyle.first_child} className="col-lg-5 col-md-12">
             <img
               className="mb-4 "
-              src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
+              src={logo}
               alt="nav_logo"
             />
             <p className={footerStyle.text}>Get the scoop!</p>
