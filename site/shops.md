@@ -10,6 +10,6 @@ shops:
     img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647867194/Madison%20Brown/red_cross_tm1qgj.png
     location: TEXAS
   - upcoming: Coming Soon
-    location: PENNSYLVANIA
+    location: PENNSYLVANIA.
     img: https://res.cloudinary.com/dq4fvmcte/image/upload/v1647867195/Madison%20Brown/doctors_y0aziq.png
 ---
