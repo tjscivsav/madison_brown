@@ -9,7 +9,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 import SignupForm from "../SignupForm"
-import footer_logo from "../../../src/images/footer_logo.svg
+import footer_logo from "../../../src/images/footer_logo.svg"
 
 function Footer() {
   return (
