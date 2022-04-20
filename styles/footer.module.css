@@ -2,7 +2,7 @@
   background-color: #4a9560;
   height: 577px;
   width: 100%;
-  border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1648200724/Madison%20Brown/footer_frame_i4vvvt.png")
+  border-image: url("https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449040/Madison%20Brown/footer_frame_sjpjdm.png")
     20 fill;
   border-image-width: 10px;
   border-image-outset: 5px;
@@ -185,7 +185,7 @@
 @media screen and (max-width: 991px) {
   .footer {
     height: 95vh;
-    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
+    border-image: url("https://res.cloudinary.com/du0nuz3fi/image/upload/v1650452243/Madison%20Brown/footer_fram_mob_llpshe.png")
       90 fill;
     border-image-width: 70px;
   }

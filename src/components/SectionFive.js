@@ -11,7 +11,7 @@ function SectionFive({ opened }) {
             <div className={`col-lg-6 col-md-12 col-12 ${five.img_section}`}>
               <div>
                 <img
-                  src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648045018/Madison%20Brown/red_velvet_p0j16b.png"
+                  src="https://res.cloudinary.com/du0nuz3fi/image/upload/v1650448769/Madison%20Brown/product_img/MB_ice_cream_RVEL_inbpmd.png"
                   alt=""
                 />
               </div>
