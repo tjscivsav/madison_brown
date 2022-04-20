@@ -7,7 +7,7 @@ products:
       includes loads of red velvet cake pieces and is finished with a swirl of
       soft smooth cream cheese frosting.
     id: MB_ice_cream_RVEL
-    frame: https://res.cloudinary.com/namodda/image/upload/v1650394097/Ellipse_18_cxmjlw.svg
+    frame: https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449041/Madison%20Brown/red_frame_vbewlx.png
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394230/MB_ice_cream__CCCD_2_mipjmh.svg
     title: Vanilla
     desc: Our Vanilla Ice Cream is made with a Vanilla Extract three times stronger
@@ -15,7 +15,7 @@ products:
       custard to round the flavor of our flagship super premium ice cream.
     btn_color: vanilla
     id: MB_ice_cream_VAN
-    frame: https://res.cloudinary.com/namodda/image/upload/v1650394228/Ellipse_19_y5gvll.svg
+    frame: https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449040/Madison%20Brown/blue_frame_wab9ho.png
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394313/MB_ice_cream__CCCD_3_yejtyd.svg
     title: Cookies N’ Cream
     desc: Madison Brown Premium Cookies & Cream Ice Cream, we take our super premium
@@ -25,7 +25,7 @@ products:
       market.
     btn_color: cookie
     id: MB_ice_cream_CNC
-    frame: https://res.cloudinary.com/namodda/image/upload/v1650394309/Ellipse_17_ydwx2u.svg
+    frame: https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449550/Madison%20Brown/grey_frame_amsvns.png
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394397/MB_ice_cream__CCCD_4_yzr7mg.svg
     desc: Our Chocolate ice cream starts with a silky milk chocolate cocoa powder
       balanced with just the right bitterness and then we add a touch of dark
