@@ -1,5 +1,5 @@
 .bg_img {
-  background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649070252/Madison%20Brown/contact_frame_m2qohu.png");
+  background-image: url("https://res.cloudinary.com/du0nuz3fi/image/upload/v1650448810/Madison%20Brown/contact_frame_lytbch.png");
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -166,7 +166,7 @@
 @media screen and (max-width: 991px) {
   .bg_img {
     /* height: 150vh; */
-    background-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649144813/Madison%20Brown/contact_mobile_frame_wioxof.png");
+    background-image: url("https://res.cloudinary.com/du0nuz3fi/image/upload/v1650448810/Madison%20Brown/contact_mobile_frame_oiipb2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }

@@ -222,7 +222,7 @@ function Contact({ data }) {
                             <img
                               width={55}
                               height={45}
-                              src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648564411/Madison%20Brown/mail_icon_cfqkkv.png"
+                              src="https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449039/Madison%20Brown/main_icon_nii9ql.png"
                               alt=""
                             />
                             <a href={`mailto:${item?.email_id}`}>
@@ -236,7 +236,7 @@ function Contact({ data }) {
                             <img
                               width={55}
                               height={45}
-                              src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1648564411/Madison%20Brown/mail_icon_cfqkkv.png"
+                              src="https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449039/Madison%20Brown/main_icon_nii9ql.png"
                               alt=""
                             />
                             <a href="mailto:Marketing@madisonbrown.com">
