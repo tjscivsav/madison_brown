@@ -18,12 +18,7 @@ function Header({ social_links }) {
       {/* Desktop View*/}
       <div className={`container-fluid ${HeaderStyle.lg_navbar}`}>
         <Link to="/">
-          <img
-            src={logo}
-            alt="nav_logo"
-            width={164.42}
-            height={78.92}
-          />
+          <img src={logo} alt="nav_logo" width={164.42} height={78.92} />
         </Link>
         <ul>
           {Links?.navLink?.slice(0, 4).map((item, i) => (
@@ -85,12 +80,7 @@ function Header({ social_links }) {
           size="2x"
         />
         <Link className={HeaderStyle.mobile_nav_logo} to="/">
-          <img
-            src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
-            alt="nav_logo"
-            width={164.42}
-            height={78.92}
-          />
+          <img src={logo} alt="nav_logo" width={164.42} height={78.92} />
         </Link>
         <div
           className={
@@ -108,11 +98,8 @@ function Header({ social_links }) {
             size="2x"
           />
           <div className={HeaderStyle.mobile_navbar}>
-            <Link className={HeaderStyle.mobile_nav_logo} to="/home">
-              <img
-                src="https://res.cloudinary.com/dq4fvmcte/image/upload/v1647597876/Madison%20Brown/nav_logo_y5sdxn.png"
-                alt="nav_logo"
-              />
+            <Link className={HeaderStyle.mobile_nav_logo} to="/">
+              <img src={logo} alt="nav_logo" />
             </Link>
             <ul>
               {Links?.navLink?.slice(0, 4).map((item, i) => (
