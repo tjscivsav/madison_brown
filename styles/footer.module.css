@@ -2,8 +2,7 @@
   background-color: #4a9560;
   height: 577px;
   width: 100%;
-  border-image: url("https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449040/Madison%20Brown/footer_frame_sjpjdm.png")
-    20 fill;
+  border-image: url("../src/images/footer_frame.png") 20 fill;
   border-image-width: 10px;
   border-image-outset: 5px;
   position: absolute;
@@ -185,8 +184,7 @@
 @media screen and (max-width: 991px) {
   .footer {
     height: 95vh;
-    border-image: url("https://res.cloudinary.com/du0nuz3fi/image/upload/v1650452243/Madison%20Brown/footer_fram_mob_llpshe.png")
-      90 fill;
+    border-image: url("../src/images/footer_fram_mob.png") 90 fill;
     border-image-width: 70px;
   }
   .text {
@@ -226,8 +224,7 @@
 @media screen and (max-width: 800px) {
   .footer {
     height: 95vh;
-    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
-      90 fill;
+    border-image: url("../src/images/footer_fram_mob.png") 90 fill;
     border-image-width: 70px;
   }
   .content {
@@ -277,8 +274,7 @@
 @media screen and (max-width: 700px) {
   .footer {
     height: 90vh;
-    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
-      90 fill;
+    border-image: url("../src/images//footer_fram_mob.png") 90 fill;
     border-image-width: 70px;
   }
   .content {
@@ -296,8 +292,7 @@
 @media screen and (max-width: 600px) {
   .footer {
     height: 84vh;
-    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
-      90 fill;
+    border-image: url("../src/images/footer_fram_mob.png") 90 fill;
     border-image-width: 70px;
   }
   .content {
@@ -331,8 +326,7 @@
 @media screen and (max-width: 500px) {
   .footer {
     height: 77vh;
-    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
-      70 fill;
+    border-image: url("../src/images/footer_fram_mob.png") 70 fill;
     border-image-width: 50px;
   }
   .content {
@@ -377,8 +371,7 @@
 @media screen and (max-width: 450px) {
   .footer {
     height: 75vh;
-    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
-      60 fill;
+    border-image: url("../src/images/footer_fram_mob.png") 60 fill;
     border-image-width: 40px;
   }
   .content {
@@ -429,8 +422,7 @@
 
 @media screen and (max-width: 350px) {
   .footer {
-    border-image: url("https://res.cloudinary.com/dq4fvmcte/image/upload/v1649088595/Madison%20Brown/mob_footer_jgzfff.png")
-      60 fill;
+    border-image: url("../src/images/footer_fram_mob.png") 60 fill;
     border-image-width: 40px;
   }
   .rights {
