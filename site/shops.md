@@ -1,4 +1,5 @@
 ---
+templateKey: shops
 shops:
   - location: TEXAS
     upcoming: Coming Soon

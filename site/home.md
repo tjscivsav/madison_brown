@@ -1,4 +1,5 @@
 ---
+templateKey: home
 seoTitle: Home
 title: "Some things are meant for sharing "
 desc: Ice cream can mean a lot of different things but at Madison Brown it
@@ -8,4 +9,6 @@ desc: Ice cream can mean a lot of different things but at Madison Brown it
 bg_img: https://res.cloudinary.com/namodda/image/upload/v1650393753/Group_78_cleaam.svg
 front_img: https://res.cloudinary.com/namodda/image/upload/v1650393754/MB_ice_cream__CHOC_adnunk.svg
 poster_title: FIND OUR ICE CREAM
+poster_btn_name: Available now at Walmart.com
+poster_btn_link: FIND OUR ICE CREAM
 ---

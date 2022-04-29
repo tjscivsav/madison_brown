@@ -14,6 +14,7 @@ export const products_Data = graphql`
         node {
           id
           frontmatter {
+            templateKey
             instagram
             facebook
             tiktok
@@ -49,18 +50,12 @@ export const products_Data = graphql`
 function Products({ data }) {
   const [open, setOpen] = useState(false)
   let product_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
-    if (
-      item?.node?.id === "0f637dd7-58e9-5009-9e24-81e116539f92" ||
-      item?.node?.id === "e628fe81-6e8e-535b-8955-45804124fc88"
-    ) {
+    if (item?.node?.frontmatter?.templateKey === "products") {
       return item?.node
     }
   })
   let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
-    if (
-      item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0" ||
-      item?.node?.id === "f410484c-206d-58cc-8915-ba3ff0672103"
-    ) {
+    if (item?.node?.frontmatter?.templateKey === "socialLinks") {
       return item?.node
     }
   })

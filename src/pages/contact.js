@@ -16,6 +16,7 @@ export const contact_Data = graphql`
         node {
           id
           frontmatter {
+            templateKey
             email {
               email_id
             }
@@ -139,18 +140,12 @@ function Contact({ data }) {
     setEmail("")
   }
   let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
-    if (
-      item?.node?.id === "c3c0c32f-9caf-5006-a84f-5db71c5fe6b0" ||
-      item?.node?.id === "f410484c-206d-58cc-8915-ba3ff0672103"
-    ) {
+    if (item?.node?.frontmatter?.templateKey === "socialLinks") {
       return item?.node
     }
   })
   let email_details = _.find(data?.allMarkdownRemark?.edges, function (item) {
-    if (
-      item?.node?.id === "5a5951ab-e27d-5f9e-849d-af5c56b9b481" ||
-      item?.node?.id === "cb7373d6-bbf2-54ef-a056-32ac51cf5dee"
-    ) {
+    if (item?.node?.frontmatter?.templateKey === "contact") {
       return item?.node
     }
   })

@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .bg_img h2 {
@@ -18,9 +19,41 @@
   text-shadow: 5px 5px #ffb0bf;
 }
 
+.bg_img a {
+  margin-top: 25px;
+  width: 380px;
+  text-decoration: none;
+  border-radius: 9px;
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 53px;
+  text-align: center;
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  color: #e41e2d;
+  background: #efdfb4;
+  border: 1px solid #efdfb4;
+  box-shadow: 8px 8px #e41e2d;
+  -webkit-filter: drop-shadow(-6px 10px 15px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(-6px 10px 15px rgba(0, 0, 0, 0.35));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_img a:hover {
+  color: #efdfb4;
+  background: #e41e2d;
+  border: 1px solid #efdfb4;
+  box-shadow: 8px 8px #efdfb4;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+}
+
 @media screen and (max-width: 1600px) {
   .bg_img {
-    height: 250px;
+    height: 350px;
   }
 
   .bg_img h2 {

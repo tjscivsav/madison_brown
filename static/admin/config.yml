@@ -40,6 +40,8 @@ collections:
           - { label: Backgroud Image, name: bg_img, widget: image }
           - { label: Ice cream Image, name: front_img, widget: image }
           - { label: Poster Title, name: poster_title, widget: string }
+          - { label: Poster Button Name, name: poster_btn_name, widget: string }
+          - { label: Poster Button Link, name: poster_btn_link, widget: string }
   - name: about
     label: About Page
     files:
