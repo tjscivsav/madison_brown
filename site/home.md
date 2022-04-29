@@ -10,4 +10,5 @@ bg_img: https://res.cloudinary.com/namodda/image/upload/v1650393753/Group_78_cle
 front_img: https://res.cloudinary.com/namodda/image/upload/v1650393754/MB_ice_cream__CHOC_adnunk.svg
 poster_title: FIND OUR ICE CREAM
 poster_btn_name: Available now at Walmart.com
+poster_btn_link: ""
 ---
