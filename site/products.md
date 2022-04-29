@@ -1,5 +1,5 @@
 ---
-templateKey: prducts
+templateKey: products
 products:
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394101/MB_ice_cream__CCCD_1_dzftca.svg
     title: Red Velvet
