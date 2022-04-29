@@ -22,12 +22,12 @@
 .bg_img a {
   margin-top: 25px;
   width: 380px;
+  font-size: 20px;
   text-decoration: none;
   border-radius: 9px;
   font-family: "Cooper Black";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
   line-height: 53px;
   text-align: center;
   -webkit-transform: skewX(-10deg);
@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 840px) {
   .bg_img {
-    height: 200px;
+    height: 280px;
   }
   .bg_img h2 {
     font-size: 48px;
@@ -93,40 +93,60 @@
 
 @media screen and (max-width: 710px) {
   .bg_img {
-    height: 180px;
+    height: 250px;
   }
   .bg_img h2 {
     font-size: 40px;
   }
-
-  @media screen and (max-width: 610px) {
-    .bg_img {
-      height: 150px;
-    }
-    .bg_img h2 {
-      font-size: 35px;
-    }
+  .bg_img a {
+    margin-top: 25px;
+    width: 350px;
+    font-size: 18px;
   }
+}
+@media screen and (max-width: 610px) {
+  .bg_img {
+    height: 200px;
+  }
+  .bg_img h2 {
+    font-size: 35px;
+    line-height: 25px;
+  }
+  .bg_img a {
+    margin-top: 25px;
+    width: 320px;
+    font-size: 18px;
+  }
+}
 
-  @media screen and (max-width: 480px) {
-    .bg_img {
-      height: 150px;
-    }
-    .bg_img {
-      background-size: cover;
-    }
-    .bg_img h2 {
-      font-size: 28px;
-    }
+@media screen and (max-width: 480px) {
+  .bg_img {
+    height: 200px;
+  }
+  .bg_img {
+    background-size: cover;
+  }
+  .bg_img h2 {
+    font-size: 28px;
+  }
+  .bg_img a {
+    margin-top: 25px;
+    width: 180px;
+    line-height: 25px;
+    padding: 10px 0;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .bg_img {
-    height: 130px;
-  }
-
   .bg_img h2 {
     font-size: 25px;
+  }
+  .bg_img a {
+    margin-top: 25px;
+    width: 180px;
+    line-height: 25px;
+    padding: 10px 0;
+    font-size: 15px;
   }
 }
