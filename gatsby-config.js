@@ -50,5 +50,12 @@ module.exports = {
       },
       __key: "content",
     },
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token:
+          "IGQVJYVGFHSFMyZAUpJMklQVU1vNkFVeDdQLXljX0JOa21abHNDU25RcmE5SFk1UTRyNTlmanR1VHBZAY2haa2JLSURyc3N0UzlSdG9PME8zempFYnRxTFI2b3dqc0h5dW1FcndQLVJzcUJ5U3dsZAFVZANgZDZD",
+      },
+    },
   ],
 }

@@ -36,6 +36,8 @@
     "gatsby-plugin-sharp": "^4.11.0",
     "gatsby-source-filesystem": "^4.11.1",
     "gatsby-source-graphql": "^4.11.1",
+    "gatsby-source-instagram": "^0.9.0",
+    "gatsby-source-instagram-all": "^5.2.1",
     "gatsby-transformer-json": "^4.11.0",
     "gatsby-transformer-remark": "^5.12.1",
     "gatsby-transformer-sharp": "^4.11.0",

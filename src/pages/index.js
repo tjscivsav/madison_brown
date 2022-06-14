@@ -11,6 +11,7 @@ import SectionFive from "../components/SectionFive.js"
 import productData from "../../site/data/products.json"
 import Popup from "../components/Popup"
 import { graphql, useStaticQuery } from "gatsby"
+import InstaFeed from "../components/InstaFeed"
 
 function Home() {
   const md_Data = useStaticQuery(graphql`
@@ -121,6 +122,8 @@ function Home() {
           setOpen(opened)
         }}
       />
+
+      <InstaFeed />
     </Layout>
   )
 }
