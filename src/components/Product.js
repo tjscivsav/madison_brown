@@ -17,7 +17,7 @@ function Product({ opened, data }) {
             <div className={`${productStyle.content}`}>
               <h5>{item.title}</h5>
               <p>{item.desc}</p>
-              {/* <button onClick={() => opened(true)}>BUY</button> */}
+              <button onClick={() => opened(true)}>Learn More</button>
             </div>
           </div>
         )
