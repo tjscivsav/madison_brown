@@ -61,4 +61,7 @@ function InstaFeed() {
   )
 }
 
+const InstaContainer = () => {
+}
+
 export default InstaFeed
