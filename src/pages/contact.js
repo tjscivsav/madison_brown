@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 import Layout from "../components/Layout/Layout"
 import PageTitle from "../components/PageTitle"
 import * as contactStyle from "../../styles/contact.module.css"
@@ -8,6 +8,8 @@ import "react-toastify/dist/ReactToastify.css"
 import useWindowSize from "../../hooks/useWindowSize"
 import { graphql } from "gatsby"
 import _ from "lodash"
+
+import emailjs from '@emailjs/browser'
 
 export const contact_Data = graphql`
   query ContactData {
@@ -112,19 +114,38 @@ function Contact({ data }) {
       bg_img_height = 90
   }
   const [email, setEmail] = useState("")
+
+  const form = useRef()
+
   const handleSubmit = async e => {
     e.preventDefault()
     const result = await addToMailchimp(email)
     if (result.result === "success") {
-      toast(result.msg, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      })
+      emailjs.sendForm("service_0m3e4dm", "template_t0b1cdf", form.current, "-XAZrfXhu70OFhzp7")
+      .then((result) => {
+        toast("We will Contact you soon", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        })
+
+
+      }, (error) => {
+        toast("Error sending message", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        })
+
+      });
     } else {
       toast(`${result.msg}`, {
         position: "top-right",
@@ -176,6 +197,7 @@ function Contact({ data }) {
                   style={{ height: `${form_height}vh` }}
                   onSubmit={e => handleSubmit(e)}
                   className={contactStyle.form_Section}
+                  ref={form}
                 >
                   <div className={contactStyle.form_value}>
                     <h3>Send us a message!</h3>
@@ -183,17 +205,23 @@ function Contact({ data }) {
                       className={contactStyle.input}
                       type="text"
                       placeholder="FULL NAME"
+                      name="from_name"
+                      required
                     />
                     <input
                       className={contactStyle.input}
                       type="text"
                       onChange={e => setEmail(e.target.value)}
                       placeholder="EMAIL"
+                      name="reply_to"
+                      required
                     />
                     <textarea
                       className={contactStyle.textarea}
                       type="text"
                       placeholder="MESSAGE"
+                      name="message"
+                      required
                     />
                     <input
                       className={contactStyle.btn}
