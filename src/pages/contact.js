@@ -10,10 +10,11 @@ import { graphql } from "gatsby"
 import _ from "lodash"
 
 import emailjs from '@emailjs/browser'
+import Seo from "../components/Seo"
 
 export const contact_Data = graphql`
   query ContactData {
-    allMarkdownRemark {
+    contact:allMarkdownRemark {
       edges {
         node {
           id
@@ -47,6 +48,17 @@ export const contact_Data = graphql`
             tiktok
             title
             twitter
+          }
+        }
+      }
+    }
+    seo: allMarkdownRemark (filter: {fileAbsolutePath: {glob: "**/contact.md"}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            seoTitle
+            seoDescription
           }
         }
       }
@@ -160,17 +172,23 @@ function Contact({ data }) {
     e.target.reset()
     setEmail("")
   }
-  let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let social_links = _.find(data?.contact?.edges, function (item) {
     if (item?.node?.frontmatter?.templateKey === "socialLinks") {
       return item?.node
     }
   })
-  let email_details = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let email_details = _.find(data?.contact?.edges, function (item) {
     if (item?.node?.frontmatter?.templateKey === "contact") {
       return item?.node
     }
   })
+  const seoData = data.seo.edges[0].node.frontmatter
   return (
+    <>
+      <Seo
+        title={seoData?.title ? seoData.title : "Contact"}
+        description={seoData?.description ? seoData.description : "Contact Us"}
+      />
     <Layout socialLinks={social_links?.node?.frontmatter}>
       <ToastContainer
         position="top-right"
@@ -351,6 +369,7 @@ function Contact({ data }) {
         </div>
       </>
     </Layout>
+    </>
   )
 }
 

@@ -12,11 +12,12 @@ import productData from "../../site/data/products.json"
 import Popup from "../components/Popup"
 import { graphql, useStaticQuery } from "gatsby"
 import InstaFeed from "../components/InstaFeed"
+import Seo from "../components/Seo"
 
 function Home() {
-  const md_Data = useStaticQuery(graphql`
+  let md_Data = useStaticQuery(graphql`
     query md_Data {
-      allMarkdownRemark {
+      home: allMarkdownRemark {
         edges {
           node {
             id
@@ -56,9 +57,25 @@ function Home() {
           }
         }
       }
+      seo: allMarkdownRemark (filter: {fileAbsolutePath: {glob: "**/home.md"}}) {
+          edges {
+            node {
+              id
+              frontmatter {
+                seoTitle
+                seoDescription
+              }
+            }
+          }
+        }
     }
   `)
   const [open, setOpen] = useState(false)
+  
+  const SEOData = md_Data.seo.edges[0].node.frontmatter
+
+  md_Data = {allMarkdownRemark: md_Data.home}
+  
   let product_Data = _.find(md_Data?.allMarkdownRemark?.edges, function (item) {
     if (item?.node?.frontmatter?.templateKey === "products") {
       return item?.node
@@ -90,41 +107,47 @@ function Home() {
     poster_btn_name: home_Data?.node?.frontmatter?.poster_btn_name,
     poster_btn_link: home_Data?.node?.frontmatter?.poster_btn_link,
   }
-  console.log(home_Data)
+
 
   return (
-    <Layout socialLinks={social_links?.node?.frontmatter}>
-      <Popup
-        open={open}
-        opened={() => {
-          setOpen(!open)
-        }}
+    <>
+      <Seo
+        title={SEOData?.seoTitle ? SEOData.seoTitle : "Home"}
+        description={SEOData?.seoDescription ? SEOData.seoDescription : "Madison Brown Home Page"}
       />
-      <SectionOne data={sectionOneData} />
-      <SectionTwo />
-      <SectionThree
-        data={
-          product_Data?.node?.frontmatter?.products
-            ? product_Data?.node?.frontmatter?.products
-            : productData?.products
-        }
-      />
-      <Poster data={poster_Data} />
-      {/* <SlickSlider
-        data={
-          shop_list?.node?.frontmatter?.shops
-            ? shop_list?.node?.frontmatter?.shops
-            : shopsData?.shops
-        }
-      /> */}
-      <SectionFive
-        opened={opened => {
-          setOpen(opened)
-        }}
-      />
+      <Layout socialLinks={social_links?.node?.frontmatter}>
+        <Popup
+          open={open}
+          opened={() => {
+            setOpen(!open)
+          }}
+        />
+        <SectionOne data={sectionOneData} />
+        <SectionTwo />
+        <SectionThree
+          data={
+            product_Data?.node?.frontmatter?.products
+              ? product_Data?.node?.frontmatter?.products
+              : productData?.products
+          }
+        />
+        <Poster data={poster_Data} />
+        {/* <SlickSlider
+          data={
+            shop_list?.node?.frontmatter?.shops
+              ? shop_list?.node?.frontmatter?.shops
+              : shopsData?.shops
+          }
+        /> */}
+        <SectionFive
+          opened={opened => {
+            setOpen(opened)
+          }}
+        />
 
-      <InstaFeed />
-    </Layout>
+        <InstaFeed />
+      </Layout>
+    </>
   )
 }
 

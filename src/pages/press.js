@@ -4,17 +4,24 @@ import Layout from "../components/Layout/Layout"
 import PageTitle from "../components/PageTitle"
 import local_data from "../../site/data/press.json"
 import { graphql } from "gatsby"
+import Seo from "../components/Seo"
 function press({ data }) {
   return (
-    <Layout socialLinks={data?.allMarkdownRemark?.edges}>
-      <PageTitle title="Press" />
-      <div
-        style={{ paddingBottom: "8rem" }}
-        className="container-fluid bg_sandal"
-      >
-        <ImageBox data={local_data?.press} />
-      </div>
-    </Layout>
+    <>
+      <Seo
+        title="Press"
+        description="Press"
+      />
+      <Layout socialLinks={data?.allMarkdownRemark?.edges}>
+        <PageTitle title="Press" />
+        <div
+          style={{ paddingBottom: "8rem" }}
+          className="container-fluid bg_sandal"
+        >
+          <ImageBox data={local_data?.press} />
+        </div>
+      </Layout>
+    </>
   )
 }
 

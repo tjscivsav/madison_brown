@@ -6,6 +6,7 @@ import productData from "../../site/data/products.json"
 import Popup from "../components/Popup"
 import { graphql } from "gatsby"
 import _ from "lodash"
+import Seo from "../components/Seo"
 
 export const products_Data = graphql`
   query productsData {
@@ -61,29 +62,35 @@ function Products({ data }) {
   })
 
   return (
-    <Layout socialLinks={social_links?.node?.frontmatter}>
-      <Popup
-        open={open}
-        opened={() => {
-          setOpen(!open)
-        }}
+    <>
+      <Seo
+        title="Products"
+        description="Products"
       />
-      <PageTitle title="Products" />
-      <div className={`container-fluid  bg_sandal`}>
-        <div className="row">
-          <Product
-            opened={opened => {
-              setOpen(opened)
-            }}
-            data={
-              product_Data?.node?.frontmatter?.products
-                ? product_Data?.node?.frontmatter?.products
-                : productData?.products
-            }
-          />
+      <Layout socialLinks={social_links?.node?.frontmatter}>
+        <Popup
+          open={open}
+          opened={() => {
+            setOpen(!open)
+          }}
+        />
+        <PageTitle title="Products" />
+        <div className={`container-fluid  bg_sandal`}>
+          <div className="row">
+            <Product
+              opened={opened => {
+                setOpen(opened)
+              }}
+              data={
+                product_Data?.node?.frontmatter?.products
+                  ? product_Data?.node?.frontmatter?.products
+                  : productData?.products
+              }
+            />
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 
