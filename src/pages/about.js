@@ -5,10 +5,11 @@ import * as AboutStyle from "../../styles/about.module.css"
 import productData from "../../site/data/products.json"
 import { graphql } from "gatsby"
 import _ from "lodash"
+import Seo from "../components/Seo"
 
 export const about_Data = graphql`
   query AboutData {
-    allMarkdownRemark {
+    about: allMarkdownRemark {
       edges {
         node {
           id
@@ -42,30 +43,48 @@ export const about_Data = graphql`
         }
       }
     }
+    seo: allMarkdownRemark (filter: {fileAbsolutePath: {glob: "**/about.md"}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            seoTitle
+            seoDescription
+          }
+        }
+      }
+    }
   }
 `
 
 function About({ data }) {
-  let about_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let about_Data = _.find(data?.about?.edges, function (item) {
     if (item?.node?.frontmatter?.templateKey === "about") {
       return item?.node
     }
   })
-  let social_links = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let social_links = _.find(data?.about?.edges, function (item) {
     if (item?.node?.frontmatter?.templateKey === "socialLinks") {
       return item?.node
     }
   })
-  let product_Data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+  let product_Data = _.find(data?.about?.edges, function (item) {
     if (item?.node?.frontmatter?.templateKey === "products") {
       return item?.node
     }
   })
 
+  const seoData = data.seo.edges[0].node.frontmatter
+
   let product_img = product_Data?.node?.frontmatter
     ? product_Data?.node?.frontmatter
     : productData
   return (
+    <>
+      <Seo
+        title={seoData?.title ? seoData.title : "About"}
+        description={seoData?.description ? seoData.description : "About Us"}
+      />
     <Layout socialLinks={social_links?.node?.frontmatter}>
       <PageTitle title="About us" />
       <div className={`container-fluid  ${AboutStyle.about_content}`}>
@@ -107,6 +126,7 @@ function About({ data }) {
         </p>
       </div>
     </Layout>
+    </>
   )
 }
 

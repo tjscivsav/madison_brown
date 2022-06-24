@@ -14,6 +14,10 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 
+
+import Seo from "../components/Seo"
+import { graphql, useStaticQuery } from "gatsby"
+
 export default function Index() {
   const [email, setEmail] = useState("")
   const handleSubmit = async e => {
@@ -48,8 +52,29 @@ export default function Index() {
     setEmail(e.target.value)
   }
 
+  const SEOData = useStaticQuery(graphql`
+
+  query homeSEO{
+    allMarkdownRemark (filter: {fileAbsolutePath: {glob: "**/home.md"}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            seoTitle
+            seoDescription
+          }
+        }
+      }
+    }
+  }
+  `).allMarkdownRemark.edges[0].node.frontmatter
+
   return (
     <>
+      <Seo
+        title={SEOData?.seoTitle ? SEOData.seoTitle : "Home"}
+        description={SEOData?.seoDescription ? SEOData.seoDescription : "Madison Brown Home Page"}
+      />
       <ToastContainer
         position="top-right"
         autoClose={5000}
