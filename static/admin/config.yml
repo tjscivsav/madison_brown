@@ -92,7 +92,7 @@ collections:
             widget: list
             fields:
               - { label: Ice Cream, name: img, widget: image }
-              - { label: Box Cap, name: cap, widget: image }
+              - { label: Box Cap, name: cap, widget: image, required: false }
               - { label: Frame, name: frame, widget: image, required: false }
               - { label: Title, name: title, widget: string }
               - { label: Description, name: desc, widget: string }
