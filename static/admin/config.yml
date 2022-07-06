@@ -2,7 +2,8 @@ backend:
   name: git-gateway
   repo: tjscivsav/madison_brown
   branch: main
-media_folder: ../../src/images/uploads
+media_folder: static/img
+public_folder: ../static/img
 
 collections:
   - name: socialLinks
