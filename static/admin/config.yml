@@ -98,6 +98,11 @@ collections:
               - { label: Description, name: desc, widget: string }
               - { label: Background Color, name: btn_color, widget: string }
               - { label: ID, name: id, widget: string }
+              - label: Gallery Content
+                name: galleryContent
+                widget: list
+                fields:
+                  - { label: image, name: galleryImage, widget: image }
   - name: shops
     label: Shops
     files:
