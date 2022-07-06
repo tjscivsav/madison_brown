@@ -9,43 +9,50 @@ import _ from "lodash"
 import Seo from "../components/Seo"
 
 export const products_Data = graphql`
-  query productsData {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            templateKey
-            instagram
-            facebook
-            tiktok
-            twitter
-            bg_img
+query productsData {
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        frontmatter {
+          templateKey
+          instagram
+          facebook
+          tiktok
+          twitter
+          bg_img
+          desc
+          front_img
+          seoTitle
+          title
+          para1
+          para2
+          poster_title
+          products {
+            btn_color
             desc
-            front_img
-            seoTitle
+            id
+            img
             title
-            para1
-            para2
-            poster_title
-            products {
-              btn_color
-              desc
-              id
-              img
-              title
-              frame
+            frame
+            galleryContent {
+              galleryImage {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }          
             }
-            shops {
-              img
-              location
-              upcoming
-            }
+          }
+          shops {
+            img
+            location
+            upcoming
           }
         }
       }
     }
   }
+}
 `
 
 function Products({ data }) {
@@ -68,12 +75,6 @@ function Products({ data }) {
         description="Products"
       />
       <Layout socialLinks={social_links?.node?.frontmatter}>
-        <Popup
-          open={open}
-          opened={() => {
-            setOpen(!open)
-          }}
-        />
         <PageTitle title="Products" />
         <div className={`container-fluid  bg_sandal`}>
           <div className="row">
