@@ -9,6 +9,9 @@ html {
 body {
   overflow-x: hidden !important ;
 }
+
+@import "./explore.css";
+
 .bg_gif {
   position: relative;
   justify-content: center;
