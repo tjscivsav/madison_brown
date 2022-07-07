@@ -76,6 +76,15 @@ products:
     frame: https://res.cloudinary.com/namodda/image/upload/v1650394574/Ellipse_16_bw1awh.svg
     galleryContent:
       - galleryImage: ../static/img/img_1083.jpg
+      - galleryImage: ../static/img/img_1080.jpg
+      - galleryImage: ../static/img/img_1081.jpg
+      - galleryImage: ../static/img/img_1117.jpg
+      - galleryImage: ../static/img/img_1084.jpg
+      - galleryImage: ../static/img/img_1085.jpg
+      - galleryImage: ../static/img/img_1113.jpg
+      - galleryImage: ../static/img/img_1114.jpg
+      - galleryImage: ../static/img/img_1115.jpg
+      - galleryImage: ../static/img/img_1116.jpg
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394003/MB_ice_cream__CCCD_fnycvo.svg
     title: Chocolate Chip Cookie Dough
     desc: Our cookie dough starts with our super premium vanilla and adds chunks of
