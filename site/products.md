@@ -11,6 +11,14 @@ products:
     frame: https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449041/Madison%20Brown/red_frame_vbewlx.png
     galleryContent:
       - galleryImage: ../static/img/img_1086.jpg
+      - galleryImage: ../static/img/img_1087.jpg
+      - galleryImage: ../static/img/img_1088.jpg
+      - galleryImage: ../static/img/img_1089.jpg
+      - galleryImage: ../static/img/img_1090.jpg
+      - galleryImage: ../static/img/img_1091.jpg
+      - galleryImage: ../static/img/img_1092.jpg
+      - galleryImage: ../static/img/img_1119.jpg
+      - galleryImage: ../static/img/img_1120.jpg
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394230/MB_ice_cream__CCCD_2_mipjmh.svg
     title: Vanilla
     desc: Our Vanilla Ice Cream is made with a Vanilla Extract three times stronger
