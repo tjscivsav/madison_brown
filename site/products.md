@@ -95,4 +95,6 @@ products:
     frame: https://res.cloudinary.com/namodda/image/upload/v1650393988/Ellipse_14_h8fozc.svg
     galleryContent:
       - galleryImage: ../static/img/img_1100.jpg
+      - galleryImage: ../static/img/img_1101-2.jpg
+      - galleryImage: ../static/img/img_1103.jpg
 ---
