@@ -46,6 +46,12 @@ products:
     frame: https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449550/Madison%20Brown/grey_frame_amsvns.png
     galleryContent:
       - galleryImage: ../static/img/img_1108.jpg
+      - galleryImage: ../static/img/img_1106.jpg
+      - galleryImage: ../static/img/img_1107.jpg
+      - galleryImage: ../static/img/img_1109.jpg
+      - galleryImage: ../static/img/img_1110.jpg
+      - galleryImage: ../static/img/img_1111-copy.jpg
+      - galleryImage: ../static/img/img_1112-copy.jpg
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394397/MB_ice_cream__CCCD_4_yzr7mg.svg
     desc: Our Chocolate ice cream starts with a silky milk chocolate cocoa powder
       balanced with just the right bitterness and then we add a touch of dark
