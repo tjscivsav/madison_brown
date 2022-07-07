@@ -29,6 +29,11 @@ products:
     frame: https://res.cloudinary.com/du0nuz3fi/image/upload/v1650449040/Madison%20Brown/blue_frame_wab9ho.png
     galleryContent:
       - galleryImage: ../static/img/img_1096.jpg
+      - galleryImage: ../static/img/img_1093.jpg
+      - galleryImage: ../static/img/img_1094.jpg
+      - galleryImage: ../static/img/img_1095.jpg
+      - galleryImage: ../static/img/img_1097.jpg
+      - galleryImage: ../static/img/img_1098.jpg
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394313/MB_ice_cream__CCCD_3_yejtyd.svg
     title: Cookies N’ Cream
     desc: Madison Brown Premium Cookies & Cream Ice Cream, we take our super premium
