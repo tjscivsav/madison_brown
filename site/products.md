@@ -63,6 +63,9 @@ products:
     frame: https://res.cloudinary.com/namodda/image/upload/v1650394393/Ellipse_15_qi43gj.svg
     galleryContent:
       - galleryImage: ../static/img/img_1099.jpg
+      - galleryImage: ../static/img/img_2629.jpg
+      - galleryImage: ../static/img/img_2630.jpg
+      - galleryImage: ../static/img/img_2631.jpg
   - img: https://res.cloudinary.com/namodda/image/upload/v1650394578/MB_ice_cream__CCCD_5_kmi6ds.svg
     title: Mint Chocolate Chip
     desc: This classic take on Mint Chip blends two unique peppermint extracts for a
