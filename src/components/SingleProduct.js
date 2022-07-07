@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import * as productStyle from "../../styles/product.module.css"
 
 import ExploreGallery from "./ExploreGallery"
@@ -7,10 +7,27 @@ import ExploreGallery from "./ExploreGallery"
 export default function SingleProduct({ item }) {
     const [galleryOpen, setGalleryOpen] = useState(false)
 
+    const escFunction = useCallback((event) => {
+      if (event.key === "Escape") {
+        setGalleryOpen(false)
+      }
+    }, [])
+  
+    useEffect(() => {
+      document.addEventListener("keydown", escFunction, false)
+
+      return () => {
+        document.removeEventListener("keydown", escFunction, false)
+      }
+    }, [])
+
     let btn_color = item.btn_color
         return (
           <div
-            className={`${btn_color} col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center my-5`}
+            className={`${btn_color} col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center my-5`} onKeyPress={(e) => {
+              console.log(e)
+            }}
+            onKey
           >
             <ExploreGallery images={ item.galleryContent} open={galleryOpen} setOpen={setGalleryOpen} />
             <div className={`${productStyle.img_section}  ${btn_color} `}>
