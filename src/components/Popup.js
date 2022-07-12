@@ -27,7 +27,7 @@ function Popup({ open, opened }) {
             size="2x"
           />
           <p>
-            Set the scoop and sign up now for all exciting news coming soon!
+            Get the scoop and sign up now for all exciting news coming soon!
           </p>
           <SignupForm />
         </div>
