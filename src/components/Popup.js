@@ -5,8 +5,9 @@ import * as popup from "../../styles/popup.module.css"
 import SignupForm from "./SignupForm"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "gatsby"
 
-function Popup({ open, opened }) {
+function Popup({ open, opened, data}) {
   return (
     <>
       <Modal
@@ -27,9 +28,19 @@ function Popup({ open, opened }) {
             size="2x"
           />
           <p>
-            Get the scoop and sign up now for all exciting news coming soon!
+            {data.node.frontmatter.poster_title}
           </p>
-          <SignupForm />
+          <a 
+            target="_blank"
+            href={
+              data.node.frontmatter.poster_btn_link
+                ? data.node.frontmatter.poster_btn_link
+                : "https://www.walmart.com/"
+            }
+            rel="noreferrer"
+          >
+              {data.node.frontmatter.poster_btn_name}
+          </a> 
         </div>
       </Modal>
     </>

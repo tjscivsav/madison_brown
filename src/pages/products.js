@@ -28,6 +28,8 @@ query productsData {
           para1
           para2
           poster_title
+          poster_btn_link
+          poster_btn_name
           products {
             btn_color
             desc
@@ -68,6 +70,12 @@ function Products({ data }) {
     }
   })
 
+  let popup_data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (item?.node?.frontmatter?.templateKey === "home") {
+      return item?.node
+    }
+  })
+
   return (
     <>
       <Seo
@@ -75,13 +83,12 @@ function Products({ data }) {
         description="Products"
       />
       <Layout socialLinks={social_links?.node?.frontmatter}>
+        <Popup open={open} opened={setOpen} data={popup_data} />
         <PageTitle title="Products" />
         <div className={`container-fluid  bg_sandal`}>
           <div className="row">
             <Product
-              opened={opened => {
-                setOpen(opened)
-              }}
+              setOpen={setOpen}
               data={
                 product_Data?.node?.frontmatter?.products
                   ? product_Data?.node?.frontmatter?.products
