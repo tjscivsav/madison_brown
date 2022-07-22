@@ -7,20 +7,20 @@ function Poster({ data }) {
   return (
     <>
       <div className={poster.bg_img}>
-        <h2>{data?.title ? data?.title : `FIND OUR ICE CREAM`}</h2>
+        <h2 className={poster.poster_title}>{data?.title ? data?.title : `FIND OUR ICE CREAM`}</h2>
         {data?.poster_btn_name ? (
-          <Link
+          <a
             target="_blank"
-            to={
+            href={
               data.poster_btn_link
-                ? data.poster_btn_name
+                ? data.poster_btn_link
                 : "https://www.walmart.com/"
             }
           >
             {data?.poster_btn_name
               ? data?.poster_btn_name
               : `Available now at Walmart.com`}
-          </Link>
+          </a>
         ) : null}
       </div>
     </>

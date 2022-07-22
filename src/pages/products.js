@@ -9,43 +9,52 @@ import _ from "lodash"
 import Seo from "../components/Seo"
 
 export const products_Data = graphql`
-  query productsData {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            templateKey
-            instagram
-            facebook
-            tiktok
-            twitter
-            bg_img
+query productsData {
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        frontmatter {
+          templateKey
+          instagram
+          facebook
+          tiktok
+          twitter
+          bg_img
+          desc
+          front_img
+          seoTitle
+          title
+          para1
+          para2
+          poster_title
+          poster_btn_link
+          poster_btn_name
+          products {
+            btn_color
             desc
-            front_img
-            seoTitle
+            id
+            img
             title
-            para1
-            para2
-            poster_title
-            products {
-              btn_color
-              desc
-              id
-              img
-              title
-              frame
+            frame
+            galleryContent {
+              galleryImage {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }          
             }
-            shops {
-              img
-              location
-              upcoming
-            }
+          }
+          shops {
+            img
+            location
+            upcoming
           }
         }
       }
     }
   }
+}
 `
 
 function Products({ data }) {
@@ -61,6 +70,12 @@ function Products({ data }) {
     }
   })
 
+  let popup_data = _.find(data?.allMarkdownRemark?.edges, function (item) {
+    if (item?.node?.frontmatter?.templateKey === "home") {
+      return item?.node
+    }
+  })
+
   return (
     <>
       <Seo
@@ -68,19 +83,12 @@ function Products({ data }) {
         description="Products"
       />
       <Layout socialLinks={social_links?.node?.frontmatter}>
-        <Popup
-          open={open}
-          opened={() => {
-            setOpen(!open)
-          }}
-        />
+        <Popup open={open} opened={setOpen} data={popup_data} />
         <PageTitle title="Products" />
         <div className={`container-fluid  bg_sandal`}>
           <div className="row">
             <Product
-              opened={opened => {
-                setOpen(opened)
-              }}
+              setOpen={setOpen}
               data={
                 product_Data?.node?.frontmatter?.products
                   ? product_Data?.node?.frontmatter?.products
